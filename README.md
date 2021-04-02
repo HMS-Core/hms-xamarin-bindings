@@ -83,8 +83,8 @@ The following targets can be specified using the `--target=<target-name>`:
 
  - `build` builds the class library bindings (depends on `externals`)
  - `externals` downloads and builds the external dependencies
- - `samples` builds all of the samples (depends on `libs`)
- - `nuget` builds the nuget packages (depends on `libs`)
+ - `samples` builds all of the samples
+ - `nuget` builds the nuget packages
  - `clean` cleans up everything
 
  **Note:** In the `main-components.cake` and `dependency.cake`, there are only latest versions specified. You can change the versions and compile the projects as you like.
