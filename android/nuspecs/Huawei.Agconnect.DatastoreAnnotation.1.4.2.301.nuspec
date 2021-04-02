@@ -1,0 +1,27 @@
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Huawei.Agconnect.DatastoreAnnotation</id>
+    <version>1.4.2.301</version>
+    <title>Huawei.Agconnect.DatastoreAnnotation</title>
+    <authors>Huawei</authors>
+    <owners>Huawei</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="file">LICENSE.txt</license>
+    <projectUrl>https://github.com/HMS-Core/hms-xamarin-bindings</projectUrl>
+    <icon>huawei.png</icon>
+    <description>Xamarin.Android bindings for HMS Core - DatastoreAnnotation</description>
+    <copyright>© Huawei Technologies Co., Ltd. All rights reserved.</copyright>
+    <tags>Huawei Agconnect DatastoreAnnotation</tags>
+    <dependencies>
+      <group targetFramework="MonoAndroid9.0" />
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="Java.Interop" targetFramework="MonoAndroid9.0" />
+    </frameworkAssemblies>
+  </metadata>
+  <files>
+    <file src="bin/Release/Huawei.Agconnect.DatastoreAnnotation.dll" target="lib/monoandroid90/Huawei.Agconnect.DatastoreAnnotation.dll" />
+    <file src="../../icons/huawei.png" target="" />
+    <file src="../../LICENSE.txt" target="" />
+  </files>
+</package>

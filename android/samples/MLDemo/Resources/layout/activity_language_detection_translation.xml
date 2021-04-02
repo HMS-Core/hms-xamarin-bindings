@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".translate.TranslatorActivity">
+        <EditText
+            android:id="@+id/et_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@drawable/bg_edit_text"
+            android:gravity="top"
+            android:minLines="5"
+            android:padding="5dp"
+            android:text="Huawei machine learning service."
+            android:textSize="14sp"
+            tools:layout_editor_absoluteY="47dp" />
+
+        <TextView
+            android:id="@+id/tv_output"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_edit_text"
+            android:layout_below="@+id/et_input"
+            android:gravity="top"
+            android:minLines="5"
+            android:padding="5dp"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btn_local_translator"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_output"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/local_translator" />
+
+                <Button
+                    android:id="@+id/btn_local_detector"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_output"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/local_detector" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btn_remote_translator"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btn_local_translator"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/remote_translator" />
+
+                <Button
+                    android:id="@+id/btn_remote_detector"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btn_remote_translator"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/remote_detector" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btn_download_model"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btn_local_translator"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/download_trans_model" />
+                <Button
+                    android:id="@+id/btn_delete_model"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btn_local_translator"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/delete_trans_model" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewTips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:layout_weight="2"
+            android:autoLink="email"
+            android:gravity="center"
+            android:text="Translates English, French, Spanish, Arabic, Thai, and Turkish into Chinese." />
+</LinearLayout>

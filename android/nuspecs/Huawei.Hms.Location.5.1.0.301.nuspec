@@ -1,0 +1,30 @@
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Huawei.Hms.Location</id>
+    <version>5.1.0.301</version>
+    <title>Huawei.Hms.Location</title>
+    <authors>Huawei</authors>
+    <owners>Huawei</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="file">LICENSE.txt</license>
+    <projectUrl>https://github.com/HMS-Core/hms-xamarin-bindings</projectUrl>
+    <icon>huawei.png</icon>
+    <description>Xamarin.Android bindings for HMS Core - Location</description>
+    <copyright>© Huawei Technologies Co., Ltd. All rights reserved.</copyright>
+    <tags>Huawei Hms Location</tags>
+    <dependencies>
+      <group targetFramework="MonoAndroid9.0">
+        <dependency id="Huawei.Hms.Base" version="5.2.0.300" include="All" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="Java.Interop" targetFramework="MonoAndroid9.0" />
+    </frameworkAssemblies>
+  </metadata>
+  <files>
+    <file src="bin/Release/Huawei.Hms.Location.dll" target="lib/monoandroid90/Huawei.Hms.Location.dll" />
+    <file src="../../icons/huawei.png" target="" />
+    <file src="README.md" target="" />
+    <file src="../../LICENSE.txt" target="" />
+  </files>
+</package>

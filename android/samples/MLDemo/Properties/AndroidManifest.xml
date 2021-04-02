@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" 
+          android:versionCode="1" 
+          android:versionName="2.0" 
+          package="com.company.project">
+	<uses-sdk android:minSdkVersion="21" android:targetSdkVersion="28" />
+	
+	<meta-data
+	android:name="com.huawei.hms.ml.DEPENDENCY"
+	android:value="object,ocr,face,label,icr,bcr,imgseg,translate,langdetect,skeleton,handkeypoint" />
+
+	<application android:allowBackup="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/AppTheme" >
+  </application>
+	<!-- add authorization of camera -->
+	<uses-feature android:name="android.hardware.camera" />
+
+	<uses-permission android:name="android.permission.CAMERA" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.RECORD_AUDIO" />
+	<uses-permission android:name="android.permission.NETWORK_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+</manifest>

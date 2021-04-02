@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">XamarinHmsNearbyDemoMessage</string>
+    <string name="title_publish">Publish Messages</string>
+    <string name="title_subscribe">Subscribe to messages</string>
+    <string name="warn">Warn</string>
+</resources>

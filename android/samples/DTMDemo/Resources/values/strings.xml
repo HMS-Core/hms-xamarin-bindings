@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">XamarinHmsDTMDemo</string>
+    <string name="action_settings">Settings</string>
+    <string name="btn_custom_tag">Custom Tag</string>
+    <string name="btn_appsflyer_tag">AppsFlyer Tag</string>
+    <string name="btn_hianalytics_tag">HiAnalytics Tag</string>
+    <string name="btn_firebase_tag">Firebase Tag</string>
+</resources>

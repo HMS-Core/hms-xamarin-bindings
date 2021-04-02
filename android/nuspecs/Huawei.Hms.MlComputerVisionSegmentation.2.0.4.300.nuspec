@@ -1,0 +1,30 @@
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Huawei.Hms.MlComputerVisionSegmentation</id>
+    <version>2.0.4.300</version>
+    <title>Huawei.Hms.MlComputerVisionSegmentation</title>
+    <authors>Huawei</authors>
+    <owners>Huawei</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="file">LICENSE.txt</license>
+    <projectUrl>https://github.com/HMS-Core/hms-xamarin-bindings</projectUrl>
+    <icon>huawei.png</icon>
+    <description>Xamarin.Android bindings for HMS Core - MlComputerVisionSegmentation</description>
+    <copyright>© Huawei Technologies Co., Ltd. All rights reserved.</copyright>
+    <tags>Huawei Hms MlComputerVisionSegmentation</tags>
+    <dependencies>
+      <group targetFramework="MonoAndroid9.0">
+        <dependency id="Huawei.Hms.MlComputerVisionCloud" version="2.0.5.300" include="All" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="Java.Interop" targetFramework="MonoAndroid9.0" />
+    </frameworkAssemblies>
+  </metadata>
+  <files>
+    <file src="bin/Release/Huawei.Hms.MlComputerVisionSegmentation.dll" target="lib/monoandroid90/Huawei.Hms.MlComputerVisionSegmentation.dll" />
+    <file src="../../icons/huawei.png" target="" />
+    <file src="README.md" target="" />
+    <file src="../../LICENSE.txt" target="" />
+  </files>
+</package>

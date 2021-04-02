@@ -1,0 +1,18 @@
+<resources>
+	<string name="app_name">HmsContactShieldDemo</string>
+	<string name="put_success">Put message success!</string>
+	<string name="put_fail">Put message fail!</string>
+	<string name="report_button_message">Click if you are tested positive, your 14 shared keys will be uploaded to a diagnostic server anonymously.</string>
+	<string name="check_button_message">Click if you want to check the exposures in the past 14 days.</string>
+	<string name="summary_button">Summary</string>
+	<string name="details_button">Details</string>
+	<string name="windowmode_button">WindowMode</string>
+	<string name="report_button">Report</string>
+	<string name="check_button">Check</string>
+	<string name="clearalldata_button">Clear all data</string>
+	<string name="contactshield_switch">ContactShieldStatus</string>
+	<string name="bottom_sheet_option_normal">Start Normal Contact Shield</string>
+	<string name="bottom_sheet_option_heading">Select Contact Shield Start Type</string>
+	<string name="bottom_sheet_option_nopersistent">Start No Persistent Contact Shield</string>
+	<string name="botttom_sheet_dismiss">Dismiss</string>
+</resources>

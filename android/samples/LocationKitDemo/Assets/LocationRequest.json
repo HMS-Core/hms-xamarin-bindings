@@ -1,0 +1,14 @@
+{
+  "Priority": 102,
+  "Interval": 5000,
+  "FastestInterval": 5000,
+  "IsFastestIntervalExplicitlySet": false,
+  "ExpirationTime": 9223372036854775807,
+  "ExpirationDuration": 9223372036854775807,
+  "NumUpdates": 2147483647,
+  "SmallestDisplacement": 0,
+  "MaxWaitTime": 0,
+  "NeedAddress": false,
+  "Language": "zh",
+  "CountryCode": "CN"
+}

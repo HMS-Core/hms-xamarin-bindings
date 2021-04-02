@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--    Copyright 2020-2021. Huawei Technologies Co., Ltd. All rights reserved.
+
+        Licensed under the Apache License, Version 2.0 (the "License");
+        you may not use this file except in compliance with the License.
+        You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+        Unless required by applicable law or agreed to in writing, software
+        distributed under the License is distributed on an "AS IS" BASIS,
+        WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+        See the License for the specific language governing permissions and
+        limitations under the License. 
+-->
+<metadata>
+	<attr path="/api/package[@name='com.huawei.hms.location']" name="managedName">Huawei.Hms.Location</attr>
+	<attr path="/api/package[@name='com.huawei.hms.support.api.entity.location.activityrecognition']" name="managedName">Huawei.Hms.Support.Api.Entity.Location.Activityrecognition</attr>
+	<attr path="/api/package[@name='com.huawei.hms.support.api.entity.location.checksettings']" name="managedName">Huawei.Hms.Support.Api.Entity.Location.Checksettings</attr>
+	<attr path="/api/package[@name='com.huawei.hms.support.api.entity.location.common']" name="managedName">Huawei.Hms.Support.Api.Entity.Location.Common</attr>
+	<attr path="/api/package[@name='com.huawei.hms.support.api.entity.location.enhance']" name="managedName">Huawei.Hms.Support.Api.Entity.Location.Enhance</attr>
+	<attr path="/api/package[@name='com.huawei.hms.support.api.entity.location.fence']" name="managedName">Huawei.Hms.Support.Api.Entity.Location.Fence</attr>
+	<attr path="/api/package[@name='com.huawei.hms.support.api.entity.location.lastlocation']" name="managedName">Huawei.Hms.Support.Api.Entity.Location.Lastlocation</attr>
+	<attr path="/api/package[@name='com.huawei.hms.support.api.entity.location.locationavailability']" name="managedName">Huawei.Hms.Support.Api.Entity.Location.Locationavailability</attr>
+	<attr path="/api/package[@name='com.huawei.hms.support.api.entity.location.mock']" name="managedName">Huawei.Hms.Support.Api.Entity.Location.Mock</attr>
+	<attr path="/api/package[@name='com.huawei.hms.support.api.entity.location.updates']" name="managedName">Huawei.Hms.Support.Api.Entity.Location.Updates</attr>
+</metadata>

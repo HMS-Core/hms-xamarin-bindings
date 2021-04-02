@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2c3e50</color>
+    <color name="colorPrimaryDark">#1B3147</color>
+    <color name="colorAccent">#3498db</color>
+
+	<color name="emui10_textColorSecondary">#99000000</color>
+
+	<color name="hidisk_navigation_bar_bg_gray">#f2f2f2f2</color>
+	<color name="hidisk_action_bar_bg_white">#ffffffff</color>
+	<color name="hidisk_action_bar_bg_gray">#f2f2f2f2</color>
+	<color name="hidisk_image_corner_color">#1A000000</color>
+
+	<color name="red_color">#CD3333</color>
+	<color name="green_color">#47CC47</color>
+	<color name="hwbutton_color_fg_inverse_dark_disable">#616161</color>
+	<color name="hwbutton_color_fg_inverse_disable">#FFFFFF</color>
+	<color name="hwbutton_color_fg_inverse_translucent_disable">#61FFFFFF</color>
+	<color name="hwbutton_functional_blue_dark_disable">#610D9FFB</color>
+	<color name="hwbutton_functional_blue_disable">#61007DFF</color>
+	<color name="hwbutton_functional_blue_translucent_disable">#610D9FFB</color>
+	<color name="emui_functional_blue">#007dff</color>
+</resources>

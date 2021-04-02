@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context="com.huawei.mlkit.example.skeleton.StillSkeletonAnalyseActivity">
+
+    <ImageView
+        android:id="@+id/skeleton_previewPane"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/skeleton_image"
+        android:scaleType="fitStart"/>
+
+    <HmsXamarinMLDemo.Camera.GraphicOverlay
+        android:id="@+id/skeleton_previewOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"/>
+
+    <Button
+        android:id="@+id/skeleton_detect_sync"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        android:background="@color/upsdk_white"
+        android:text="DETECT_SYNC"
+        android:textColor="@color/emui_color_gray_7"></Button>
+    <Button
+        android:id="@+id/skeleton_detect_async"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@color/upsdk_white"
+        android:text="DETECT_ASYNC"
+        android:textColor="@color/emui_color_gray_7"></Button>
+</RelativeLayout>

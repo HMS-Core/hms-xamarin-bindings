@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">SafetyDetectDemo</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+	
+	<!-- Navigation Items-->
+	<string name="sysIntegrity">SysIntegrity</string>
+	<string name="appsCheck">AppsCheck</string>
+	<string name="urlCheck">URLCheck</string>
+	<string name="others">Others</string>
+
+	<!-- SysIntegrity -->
+	<string name="detect_go_hint">Click the button below to detect system integrity.</string>
+	<string name="run">Run detection</string>
+	<string name="processing">Detecting</string>
+	<string name="rerun">Rerun detection</string>
+
+	<!-- AppsCheck -->
+	<string name="title_apps_check_entry">AppsCheck</string>
+	<string name="title_activity_apps_check">AppsCheck</string>
+	<string name="get_malicious_appslist">Get Malicious Apps List</string>
+	<string name="isverify_appscheck">Verify AppsCheck Enabled</string>
+	<string name="enable_appscheck">Enable AppsCheck</string>
+
+	<string name="app_type_virus">Virus App</string>
+	<string name="app_type_risk">Risk App</string>
+	<string name="app_type_unknown">Unknown App</string>
+
+	<!-- UrlCheck -->
+	<string name="title_url_check_entry">URLCheck</string>
+	<string name="title_activity_url_check">URLCheck</string>
+	<string name="call_url_text">http|https://</string>
+	<string name="call_url_btn">check url</string>
+	<string name="call_result_text">check result</string>
+	<string-array name="url_array">
+		<item>Malicious Urls</item>
+		<item>http://wap.paokw.cn</item>
+		<item>http://www.appid-ios-aoet.cn/ip</item>
+		<item>http://wap.paokw.cn/admin</item>
+		<item>http://wap.paykc.cn</item>
+		<item>https://appurl.io/IbY4HVP-P</item>
+		<item>http://owafranceadmin.000webhostapp.com/</item>
+		<item>http://rewtrrt.000webhostapp.com/</item>
+		<item>http://5e5m2i.wuxihg.com/</item>
+		<item>http://91cheerful.com.tw/shop/class/?135.html</item>
+		<item>http://example.com/hms/safetydetect/malware</item>
+	</string-array>
+	
+	<!--Others-->
+	<string name="wifidetect">Wifi Detect</string>
+	<string name="userdetect">User Detect</string>
+	<string name="risktoken">Risk Token</string>
+	<string name="initantifraud">Init AntiFraud</string>
+	<string name="releaseantifraud">Release AntiFraud</string>
+</resources>

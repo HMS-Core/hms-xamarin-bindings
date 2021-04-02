@@ -1,0 +1,75 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.hmscore.xaccountdemo.HuaweiIdActivity">
+
+        <TextView
+            android:text="@string/sample_hwid_description"
+            style="@style/TitleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+
+        <com.huawei.hms.support.hwid.ui.HuaweiIdAuthButton
+            android:id="@+id/hwid_huawei_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hwid_button_theme="hwid_button_theme_full_title"
+            app:hwid_color_policy="hwid_color_policy_red"
+            app:hwid_corner_radius="hwid_corner_radius_large"/>
+
+        <Button
+            android:id="@+id/hwid_signin"
+            style="@style/ButtonStyle"
+            android:text="@string/hwid_sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/hwid_signInCode"
+            style="@style/ButtonStyle"
+            android:text="@string/hwid_revokeAccess"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <Button
+            android:id="@+id/hwid_silentSignIn"
+            style="@style/ButtonStyle"
+            android:text="@string/hwid_silent_sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:id="@+id/hwid_startSmsManager"
+            style="@style/ButtonStyle"
+            android:text="@string/hwid_start_sms_manager" 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:id="@+id/hwid_cancelAuthorization"
+            style="@style/ButtonStyle"
+            android:text="@string/hwid_cancel_out" 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:id="@+id/hwid_signout"
+            style="@style/ButtonStyle"
+            android:text="@string/hwid_sign_out" 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <FrameLayout
+            android:id="@+id/framelog"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"></FrameLayout>
+    </LinearLayout>
+</ScrollView>

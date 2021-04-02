@@ -1,0 +1,20 @@
+﻿<metadata>
+<attr path="/api/package[@name='com.huawei.hianalytics.ab.bc.ab']/class[@name='ab']/field[@name='ab']" name="name">ababStats</attr>
+	<attr path="/api/package[@name='com.huawei.hianalytics.ab.bc.cd.bc']/class[@name='ab']/field[@name='ab']" name="name">ababStats</attr>
+	<attr path="/api/package[@name='com.huawei.hianalytics.ab.bc.cd.bc']/class[@name='cd']/field[@name='cd']" name="name">cdcdStats</attr>
+	<attr path="/api/package[@name='com.huawei.hianalytics.ab.cd.ab']/class[@name='bc']/field[@name='bc']" name="name">bcbcStats</attr>
+	<attr path="/api/package[@name='com.huawei.hianalytics.ab.bc.cd.bc']/class[@name='bc']/field[@name='bc']" name="name">bcbcStats</attr>
+	<attr path="/api/package[@name='com.huawei.hianalytics.ab.gh']/class[@name='ab']/field[@name='ab']" name="name">ababStats</attr>
+	<remove-node path="/api/package[@name='com.huawei.hianalytics.ab.bc.cd.bc']/interface[@name='fg']/method[@name='ab' and count(parameter)=0]"></remove-node>
+	<attr path="/api/package[@name='com.huawei.hianalytics.ab.bc.bc']/class[@name='ab.ab']" name="managedName">AB1</attr>
+	<attr path="/api/package[@name='com.huawei.hianalytics.ab.bc.fg']/class[@name='ab.ab']" name="managedName">AB1</attr>
+	<attr path="/api/package[@name='com.huawei.hianalytics.ab.cd.bc']/class[@name='ab.ab']" name="managedName">AB1</attr>
+	<attr path="/api/package[@name='com.huawei.hianalytics.ab.de']/class[@name='ab.ab']" name="managedName">AB1</attr>
+	<attr path="/api/package[@name='com.huawei.hianalytics.ab.cd.bc']/class[@name='ab.ab']/method[@name='bc' and count(parameter)=0]" name="managedName">InvokeBc</attr>
+	<attr path="/api/package[@name='com.huawei.hms.utils']/class[@name='HMSBIInitializer.GRSTask']/method[@name='doInBackground' and count(parameter)=1 and parameter[1][@type='java.lang.String...']]/
+        parameter[1]" name="managedType">params Java.Lang.Object[]</attr>
+	<attr path="/api/package[@name='com.huawei.hms.utils']/class[@name='HMSBIInitializer.GRSTask']/method[@name='doInBackground' and count(parameter)=1 and parameter[1][@type='java.lang.String...']]" name="managedReturn">Java.Lang.Object</attr>
+	<attr path="/api/package[@name='com.huawei.hms.utils']/class[@name='HMSBIInitializer.GRSTask']/method[@name='doInBackground' and count(parameter)=1 and parameter[1][@type='java.lang.String...']]" name="visibility">override protected</attr>
+	<attr path="/api/package[@name='com.huawei.hms.utils']/class[@name='HMSBIInitializer.GRSTask']/method[@name='doInBackground' and count(parameter)=1 and parameter[1][@type='java.lang.String...']]" name="final">true</attr>
+
+</metadata>

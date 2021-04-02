@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D6DC4772-23C4-414B-A4AE-1B1D3CF467E4}</ProjectGuid>
+    <ProjectTypeGuids>{10368E6C-D01B-4462-8E8B-01FC667A7035};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{77efb91c-a7e9-4b0e-a7c5-31eeec3c6d46}</TemplateGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Huawei.Hms.Opendevice</RootNamespace>
+    <AssemblyName>Huawei.Hms.Opendevice</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>True</Deterministic>
+    <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
+    <AndroidClassParser>class-parse</AndroidClassParser>
+    <AndroidCodegenTarget>XAJavaInterop1</AndroidCodegenTarget>
+    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>portable</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Android" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Additions\OpenDeviceHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Jars\AboutJars.txt" />
+    <None Include="Additions\AboutAdditions.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <TransformFile Include="Transforms\Metadata.xml" />
+    <TransformFile Include="Transforms\EnumFields.xml" />
+    <TransformFile Include="Transforms\EnumMethods.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\agconnect-core\agconnect-core.csproj">
+      <Project>{DC61B5FF-1065-4C4B-878D-B0F05FEE296F}</Project>
+      <Name>agconnect-core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\update\update.csproj">
+      <Project>{287DFD83-9873-4054-9004-F9507E926CD7}</Project>
+      <Name>update</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\base\base.csproj">
+      <Project>{930C8034-CC38-4216-96A8-5A54B1E98B5D}</Project>
+      <Name>base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\device\device.csproj">
+      <Project>{735D9F1E-A2CF-466B-98A1-1722D7FA2898}</Project>
+      <Name>device</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\log\log.csproj">
+      <Project>{90CDEA4A-D708-4F14-B975-07918C77806A}</Project>
+      <Name>log</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\network-common\network-common.csproj">
+      <Project>{756CF6A2-4055-464D-B9B1-35FAF5EEF6D8}</Project>
+      <Name>network-common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\network-grs\network-grs.csproj">
+      <Project>{0F4EAA93-9D3A-4050-8470-3391CBA73937}</Project>
+      <Name>network-grs</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\stats\stats.csproj">
+      <Project>{12FABBC8-59ED-4794-8C49-BE6FCAB9E367}</Project>
+      <Name>stats</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\tasks\tasks.csproj">
+      <Project>{422129CC-0712-4DD5-9F39-6DE8D64B52A2}</Project>
+      <Name>tasks</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ui\ui.csproj">
+      <Project>{BF819FD6-EFA7-4E2A-8E42-80BDAF850748}</Project>
+      <Name>ui</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\update\update.csproj">
+      <Project>{ACFCF020-3E94-4930-862E-93F3AFC33C36}</Project>
+      <Name>update</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <TransformFile Include="Transforms\Metadata.Namespaces.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <LibraryProjectZip Include="..\..\externals\opendevice.aar" Link="Jars\%(Filename)%(Extension)" />
+  </ItemGroup>
+</Project>

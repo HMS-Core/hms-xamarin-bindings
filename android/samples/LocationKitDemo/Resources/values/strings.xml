@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">LocationKitDemo</string>
+    <string name="action_settings">Settings</string>
+	
+	<string name="sample_hwlocation_description">Huawei Location Demo</string>
+
+	<string name="hwlocation_getLastLocation">Get Last Location</string>
+	<string name="hwlocation_getLocationAvailability">Get Location Availability</string>
+	<string name="hwlocation_locationupdates">Location Updates</string>
+	<string name="hwlocation_requestLocationUpdatesWithCallback">Request LocationUpdates with callback</string>
+	<string name="hwlocation_removeLocationUpdatesWithCallback">Remove LocationUpdates with callback</string>
+	<string name="hwlocation_requestLocationUpdatesWithIntent">Request LocationUpdates with intent</string>
+	<string name="hwlocation_removeLocationUpdatesWithIntent">Remove LocationUpdates with intent</string>
+	<string name="hwlocation_setMockLocation">Set Mock Location</string>
+	<string name="hwlocation_setMockMode">Set Mock Mode</string>
+	<string name="hwlocation_mockWarning">Enable the mobile phone to allow mock location \nand  set mockmode true</string>
+	<string name="hwlocation_activity">ActivityRecognition Update</string>
+	<string name="hwlocation_activity_transition">ActivityTransition Update</string>
+	<string name="hwlocation_geofence">Geofence</string>
+	<string name="hwlocation_locationHD">LocationHD</string>
+	<string name="hwlocation_getNavigationContextState">Get NavigationContextState</string>
+	<string name="hwlocation_checkSetting">Check Setting</string>
+</resources>

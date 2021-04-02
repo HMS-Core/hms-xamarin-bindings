@@ -1,0 +1,142 @@
+<resources>
+    <string name="app_name">XamarinHmsWalletDemo</string>
+    <string name="action_settings">Settings</string>
+	<!--Membership Card Area-->
+	<string name="pass_type_id">Pass Type</string>
+	<string name="pass_issuer_id">IssuerId(appId)</string>
+	<string name="pass_id">Pass Id</string>
+	<string name="member_name">Member Name</string>
+	<string name="barcode_text">Bar Description</string>
+	<string name="barcode_type">Bar Type</string>
+	<string name="barcode_value">Bar Code</string>
+	<string name="pass_style_identifier">Template ID</string>
+	<string name="serinumber">Serialnumber Text</string>
+	<string name="image_module_data_main_image_uris">Banner URI</string>
+	<string name="image_module_data_main_image_uris_des">Banner URI Des</string>
+	<string name="image_module_data_main_image_uris1">Banner URI 1</string>
+	<string name="image_module_data_main_image_uris_des1">Banner URI Des 1</string>
+	<string name="info_module_data_hex_background_color">infoModuleDataHexBackgroundColor</string>
+	<string name="info_module_data_hex_font_color">infoModuleDataHexFontColor</string>
+	<string name="info_module_data_label_info_rows_lable">infoModuleDataLabelInfoRowsLable</string>
+	<string name="info_module_data_label_info_rows_value">infoModuleDataLabelInfoRowsValue</string>
+	<string name="info_module_data_show_last_update_time">infoModuleDataShowLastUpdateTime</string>
+	<string name="message_header">Message Header</string>
+	<string name="message_body">Message Info</string>
+	<string name="message_header1">Message Header 1</string>
+	<string name="message_body1">Message Info 1</string>
+	<string name="text_data_header">TextDataHeader</string>
+	<string name="text_data_body">TextDataBody</string>
+	<string name="text_data_header1">TextDataHeader1</string>
+	<string name="text_data_body1">TextDataBody1</string>
+	<string name="merchant_name">Merchant Name</string>
+	<string name="background_image">Card Picture Uri</string>
+	<string name="homepage_uri_key">HomePageUriKey</string>
+	<string name="homepage_uri_value">HomePageUriValue</string>
+	<string name="homepage_uri_lable">HomePageUriLabel</string>
+	<string name="nearby_locations_value">Nearby Location Value</string>
+	<string name="nearby_locations_lable">Nearby Location</string>
+	<string name="hotline_value">Hotline Value</string>
+	<string name="hotline_lable">Hotline Display Name</string>
+	<string name="website_value">Website Value</string>
+	<string name="website_lable">Website Display Name</string>
+	<string name="latitude">Latitude</string>
+	<string name="longitude">Longitude</string>
+	<string name="latitude1">Latitude1</string>
+	<string name="longitude1">Longitude1</string>
+	<string name="points">Points</string>
+	<string name="balance">Balance</string>
+	<string name="secondary_points">Rewards</string>
+	<string name="name">Card Name</string>
+	<!--<string name="card_name">Card Name</string>-->
+	<string name="card_number">Card Number</string>
+	<string name="status">Status</string>
+	<string name="logo">Logo</string>
+	<string name="Start_time">StartTime</string>
+	<string name="End_time">EndTime</string>
+	<string name="merchant_Provides">Merchant Provides Name</string>
+	<string name="Details">Details</string>
+	<string name="disclaimer">Disclaimer</string>
+	<string name="relatedPassId1">RelatedCardId</string>
+	<string name="relatedPassId2">RelatedCardType</string>
+	<string name="relatedPassId3">RelatedCardId1</string>
+	<string name="relatedPassId4">RelatedCardType1</string>
+	<string name="url1">UrlLabel</string>
+	<string name="url2">UrlValue</string>
+	<string name="url3">UrlLable1</string>
+	<string name="url4">UrlValue1</string>
+	<string name="level">Tier level</string>
+	<string name="click_save_data">Save Data</string>
+
+	<!--main_index-->
+	<string name="save_loyalty_card">Save Loyalty Card</string>
+	<string name="save_gift_card">Save Gift Card</string>
+	<string name="save_coupon_card">Save Coupon Card</string>
+
+	<!--gift_card-->
+	<string name="gift_background_image">Background picture of the gift card</string>
+	<string name="gift_background_image_des">Description of the gift card background image</string>
+	<string name="gift_logo">URL of the gift card logo</string>
+	<string name="gift_merchant_name">Merchant name</string>
+	<string name="gift_card_name">Card name</string>
+	<string name="gift_card_number">Gift Card Number</string>
+	<string name="gift_card_balance">Balance Value</string>
+	<string name="gift_card_pin">Gift card pin</string>
+
+	<string name="currency_code">CurrencyCode</string>
+	<string name="balance_micros">Balance</string>
+	<string name="pass_balance_update_time">Last Balance Update Time</string>
+	<string name="giftScrollingImages1">Rotation chart 1 URL</string>
+	<string name="giftScrollingDesc1">Rotation chart 1 DESC</string>
+	<string name="giftScrollingImages2">Rotation chart 2 URL</string>
+	<string name="giftScrollingDesc2">Rotation chart 2 DESC</string>
+
+	<string name="gift_nearby_stores_url">Nearby stores url</string>
+	<string name="gift_nearby_stores_name">Nearby stores name</string>
+
+	<string name="gift_main_image_url">Main page url</string>
+	<string name="gift_main_image_name">Main page name</string>
+
+	<string name="gift_hot_line_phone">Hot line</string>
+	<string name="gift_hot_line_name">Hot line name</string>
+
+	<string name="pass_event_number">Event Number</string>
+	<string name="passPin">Pass Pin</string>
+	<string name="link_lable">LinkLabel</string>
+	<string name="link_uri_gift">LinkUri</string>
+	<string name="link_des_gift">LinkUri</string>
+	<string name="link_lable1">LinkLabel1</string>
+	<string name="link_uri_gift1">LinkUri1</string>
+	<string name="link_des_gift1">LinkUri1</string>
+
+	<!--sec_main-->
+	<string name="save_to_wallet">Add card with WalletKitSDK </string>
+	<string name="click_link_toPay">Third party intent add card coupon</string>
+	<string name="click_app_orUriToPay">Click on wallet or browser to add card</string>
+	<string name="view_card">Click to view the added coupons</string>
+
+	<string name="giftScrollingTitle2">Rotation chart 2</string>
+	<string name="giftScrollingTitle1">Rotation chart 1</string>
+	<string name="home_page_zh">Obtaining vouchers in the app, fast app, or Huawei Pay CardStore moded</string>
+	<string name="home_page_en">Obtaining vouchers through web pages, SMS messages, emails, and apps</string>
+
+	<string name="pass_cn_appid">Please enter an appid, such as "myappid"</string>
+	<string name="pass_cn_passType">Please enter passType, such as "passType"</string>
+	<string name="pass_cn_canAddPass">Is it possible to add cards</string>
+	<string name="pass_cn_addPass">Add card coupon</string>
+	<string name="pass_cn_getToken">Get token</string>
+	<string name="pass_cn_requerySec">Get temporary public key</string>
+	<string name="pass_cn_writeCard">Write card</string>
+	<string name="pass_cn_readCard">Read card</string>
+	<string name="pass_cn_checkStatus">Query key status</string>
+	<string name="pass_cn_delete">Delete Card</string>
+	<string name="pass_cn_query">Query Card info</string>
+	<string name="pass_cn_swipe">Query swipe Card info</string>
+	<string name="pass_cn_desc">Remarks: The current passType parameter is only successful if "Can add a card pass" is entered:</string>
+	<string name="pass_cn_queryBiaos">Query unique ID</string>
+	<string name="pass_cn_requestRegistration">Request registration</string>
+	<string name="pass_cn_confirmRegistration">Confirm registration</string>
+	<string name="pass_cn_personalizedRequest">Personalized request</string>
+	<string name="pass_cn_personalizedConfirmation">Personalized confirmation</string>
+	<string name="pass_cn_requestTransaction">Request transaction</string>
+	<string name="pass_cn_confirmTransaction">Confirm transaction</string>
+</resources>

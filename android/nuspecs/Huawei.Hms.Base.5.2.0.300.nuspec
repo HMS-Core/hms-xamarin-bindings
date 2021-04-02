@@ -1,0 +1,34 @@
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Huawei.Hms.Base</id>
+    <version>5.2.0.300</version>
+    <title>Huawei.Hms.Base</title>
+    <authors>Huawei</authors>
+    <owners>Huawei</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="file">LICENSE.txt</license>
+    <projectUrl>https://github.com/HMS-Core/hms-xamarin-bindings</projectUrl>
+    <icon>huawei.png</icon>
+    <description>Xamarin.Android bindings for HMS Core - Base</description>
+    <copyright>© Huawei Technologies Co., Ltd. All rights reserved.</copyright>
+    <tags>Huawei Hms Base</tags>
+    <dependencies>
+      <group targetFramework="MonoAndroid9.0">
+        <dependency id="Huawei.Hms.Availableupdate" version="5.2.0.300" include="All" />
+        <dependency id="Huawei.Hms.Stats" version="5.2.0.300" include="All" />
+        <dependency id="Huawei.Hms.Ui" version="5.2.0.300" include="All" />
+        <dependency id="Huawei.Hms.Device" version="5.2.0.300" include="All" />
+        <dependency id="Huawei.Hms.Log" version="5.2.0.300" include="All" />
+        <dependency id="Huawei.Hmf.Tasks" version="1.4.1.300" include="All" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="Java.Interop" targetFramework="MonoAndroid9.0" />
+    </frameworkAssemblies>
+  </metadata>
+  <files>
+    <file src="bin/Release/Huawei.Hms.Base.dll" target="lib/monoandroid90/Huawei.Hms.Base.dll" />
+    <file src="../../icons/huawei.png" target="" />
+    <file src="../../LICENSE.txt" target="" />
+  </files>
+</package>

@@ -1,0 +1,36 @@
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Huawei.Hms.MlComputerVoiceTtsModelBee</id>
+    <version>2.0.5.300</version>
+    <title>Huawei.Hms.MlComputerVoiceTtsModelBee</title>
+    <authors>Huawei</authors>
+    <owners>Huawei</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="file">LICENSE.txt</license>
+    <projectUrl>https://github.com/HMS-Core/hms-xamarin-bindings</projectUrl>
+    <icon>huawei.png</icon>
+    <description>Xamarin.Android bindings for HMS Core - MlComputerVoiceTtsModelBee</description>
+    <copyright>© Huawei Technologies Co., Ltd. All rights reserved.</copyright>
+    <tags>Huawei Hms MlComputerVoiceTtsModelBee</tags>
+    <dependencies>
+      <group targetFramework="MonoAndroid9.0">
+        <dependency id="Huawei.Hms.DynamicApi" version="1.0.13.303" include="All" />
+        <dependency id="Huawei.Hms.MlComputerAidlbaseInner" version="2.0.5.300" include="All" />
+        <dependency id="Huawei.Hms.MlComputerCommonutilsInner" version="2.0.5.300" include="All" />
+        <dependency id="Huawei.Hms.MlComputerHaInner" version="2.0.5.300" include="All" />
+        <dependency id="Huawei.Hms.MlComputerVoiceTtsInner" version="2.0.5.300" include="All" />
+        <dependency id="Jackson.Core" version="2.7.4.1" />
+        <dependency id="Slf4jApi" version="1.7.30" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="Java.Interop" targetFramework="MonoAndroid9.0" />
+    </frameworkAssemblies>
+  </metadata>
+  <files>
+    <file src="bin/Release/Huawei.Hms.MlComputerVoiceTtsModelBee.dll" target="lib/monoandroid90/Huawei.Hms.MlComputerVoiceTtsModelBee.dll" />
+    <file src="../../icons/huawei.png" target="" />
+    <file src="THIRD PARTY OPEN SOURCE SOFTWARE NOTICE.txt" target="THIRD PARTY OPEN SOURCE SOFTWARE NOTICE.txt" />
+    <file src="../../LICENSE.txt" target="" />
+  </files>
+</package>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <HmsXamarinMLDemo.Camera.LensEnginePreview
+        android:id="@+id/object_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <HmsXamarinMLDemo.Camera.GraphicOverlay
+            android:id="@+id/object_overlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </HmsXamarinMLDemo.Camera.LensEnginePreview>
+
+    <TextView
+        android:id="@+id/textViewTips"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:autoLink="email"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="When food is detected, detection stops, click restart to re-detect." />
+
+    <Button
+        android:id="@+id/detect_start"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:background="@color/upsdk_white"
+        android:text="@string/restart"
+        android:textColor="@color/emui_color_gray_7"></Button>
+</RelativeLayout>

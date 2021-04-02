@@ -1,0 +1,33 @@
+<!--Copyright 2020-2021. Huawei Technologies Co., Ltd. All rights reserved.
+
+        Licensed under the Apache License, Version 2.0 (the "License");
+        you may not use this file except in compliance with the License.
+        You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+        Unless required by applicable law or agreed to in writing, software
+        distributed under the License is distributed on an "AS IS" BASIS,
+        WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+        See the License for the specific language governing permissions and
+        limitations under the License.-->
+<metadata>
+  <attr path="/api/package[@name='com.huawei.appmarket.service.externalservice.activityresult']" name="managedName">Huawei.Appmarket.Service.Externalservice.Activityresult</attr>
+  <attr path="/api/package[@name='com.huawei.hms.ads']" name="managedName">Huawei.Hms.Ads</attr>
+  <attr path="/api/package[@name='com.huawei.hms.ads.annotation']" name="managedName">Huawei.Hms.Ads.Annotation</attr>
+  <attr path="/api/package[@name='com.huawei.hms.ads.base']" name="managedName">Huawei.Hms.Ads.Base</attr>
+  <attr path="/api/package[@name='com.huawei.openalliance.ad.activity']" name="managedName">Huawei.Openalliance.Ad.Activity</attr>
+  <attr path="/api/package[@name='com.huawei.openalliance.ad.annotations']" name="managedName">Huawei.Openalliance.Ad.Annotations</attr>
+  <attr path="/api/package[@name='com.huawei.openalliance.ad.augreality.views']" name="managedName">Huawei.Openalliance.Ad.Augreality.Views</attr>
+  <attr path="/api/package[@name='com.huawei.openalliance.ad.beans.inner']" name="managedName">Huawei.Openalliance.Ad.Beans.Inner</attr>
+  <attr path="/api/package[@name='com.huawei.openalliance.ad.beans.metadata']" name="managedName">Huawei.Openalliance.Ad.Beans.Metadata</attr>
+  <attr path="/api/package[@name='com.huawei.openalliance.ad.beans.parameter']" name="managedName">Huawei.Openalliance.Ad.Beans.Parameter</attr>
+  <attr path="/api/package[@name='com.huawei.openalliance.ad.beans.server']" name="managedName">Huawei.Openalliance.Ad.Beans.Server</attr>
+  <attr path="/api/package[@name='com.huawei.openalliance.ad.download']" name="managedName">Huawei.Openalliance.Ad.Download</attr>
+  <attr path="/api/package[@name='com.huawei.openalliance.ad.download.app']" name="managedName">Huawei.Openalliance.Ad.Download.App</attr>
+  <attr path="/api/package[@name='com.huawei.openalliance.ad.inter.data']" name="managedName">Huawei.Openalliance.Ad.Inter.Data</attr>
+  <attr path="/api/package[@name='com.huawei.openalliance.ad.inter']" name="managedName">Huawei.Openalliance.Ad.Inter</attr>
+  <attr path="/api/package[@name='com.huawei.openalliance.ad.media']" name="managedName">Huawei.Openalliance.Ad.Media</attr>
+  <attr path="/api/package[@name='com.huawei.openalliance.ad.msgnotify']" name="managedName">Huawei.Openalliance.Ad.Msgnotify</attr>
+  <attr path="/api/package[@name='com.huawei.openalliance.ad.views']" name="managedName">Huawei.Openalliance.Ad.Views</attr>
+</metadata>

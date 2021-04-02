@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D854D757-FF08-47F8-A8CB-A4A1BBD77076}</ProjectGuid>
+    <ProjectTypeGuids>{10368E6C-D01B-4462-8E8B-01FC667A7035};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{77efb91c-a7e9-4b0e-a7c5-31eeec3c6d46}</TemplateGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Huawei.Hms.MlNlpTextembedding</RootNamespace>
+    <AssemblyName>Huawei.Hms.MlNlpTextembedding</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>True</Deterministic>
+    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
+    <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
+    <AndroidClassParser>class-parse</AndroidClassParser>
+    <AndroidCodegenTarget>XAJavaInterop1</AndroidCodegenTarget>
+    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>portable</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Android" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Additions\TextEmbeddingAdditions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Jars\AboutJars.txt" />
+    <None Include="Additions\AboutAdditions.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <TransformFile Include="Transforms\Metadata.xml" />
+    <TransformFile Include="Transforms\EnumFields.xml" />
+    <TransformFile Include="Transforms\EnumMethods.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="GoogleGson">
+      <Version>2.8.5</Version>
+    </PackageReference>
+    <ProjectReference Include="..\agconnect-core\agconnect-core.csproj">
+      <Project>{dc61b5ff-1065-4c4b-878d-b0f05fee296f}</Project>
+      <Name>agconnect-core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ml-computer-agc-inner\ml-computer-agc-inner.csproj">
+      <Name>ml-computer-agc-inner</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ml-computer-commonutils-inner\ml-computer-commonutils-inner.csproj">
+      <Name>ml-computer-commonutils-inner</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ml-computer-grs-inner\ml-computer-grs-inner.csproj">
+      <Name>ml-computer-grs-inner</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ml-computer-net\ml-computer-net.csproj">
+      <Name>ml-computer-net</Name>
+    </ProjectReference>
+    <PackageReference Include="Square.OkHttp3">
+      <Version>3.12.6</Version>
+    </PackageReference>
+    <PackageReference Include="Square.OkIO">
+      <Version>2.8.0</Version>
+    </PackageReference>
+    <PackageReference Include="Square.Retrofit2">
+      <Version>2.7.2</Version>
+    </PackageReference>
+    <ProjectReference Include="..\network-common\network-common.csproj">
+      <Project>{756cf6a2-4055-464d-b9b1-35faf5eef6d8}</Project>
+      <Name>network-common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\network-framework-compat\network-framework-compat.csproj">
+      <Project>{c125a15a-dd78-4634-9279-8c1172e33ec3}</Project>
+      <Name>network-framework-compat</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\network-grs\network-grs.csproj">
+      <Project>{0f4eaa93-9d3a-4050-8470-3391cba73937}</Project>
+      <Name>network-grs</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\security-ssl\security-ssl.csproj">
+      <Project>{f2e9130c-ab62-4c86-a740-634c22861c0b}</Project>
+      <Name>security-ssl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\tasks\tasks.csproj">
+      <Project>{422129cc-0712-4dd5-9f39-6de8d64b52a2}</Project>
+      <Name>tasks</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <TransformFile Include="Transforms\Metadata.Namespaces.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="GoogleGson" Version="2.8.5" />
+    <PackageReference Include="Square.Retrofit2" Version="2.5.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <LibraryProjectZip Include="..\..\externals\ml-nlp-textembedding.aar" Link="Jars\%(Filename)%(Extension)" />
+  </ItemGroup>
+</Project>

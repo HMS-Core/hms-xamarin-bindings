@@ -1,0 +1,127 @@
+﻿<!--    Copyright 2021. Huawei Technologies Co., Ltd. All rights reserved.
+
+        Licensed under the Apache License, Version 2.0 (the "License");
+        you may not use this file except in compliance with the License.
+        You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+        Unless required by applicable law or agreed to in writing, software
+        distributed under the License is distributed on an "AS IS" BASIS,
+        WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+        See the License for the specific language governing permissions and
+        limitations under the License. 
+-->
+<metadata>
+	<!--Type 'AbstractJsonClient.BuilderInvoker' already defines a member called 'Build' with the same parameter types-->
+	<attr 
+		path="/api/package[@name='com.huawei.cloud.base.services.json']/class[@name='AbstractJsonClient.Builder']/method[@name='build' and count(parameter)=0]"
+		name="managedName">InvokeBuild</attr>
+
+	<!--The namespace 'Com.Huawei.Cloud.Base.Util' already contains a definition for 'Base64'-->
+	<attr
+		path="/api/package[@name='com.huawei.cloud.base.util']/class[@name='Base64']"
+		name="managedName">UtilBase64</attr>
+
+	<!--Cannot convert type 'Com.Huawei.Cloud.Base.Util.Base64.Base64' to 'Java.Lang.Object'-->
+	<attr
+		path="/api/package[@name='com.huawei.cloud.base.util.base64']/class[@name='Base64']/constructor[@name='Base64' and count(parameter)=0]"
+		name="managedReturn">Java.Lang.Object</attr>	
+
+	<!--'UnicodeEscaperInvoker' does not implement inherited abstract member 'Escaper.Escape(string)'-->
+	<remove-node
+		path="/api/package[@name='com.huawei.cloud.base.util.escape']/class[@name='UnicodeEscaper']/method[@name='escape' and count(parameter)=1 and parameter[1][@type='java.lang.String']]"
+		/>
+
+	<!--'AbstractDataStore' does not implement interface member 'IDataStore.Set(string, Object)'-->
+	<add-node path="/api/package[@name='com.huawei.cloud.base.util.store']/class[@name='AbstractDataStore']">
+				<method name="Set" return="Huawei.Cloud.Base.Util.Store.IDataStore" final="false" visibility="public">
+					<parameter name="p0" type="java.lang.String" />
+					<parameter name="p1" type="java.lang.Object" />
+				</method>
+	</add-node>	
+
+	<!--'AbstractDataStore' does not implement interface member 'IDataStore.Get(string)'-->
+	<add-node path="/api/package[@name='com.huawei.cloud.base.util.store']/class[@name='AbstractDataStore']">
+		<method name="Get" return="Java.Lang.Object" final="false" visibility="public">
+			<parameter name="p0" type="java.lang.String" />
+		</method>
+	</add-node>
+
+	<!--'AbstractDataStore' does not implement interface member 'IDataStore.Delete(string)'-->
+	<add-node path="/api/package[@name='com.huawei.cloud.base.util.store']/class[@name='AbstractDataStore']">
+		<method name="Delete" return="Huawei.Cloud.Base.Util.Store.IDataStore" final="false" visibility="public">
+			<parameter name="p0" type="java.lang.String" />
+		</method>
+	</add-node>
+
+	<!--'AbstractDataStore' does not implement interface member 'IDataStore.Clear()'-->
+	<add-node path="/api/package[@name='com.huawei.cloud.base.util.store']/class[@name='AbstractDataStore']">
+		<method name="Clear" return="Huawei.Cloud.Base.Util.Store.IDataStore" final="false" visibility="public">
+		</method>
+	</add-node>
+
+	<!--'DriveRequest.AbstractClient': Target runtime doesn't support covariant types in overrides.
+		Type must be 'AbstractClient' to match overridden member 'AbstractClientRequest.AbstractClient'	-->
+	<attr
+		path="/api/package[@name='com.huawei.cloud.services.drive']/class[@name='DriveRequest']/method[@name='getAbstractClient' and count(parameter)=0]"
+		name="managedReturn">Huawei.Cloud.Base.Services.AbstractClient</attr>
+
+	<!--'AbstractJsonClient.Builder.ObjectParser': Target runtime doesn't support covariant types in overrides.
+		Type must be 'IObjectParser' to match overridden member 'AbstractClient.Builder.ObjectParser'-->
+	<attr
+		path="/api/package[@name='com.huawei.cloud.base.services.json']/class[@name='AbstractJsonClient.Builder']/method[@name='getObjectParser' and count(parameter)=0]"
+		name="managedReturn">Huawei.Cloud.Base.Util.IObjectParser</attr>
+
+	<!--'Drive.Builder' does not implement inherited abstract member 'AbstractClient.Builder.Build()'-->
+	<add-node path="/api/package[@name='com.huawei.cloud.services.drive']/class[@name='Drive.Builder']">
+		<method name="Build" return="Huawei.Cloud.Base.Services.AbstractClient" final="false" visibility="public">
+		</method>
+	</add-node>	
+
+	<!--'ArrayMap.EntrySet()': return type must be 'ICollection' to match overridden member 'AbstractMap.EntrySet()'
+		To fix this error:  
+			1- Added new partial class to Addition folder named as ArrayMapEntrySet.
+			2- Remove original node from metadata.xml file.-->
+	<remove-node
+		path="/api/package[@name='com.huawei.cloud.base.util']/class[@name='ArrayMap']/method[@name='entrySet' and count(parameter)=0]"
+		/>
+
+	<!--'GenericData.EntrySet()': return type must be 'ICollection' to match overridden member 'AbstractMap.EntrySet()'
+		To fix this error:  
+			1- Added new partial class to Addition folder named as GenericDataEntrySet.
+			2- Remove original node from metadata.xml file.-->
+	<remove-node
+		path="/api/package[@name='com.huawei.cloud.base.util']/class[@name='GenericData']/method[@name='entrySet' and count(parameter)=0]"
+		/>	
+	
+	<!--'JsonBatchCallback' does not implement interface member 'IBatchCallback.OnFailure(Object, HttpHeaders)'-->
+	 <add-node path="/api/package[@name='com.huawei.cloud.base.batch.json']/class[@name='JsonBatchCallback']">
+		<method abstract="true" deprecated="not deprecated" final="false" name="onFailure" return="void"  static="false" synchronized="false" visibility="public">
+		  <parameter name="p0" type="Java.Lang.Object">
+		  </parameter>
+		  <parameter name="p1" type="com.huawei.cloud.base.http.HttpHeaders">
+		  </parameter>
+		  <exception name="IOException" type="Java.IO.IOException">
+		  </exception>
+		</method>
+	  </add-node>
+	
+	  <!--'JsonBatchCallback' does not implement interface member 'IBatchCallback.OnSuccess(Object, HttpHeaders)'-->		
+	  <add-node path="/api/package[@name='com.huawei.cloud.base.batch.json']/class[@name='JsonBatchCallback']">
+		<method abstract="true" deprecated="not deprecated" final="false" name="onSuccess" return="void"  static="false" synchronized="false" visibility="public">
+		  <parameter name="p0" type="Java.Lang.Object">
+		  </parameter>
+		  <parameter name="p1" type="com.huawei.cloud.base.http.HttpHeaders">
+		  </parameter>
+		  <exception name="IOException" type="Java.IO.IOException">
+		  </exception>
+		</method>
+	  </add-node>
+	
+	<!--Change callback type for performing operations in batches-->		
+	<attr
+		path="/api/package[@name='com.huawei.cloud.base.services.json']/class[@name='AbstractJsonClientRequest']/method[@name='queue']/parameter[@name='p1']"
+		name="managedType">Huawei.Cloud.Base.Batch.IBatchCallback</attr>
+
+</metadata>

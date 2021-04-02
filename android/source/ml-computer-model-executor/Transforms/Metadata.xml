@@ -1,0 +1,36 @@
+﻿<!--    Copyright 2020. Huawei Technologies Co., Ltd. All rights reserved.
+
+        Licensed under the Apache License, Version 2.0 (the "License");
+        you may not use this file except in compliance with the License.
+        You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+        Unless required by applicable law or agreed to in writing, software
+        distributed under the License is distributed on an "AS IS" BASIS,
+        WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+        See the License for the specific language governing permissions and
+        limitations under the License. 
+-->
+<metadata>
+	
+	<!--'ConfigManager' does not implement inherited abstract member
+	'ModelConfigManagerStrategy.IsModelVersionNeedUpdated(MLRemoteModel, ModelResponse, IDictionary<string, string="">
+	#Implement method manually to TranslateAdditions class.-->
+	<remove-node path="/api/package[@name='com.huawei.hms.mlsdk.custom.download.strategy']/class[@name='ConfigManager']/method[@name='isModelVersionNeedUpdated' and count(parameter)=3 and parameter[1][@type='com.huawei.hms.mlsdk.model.download.MLRemoteModel'] and parameter[2][@type='com.huawei.hms.mlsdk.model.download.impl.ModelResponse'] and parameter[3][@type='java.util.Map&lt;java.lang.String, java.lang.String&gt;']]"/>
+
+	<!--'ConfigManager' does not implement inherited abstract member
+	'ModelConfigManagerStrategy.IsModelFileNeedUpdate(MLRemoteModel, IDictionary<string, string="">
+	#Implement method manually to TranslateAdditions class.-->
+	<remove-node path="/api/package[@name='com.huawei.hms.mlsdk.custom.download.strategy']/class[@name='ConfigManager']/method[@name='isModelFileNeedUpdate' and count(parameter)=2 and parameter[1][@type='com.huawei.hms.mlsdk.model.download.MLRemoteModel'] and parameter[2][@type='java.util.Map&lt;java.lang.String, java.lang.String&gt;']]"/>
+
+	<!--'ModelManager' does not implement interface member 'IRemoteModelManagerInterface.GetDownloadedModels(IDictionary<string, string>)'. 'ModelManager.GetDownloadedModels(IDictionary<string, string>)' cannot implement 'IRemoteModelManagerInterface.GetDownloadedModels(IDictionary<string, string>)'
+	because it does not have the matching return type of 'ICollection'.
+	#Implement overload method manually to TranslateAdditions class.-->
+
+
+	<!--'FileManager' does not implement inherited abstract member
+	#Change  method to override manually at TranslateAdditions class.-->
+	<remove-node path="/api/package[@name='com.huawei.hms.mlsdk.custom.download.strategy']/class[@name='FileManager']/method[@name='getModelFilePath' and count(parameter)=2 and parameter[1][@type='com.huawei.hms.mlsdk.model.download.MLRemoteModel'] and parameter[2][@type='java.util.Map&lt;java.lang.String, java.lang.String&gt;']]"/>
+	
+</metadata>

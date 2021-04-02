@@ -1,0 +1,63 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dp_8"
+    android:layout_marginTop="@dimen/dp_8"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvContactshieldTypeHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_56"
+        android:layout_marginEnd="@dimen/dp_16"
+        android:layout_marginStart="@dimen/dp_16"
+        android:gravity="center"
+        android:text="@string/bottom_sheet_option_heading"
+        android:textColor="@color/colorPrimaryDark"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnStartNormalContactShield"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginEnd="@dimen/dp_16"
+        android:layout_marginStart="@dimen/dp_16"
+        android:backgroundTint="@color/colorPrimary"
+        android:gravity="start|center_vertical"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:text="@string/bottom_sheet_option_normal"
+        android:textColor="@color/textFontWhite"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnStartNoPersistentContactShield"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:layout_marginEnd="@dimen/dp_16"
+        android:layout_marginStart="@dimen/dp_16"
+        android:backgroundTint="@color/colorPrimary"
+        android:gravity="start|center_vertical"
+        android:text="@string/bottom_sheet_option_nopersistent"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/textFontWhite"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnDismissDialog"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:layout_marginEnd="@dimen/dp_16"
+        android:layout_marginStart="@dimen/dp_16"
+        android:backgroundTint="@color/colorAccent"
+        android:gravity="start|center_vertical"
+        android:text="@string/botttom_sheet_dismiss"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/textFontWhite"
+        android:textSize="16sp" />
+</LinearLayout>

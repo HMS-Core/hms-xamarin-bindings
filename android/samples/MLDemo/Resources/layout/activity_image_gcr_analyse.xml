@@ -1,0 +1,147 @@
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".text.ImageTextAnalyseActivity">
+
+    <ImageView
+        android:id="@+id/Card_image"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/card_passcard">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/text_result"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/Card_image"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:textSize="13sp">
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/top_layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_result"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/detect_picture_passCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray"
+            android:text="@string/passcard_image"
+            android:textColor="@color/black">
+        </Button>
+
+        <TextView
+            android:id="@+id/text_white1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:textSize="13sp">
+        </TextView>
+
+        <Button
+            android:id="@+id/detect_video_passCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray"
+            android:text="@string/passcard_video"
+            android:textColor="@color/black">
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/top_layout_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_layout_1"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/detect_picture_HKID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray"
+            android:text="@string/hkid_image"
+            android:textColor="@color/black">
+        </Button>
+
+        <TextView
+            android:id="@+id/text_white2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:textSize="13sp">
+        </TextView>
+
+        <Button
+            android:id="@+id/detect_video_HKID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray"
+            android:text="@string/hkid_video"
+            android:textColor="@color/black">
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/top_layout_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_layout_2"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="50dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/detect_picture_homeCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray"
+            android:text="@string/homecard_image"
+            android:textColor="@color/black">
+        </Button>
+
+        <TextView
+            android:id="@+id/text_white3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:textSize="13sp">
+        </TextView>
+
+        <Button
+            android:id="@+id/detect_video_homeCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray"
+            android:text="@string/homecard_video"
+            android:textColor="@color/black">
+        </Button>
+    </LinearLayout>
+
+</RelativeLayout>

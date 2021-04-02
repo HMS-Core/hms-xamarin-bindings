@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<dimen name="weight_height">0dp</dimen>
+	<dimen name="login_button_width">200dp</dimen>
+	<dimen name="emui10_welcome_img_height">260dp</dimen>
+
+	<dimen name="emui10_list_min_height_40">40dp</dimen>
+	<dimen name="emui10_list_min_height_64">64dp</dimen>
+
+	<dimen name="emui10_title_9">9sp</dimen>
+	<dimen name="emui10_title_14">14sp</dimen>
+	<dimen name="emui10_title_18">18sp</dimen>
+
+	<dimen name="emui10_margin_start_24">24dp</dimen>
+	<dimen name="emui10_margin_end_24">24dp</dimen>
+
+	<dimen name="emui10_elementsMarginVerticalM">8dp</dimen>
+	<dimen name="emui10_elementsMarginHorizontalS">4dp</dimen>
+	<dimen name="emui10_elementsMarginHorizontalM">8dp</dimen>
+
+	<dimen name="download_bar_height">48dp</dimen>
+	<dimen name="download_bar_item_icon_size">24dp</dimen>
+	<dimen name="download_bar_item_min_text">9dp</dimen>
+	<dimen name="download_bar_item_text">10dp</dimen>
+
+	<dimen name="margin_l">16dp</dimen>
+	<dimen name="margin_m">8dp</dimen>
+	<dimen name="margin_s">4dp</dimen>
+	<dimen name="margin_xl">24dp</dimen>
+	<dimen name="margin_xs">2dp</dimen>
+	<dimen name="padding_l">16dp</dimen>
+	<dimen name="padding_m">8dp</dimen>
+	<dimen name="padding_s">4dp</dimen>
+	<dimen name="padding_xl">24dp</dimen>
+	<dimen name="padding_xs">2dp</dimen>
+	<dimen name="radius_l">8dp</dimen>
+	<dimen name="radius_m">4dp</dimen>
+	<dimen name="radius_s">2dp</dimen>
+
+	<dimen name="corner_bg_size">8dp</dimen>
+
+	<dimen name="emui10_btn_send_width">80dp</dimen>
+	<dimen name="emui10_btn_add_width">50dp</dimen>
+	<dimen name="emui10_hotizontal_seprate_line_height">0.5dp</dimen>
+
+	<dimen name="hwbutton_emui_min_height">32dp</dimen>
+	<color name="emui_color_bg">#FFFFFFFF</color>
+
+</resources>

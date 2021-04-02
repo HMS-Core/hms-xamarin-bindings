@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{60B9C71E-E1D0-4D31-B98D-BD9D02FB8870}</ProjectGuid>
+    <ProjectTypeGuids>{10368E6C-D01B-4462-8E8B-01FC667A7035};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{77efb91c-a7e9-4b0e-a7c5-31eeec3c6d46}</TemplateGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Huawei.Hms.AdsLite</RootNamespace>
+    <AssemblyName>Huawei.Hms.AdsLite</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>True</Deterministic>
+    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
+    <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
+    <AndroidClassParser>class-parse</AndroidClassParser>
+    <AndroidCodegenTarget>XAJavaInterop1</AndroidCodegenTarget>
+    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>portable</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Android" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Jars\AboutJars.txt" />
+    <None Include="Additions\AboutAdditions.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <TransformFile Include="Transforms\Metadata.xml" />
+    <TransformFile Include="Transforms\EnumFields.xml" />
+    <TransformFile Include="Transforms\EnumMethods.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ads-banner\ads-banner.csproj">
+      <Project>{ce2b84d4-22ff-474d-b11b-1f507eeeae9e}</Project>
+      <Name>ads-banner</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ads-base\ads-base.csproj">
+      <Project>{47e5b6b3-896c-4054-88c1-f0a75d84cdf2}</Project>
+      <Name>ads-base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ads-consent\ads-consent.csproj">
+      <Project>{bf30ab75-9861-4af2-b230-41b7a7c7f776}</Project>
+      <Name>ads-consent</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ads-instream\ads-instream.csproj">
+      <Project>{d9cd9518-527c-4c9c-8001-c9dd75950d35}</Project>
+      <Name>ads-instream</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ads-interstitial\ads-interstitial.csproj">
+      <Project>{5f69c3ff-b1c1-4e74-826b-2a43ceb9bd45}</Project>
+      <Name>ads-interstitial</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ads-lang\ads-lang.csproj">
+      <Project>{0077558d-c943-4722-b834-3b3ce198e8dc}</Project>
+      <Name>ads-lang</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ads-native\ads-native.csproj">
+      <Project>{3df32695-52e7-40c9-804b-34ab57fa2295}</Project>
+      <Name>ads-native</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ads-reward\ads-reward.csproj">
+      <Project>{94378248-a770-4459-ba7d-04df16a7500b}</Project>
+      <Name>ads-reward</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ads-splash\ads-splash.csproj">
+      <Project>{eec0c2cc-5df3-423a-8df7-951a043a6d4c}</Project>
+      <Name>ads-splash</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ads-template\ads-template.csproj">
+      <Project>{03e1f189-c6a9-4972-ada4-85ea36086120}</Project>
+      <Name>ads-template</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <TransformFile Include="Transforms\Metadata.Namespaces.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <LibraryProjectZip Include="..\..\externals\ads-lite.aar" Link="Jars\%(Filename)%(Extension)" />
+  </ItemGroup>
+</Project>

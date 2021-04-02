@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000">
+
+    <ImageView
+        android:id="@+id/handstill_previewPane"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="100dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/hand" />
+
+    <HmsXamarinMLDemo.Camera.GraphicOverlay
+        android:id="@+id/handstill_previewOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"/>
+
+    <Button
+        android:id="@+id/handstill_detect_sync"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        android:background="@color/upsdk_white"
+        android:text="DETECT_SYNC"
+        android:textColor="@color/emui_color_gray_7" />
+
+    <Button
+        android:id="@+id/handstill_detect_async"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@color/upsdk_white"
+        android:text="DETECT_ASYNC"
+        android:textColor="@color/emui_color_gray_7" />
+</RelativeLayout>

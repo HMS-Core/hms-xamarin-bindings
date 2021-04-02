@@ -1,0 +1,37 @@
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Huawei.Hms.AdsLite</id>
+    <version>13.4.35.300</version>
+    <title>Huawei.Hms.AdsLite</title>
+    <authors>Huawei</authors>
+    <owners>Huawei</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="file">LICENSE.txt</license>
+    <projectUrl>https://github.com/HMS-Core/hms-xamarin-bindings</projectUrl>
+    <icon>huawei.png</icon>
+    <description>Xamarin.Android bindings for HMS Core - AdsLite</description>
+    <copyright>© Huawei Technologies Co., Ltd. All rights reserved.</copyright>
+    <tags>Huawei Hms AdsLite</tags>
+    <dependencies>
+      <group targetFramework="MonoAndroid9.0">
+        <dependency id="Huawei.Hms.AdsNative" version="13.4.35.300" include="All" />
+        <dependency id="Huawei.Hms.AdsBanner" version="13.4.35.300" include="All" />
+        <dependency id="Huawei.Hms.AdsReward" version="13.4.35.300" include="All" />
+        <dependency id="Huawei.Hms.AdsInterstitial" version="13.4.35.300" include="All" />
+        <dependency id="Huawei.Hms.AdsTemplate" version="13.4.35.300" include="All" />
+        <dependency id="Huawei.Hms.AdsLang" version="13.4.35.300" include="All" />
+        <dependency id="Huawei.Hms.AdsSplash" version="13.4.35.300" include="All" />
+        <dependency id="Huawei.Hms.AdsInstream" version="13.4.35.300" include="All" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="Java.Interop" targetFramework="MonoAndroid9.0" />
+    </frameworkAssemblies>
+  </metadata>
+  <files>
+    <file src="bin/Release/Huawei.Hms.AdsLite.dll" target="lib/monoandroid90/Huawei.Hms.AdsLite.dll" />
+    <file src="../../icons/huawei.png" target="" />
+    <file src="README.md" target="" />
+    <file src="../../LICENSE.txt" target="" />
+  </files>
+</package>

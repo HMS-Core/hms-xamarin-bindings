@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Hms Xamarin HiAnalytics Demo</string>
+    <string name="action_settings">Settings</string>
+	<string name="true_button">True</string>
+	<string name="false_button">False</string>
+	<string name="title_home">Quiz</string>
+	<string name="title_settings">Settings</string>
+	<string name="next_button">Next</string>
+	<string name="post_score_button">Post Score</string>
+	<string name="save_setting_button">Save</string>
+	<string name="wrong_answer">The answer is wrong.</string>
+	<string name="correct_answer">The answer is correct.</string>
+  <string name="menu_order">Order</string>
+</resources>

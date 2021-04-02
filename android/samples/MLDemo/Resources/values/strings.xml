@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">HMS Xamarin ML Kit Demo</string>
+    <string name="action_settings">Settings</string>
+	<string name="detect">Detect</string>
+	<string name="detect_on_device">Detect on Device</string>
+	<string name="detect_on_cloud">Detect on Cloud</string>
+	<string name="change_photo">Change Photo</string>
+	<string name="passcard_image">PassCard image</string>
+	<string name="passcard_video">PassCard video</string>
+	<string name="hkid_image">HKID image</string>
+	<string name="hkid_video">HKID video</string>
+	<string name="homecard_image">HomeCard image</string>
+	<string name="homecard_video">HomeCard video</string>
+	<string name="local_translator">Local Text Translator</string>
+	<string name="local_detector">Local Language detector</string>
+	<string name="remote_translator">Remote Text Translator</string>
+	<string name="remote_detector">Remote Language detector</string>
+	<string name="download_trans_model">Download Local Translation Model</string>
+	<string name="delete_trans_model">Delete Local Translation Model</string>
+	<string name="restart">Restart</string>
+	<string name="sound_dect_start">Voice Recognition start</string>
+    <string name="sound_dect_stop">Voice Recognition stop</string>
+    <string name="sound_dect_error">Voice Recognition error:</string>
+
+    <string name="destroied">SpeeechRecognizer has been destroyed</string>
+    <string name="you_may_speak">You may speak now</string>
+
+    <string name="online_synthesis">Online Mode</string>
+    <string name="ondevice_synthesis">On-device Mode</string>
+
+</resources>

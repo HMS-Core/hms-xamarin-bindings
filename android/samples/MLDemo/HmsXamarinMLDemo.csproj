@@ -1,0 +1,918 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{67169360-D52B-4775-8715-34A2428A83C7}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{122416d6-6b49-4ee2-a1e8-b825f31c79fe}</TemplateGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HmsXamarinMLDemo</RootNamespace>
+    <AssemblyName>HmsXamarinMLDemo</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>True</Deterministic>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
+    <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
+    <AndroidUseAapt2>true</AndroidUseAapt2>
+    <AndroidHttpClientHandlerType>Xamarin.Android.Net.AndroidClientHandler</AndroidHttpClientHandlerType>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AndroidManifestMerger>manifestmerger.jar</AndroidManifestMerger>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>true</AndroidUseSharedRuntime>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
+    <AndroidKeyStore>false</AndroidKeyStore>
+    <AndroidSigningKeyStore>
+    </AndroidSigningKeyStore>
+    <AndroidSigningStorePass>
+    </AndroidSigningStorePass>
+    <AndroidSigningKeyAlias>
+    </AndroidSigningKeyAlias>
+    <AndroidSigningKeyPass>
+    </AndroidSigningKeyPass>
+    <AotAssemblies>false</AotAssemblies>
+    <EnableLLVM>false</EnableLLVM>
+    <AndroidEnableProfiledAot>false</AndroidEnableProfiledAot>
+    <BundleAssemblies>false</BundleAssemblies>
+    <AndroidUseAapt2>true</AndroidUseAapt2>
+    <AndroidEnableMultiDex>true</AndroidEnableMultiDex>
+    <AndroidDexTool>d8</AndroidDexTool>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <AndroidCreatePackagePerAbi>false</AndroidCreatePackagePerAbi>
+    <AndroidStoreUncompressedFileExtensions>.ms;.tflite</AndroidStoreUncompressedFileExtensions>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidManagedSymbols>true</AndroidManagedSymbols>
+    <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
+    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
+    <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
+    <AndroidKeyStore>false</AndroidKeyStore>
+    <AndroidSigningKeyStore>
+    </AndroidSigningKeyStore>
+    <AndroidSigningStorePass>
+    </AndroidSigningStorePass>
+    <AndroidSigningKeyAlias>
+    </AndroidSigningKeyAlias>
+    <AndroidSigningKeyPass>
+    </AndroidSigningKeyPass>
+    <AotAssemblies>false</AotAssemblies>
+    <EnableLLVM>false</EnableLLVM>
+    <AndroidEnableProfiledAot>false</AndroidEnableProfiledAot>
+    <BundleAssemblies>false</BundleAssemblies>
+    <MandroidI18n />
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <AndroidLinkTool>r8</AndroidLinkTool>
+    <AndroidDexTool>d8</AndroidDexTool>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Camera\GraphicOverlay.cs" />
+    <Compile Include="Camera\LensEnginePreview.cs" />
+    <Compile Include="Common\OnCompleteListener.cs" />
+    <Compile Include="Common\OnFailureListener.cs" />
+    <Compile Include="Common\OnSuccessListener.cs" />
+    <Compile Include="HmsLazyInputStream.cs" />
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="MLKitActivities\BodyRelated\Face3d\Live3DFaceAnalyseActivity.cs" />
+    <Compile Include="MLKitActivities\BodyRelated\Face3d\ML3DFaceGraphic.cs" />
+    <Compile Include="MLKitActivities\BodyRelated\Face3d\Still3DFaceAnalyseActivity.cs" />
+    <Compile Include="MLKitActivities\BodyRelated\Face\FaceAnalyzerTransactor.cs" />
+    <Compile Include="MLKitActivities\BodyRelated\Face\LiveFaceAnalyseActivity.cs" />
+    <Compile Include="MLKitActivities\BodyRelated\Face\MLFaceGraphic.cs" />
+    <Compile Include="MLKitActivities\BodyRelated\Face\StillFaceAnalyseActivity.cs" />
+    <Compile Include="MLKitActivities\CustomModel\CustomModelActivity.cs" />
+    <Compile Include="MLKitActivities\ImageRelated\ProductVisionSearch\BottomSheetAdapter.cs" />
+    <Compile Include="MLKitActivities\ImageRelated\ProductVisionSearch\BottomSheetGridView.cs" />
+    <Compile Include="MLKitActivities\ImageRelated\ProductVisionSearch\BottomSheetListView.cs" />
+    <Compile Include="MLKitActivities\ImageRelated\ProductVisionSearch\ProductFragment.cs" />
+    <Compile Include="MLKitActivities\ImageRelated\ProductVisionSearch\RealProductBean.cs" />
+    <Compile Include="MLKitActivities\ImageRelated\SceneDetection\MLSceneDetectionGraphic.cs" />
+    <Compile Include="MLKitActivities\ImageRelated\SceneDetection\SceneDetectionLiveAnalyseActivity.cs" />
+    <Compile Include="MLKitActivities\ImageRelated\SceneDetection\SceneDetectionStillAnalyseActivity.cs" />
+    <Compile Include="MLKitActivities\LanguageRelated\TextEmbedding\TextEmbeddingAnalyseActivity.cs" />
+    <Compile Include="MLKitActivities\VoiceRelated\Aft\AftAnalyseActivity.cs" />
+    <Compile Include="MLKitActivities\VoiceRelated\Asr\AsrAnalyseActivity.cs" />
+    <Compile Include="MLKitActivities\TextRelated\BankCard\BcrAnalyseActivity.cs" />
+    <Compile Include="MLKitActivities\TextRelated\BankCard\CustomActivity.cs" />
+    <Compile Include="MLKitActivities\TextRelated\BankCard\ViewfinderView.cs" />
+    <Compile Include="MLKitActivities\ImageRelated\Classification\ImageClassificationAnalyseActivity.cs" />
+    <Compile Include="MLKitActivities\ImageRelated\DocumentSkewCorrection\DocumentSkewCorrectionActivity.cs" />
+    <Compile Include="MLKitActivities\TextRelated\Document\ImageDocumentAnalyseActivity.cs" />
+    <Compile Include="MLKitActivities\TextRelated\FormRecognition\FormRecognitionActivity.cs" />
+    <Compile Include="MLKitActivities\TextRelated\GeneralCard\BlockItem.cs" />
+    <Compile Include="MLKitActivities\TextRelated\GeneralCard\GcrAnalyseActivity.cs" />
+    <Compile Include="MLKitActivities\TextRelated\GeneralCard\HKIdCardProcess.cs" />
+    <Compile Include="MLKitActivities\TextRelated\GeneralCard\HomeCardProcess.cs" />
+    <Compile Include="MLKitActivities\TextRelated\GeneralCard\PassCardProcess.cs" />
+    <Compile Include="MLKitActivities\TextRelated\GeneralCard\UniversalCardResult.cs" />
+    <Compile Include="MLKitActivities\BodyRelated\HandKeypoint\HandKeypointGraphic.cs" />
+    <Compile Include="MLKitActivities\BodyRelated\HandKeypoint\LiveHandKeyPointAnalyseActivity.cs" />
+    <Compile Include="MLKitActivities\BodyRelated\HandKeypoint\StillHandKeyPointAnalyseActivity.cs" />
+    <Compile Include="MLKitActivities\ImageRelated\ImageSegmentation\ImageSegmentationLiveAnalyseActivity.cs" />
+    <Compile Include="MLKitActivities\ImageRelated\ImageSegmentation\ImageSegmentationStillAnalyseActivity.cs" />
+    <Compile Include="MLKitActivities\ImageRelated\ImageSegmentation\MLSegmentGraphic.cs" />
+    <Compile Include="MLKitActivities\ImageRelated\ImageSuperResolution\ImageSuperResolutionActivity.cs" />
+    <Compile Include="MLKitActivities\ImageRelated\Landmark\ImageLandmarkAnalyseActivity.cs" />
+    <Compile Include="MLKitActivities\BodyRelated\LivenessDetection\LiveLivenessDetectionActivity.cs" />
+    <Compile Include="MLKitActivities\ImageRelated\Object\LiveObjectAnalyseActivity.cs" />
+    <Compile Include="MLKitActivities\ImageRelated\Object\MLObjectGraphic.cs" />
+    <Compile Include="MLKitActivities\ImageRelated\ProductVisionSearch\ProductVisionSearchAnalyseActivity.cs" />
+    <Compile Include="MLKitActivities\BodyRelated\Skeleton\LiveSkeletonAnalyseActivity.cs" />
+    <Compile Include="MLKitActivities\BodyRelated\Skeleton\SkeletonGraphic.cs" />
+    <Compile Include="MLKitActivities\BodyRelated\Skeleton\SkeletonUtils.cs" />
+    <Compile Include="MLKitActivities\BodyRelated\Skeleton\StillSkeletonAnalyseActivity.cs" />
+    <Compile Include="MLKitActivities\ImageRelated\TextImageSuperResolution\TextImageSuperResolutionActivity.cs" />
+    <Compile Include="MLKitActivities\TextRelated\Text\ImageTextAnalyseActivity.cs" />
+    <Compile Include="MLKitActivities\LanguageRelated\Translate\TranslatorActivity.cs" />
+    <Compile Include="MLKitActivities\VoiceRelated\RealTimeTranscription\RealTimeTranscriptionActivity.cs" />
+    <Compile Include="MLKitActivities\VoiceRelated\SoundDetect\SoundDetectActivity.cs" />
+    <Compile Include="MLKitActivities\VoiceRelated\Tts\BaseActivity.cs" />
+    <Compile Include="MLKitActivities\VoiceRelated\Tts\TtsActivity.cs" />
+    <Compile Include="MLKitActivities\VoiceRelated\Tts\TtsOfflineModeActivity.cs" />
+    <Compile Include="MLKitActivities\VoiceRelated\Tts\TtsOnlineModeActivity.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="XamarinCustomProvider.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\mobilenet_v1_1_0_224_quant.ms" />
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+    <None Include="Assets\AboutAssets.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\activity_main.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\values\colors.xml" />
+    <AndroidResource Include="Resources\values\ic_launcher_background.xml" />
+    <AndroidResource Include="Resources\values\strings.xml" />
+    <AndroidResource Include="Resources\values\styles.xml" />
+    <AndroidResource Include="Resources\mipmap-anydpi-v26\ic_launcher.xml" />
+    <AndroidResource Include="Resources\mipmap-anydpi-v26\ic_launcher_round.xml" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ic_launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ic_launcher_round.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\ic_launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\ic_launcher_round.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\ic_launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\ic_launcher_round.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_launcher_round.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher_round.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\activity_image_gcr_analyse.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\bg_edit_text.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\card_image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\card_image_back.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\card_image_front.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\card_passcard.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\classification_image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\document_image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\face_image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\front_back_switch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\icon_record.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\icon_voice_accent_new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\icon_voice_new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\imgseg_foreground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\landmark_image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\product_image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\text_image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\activity_image_bcr_analyse.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\activity_image_classification_analyse.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\activity_image_document_analyse.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\activity_image_landmark_analyse.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\activity_image_product_vision_search_analyse.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\activity_image_text_analyse.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\activity_live_segment_analyse.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\activity_voice_aft.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\activity_voice_asr.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\activity_voice_tts.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\activity_image_segmentation_analyse.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\activity_language_detection_translation.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Country_pair_new.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\activity_live_object_analyse.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\activity_image_face_analyse.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\activity_live_face_analyse.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ml.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\button_rounded.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\tts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\asr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\bcr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\classification.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\doc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\face.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\gcr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\icr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\landmark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\langdetect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\object.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\productsegment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\segmentation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\trans.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\face_smaller.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\document_smaller.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\translate_smaller.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\tts_smaller.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\bankcard_smaller.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\text_smaller.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\idcard_smaller.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\imgsegment_smaller.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\object_smaller.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\product_smaller.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\landmark_smaller.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\classify_smaller.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\generalcard_smaller.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\labels_mobilenet_quant_v1_224.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\activity_image_super_resolution.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\superresolution_image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\activity_document_skew_correction.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\document_correct_image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\activity_image_hand_analyse.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\hand.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\activity_live_handkeypoint_analyse.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\activity_live_liveness_detection.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\bg_grey.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\bg_red.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\bg_blue.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\activity_image_skeleton_analyse.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\skeleton_image.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\activity_live_skeleton_analyse.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\skeleton_template.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\custom_model_image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\activity_custom_model.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\activity_bcr_customview.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\rn_eid_ic_hivision_light_act.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\rn_eid_ic_hivision_light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\fragment_product.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\activity_form_recognition.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\form_recognition.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\activity_text_super_resolution.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxhdpi\tisr_image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\activity_image_scene_analyse.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\activity_live_scene_analyse.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\activity_text_embedding_analyse.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\activity_live_face3d_analyse.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\activity_sound_detect.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\activity_realtime_transcription.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\activity_tts_offline_mode.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\activity_tts.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\activity_tts_online_mode.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\adapter_item_product.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\scene_smaller.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\scene_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\skeleton_smaller.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\skeleton_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\rtt_smaller.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\rtt_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\handkey_smaller.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\handkey_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\liveness_smaller.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\sounddetect_smaller.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\sounddetect_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\liveness_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\textembedding_smaller.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\textembedding_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\tisr_smaller.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\tisr_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\isr_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\isr_smaller.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\asr_smaller.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Huawei.Hms.MlComputerAgcInner">
+      <Version>2.0.5.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlComputerCardBcr">
+      <Version>2.0.3.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlComputerCardBcrInner">
+      <Version>2.0.3.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlComputerCardBcrNodynamicModel">
+      <Version>2.0.3.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlComputerCardBcrNodynamicSdk">
+      <Version>2.0.3.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlComputerCardGcrPlugin">
+      <Version>2.0.1.301</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlComputerLanguageDetection">
+      <Version>2.0.5.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlComputerLanguageDetectionModel">
+      <Version>2.0.5.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlComputerModelExecutor">
+      <Version>2.0.5.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlComputerTranslate">
+      <Version>2.0.5.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlComputerTranslateModel">
+      <Version>2.0.5.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlComputerVisionClassification">
+      <Version>2.0.1.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlComputerVisionCloud">
+      <Version>2.0.5.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlComputerVisionDocumentskew">
+      <Version>2.0.4.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlComputerVisionDocumentskewInner">
+      <Version>2.0.4.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlComputerVisionDocumentskewModel">
+      <Version>2.0.4.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlComputerVisionFace">
+      <Version>2.0.5.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlComputerVisionFace3dModel">
+      <Version>2.0.5.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlComputerVisionFaceBase">
+      <Version>2.0.5.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlComputerVisionFaceEmotionModel">
+      <Version>2.0.5.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlComputerVisionFaceFeatureModel">
+      <Version>2.0.5.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlComputerVisionFaceShapePointModel">
+      <Version>2.0.5.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlComputerVisionFormrecognition">
+      <Version>2.0.4.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlComputerVisionFormrecognitionInner">
+      <Version>2.0.4.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlComputerVisionFormrecognitionModel">
+      <Version>2.0.4.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlComputerVisionHandkeypoint">
+      <Version>2.0.4.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlComputerVisionHandkeypointInner">
+      <Version>2.0.4.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlComputerVisionHandkeypointModel">
+      <Version>2.0.4.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlComputerVisionImageClassificationModel">
+      <Version>2.0.1.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlComputerVisionImageSegmentationBase">
+      <Version>2.0.4.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlComputerVisionImageSegmentationBodyModel">
+      <Version>2.0.4.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlComputerVisionImageSegmentationMulticlassModel">
+      <Version>2.0.4.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlComputerVisionImagesuperresolution">
+      <Version>2.0.4.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlComputerVisionImagesuperresolutionInner">
+      <Version>2.0.4.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlComputerVisionImagesuperresolutionModel">
+      <Version>2.0.4.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlComputerVisionLivenessdetection">
+      <Version>2.0.5.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlComputerVisionLivenessdetectionInner">
+      <Version>2.0.5.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlComputerVisionLivenessdetectionNodynamicModel">
+      <Version>2.0.5.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlComputerVisionObject">
+      <Version>2.0.3.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlComputerVisionObjectDetectionModel">
+      <Version>2.0.3.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlComputerVisionOcr">
+      <Version>2.0.5.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlComputerVisionOcrBase">
+      <Version>2.0.5.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlComputerVisionOcrCnModel">
+      <Version>2.0.5.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlComputerVisionOcrJkModel">
+      <Version>2.0.5.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlComputerVisionOcrLatinModel">
+      <Version>2.0.5.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlComputerVisionScenedetection">
+      <Version>2.0.3.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlComputerVisionScenedetectionInner">
+      <Version>2.0.3.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlComputerVisionScenedetectionModel">
+      <Version>2.0.3.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlComputerVisionSegmentation">
+      <Version>2.0.4.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlComputerVisionSkeleton">
+      <Version>2.0.4.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlComputerVisionSkeletonBase">
+      <Version>2.0.4.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlComputerVisionSkeletonInner">
+      <Version>2.0.4.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlComputerVisionSkeletonModel">
+      <Version>2.0.4.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlComputerVisionTextimagesuperresolution">
+      <Version>2.0.4.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlComputerVisionTextimagesuperresolutionInner">
+      <Version>2.0.4.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlComputerVisionTextimagesuperresolutionModel">
+      <Version>2.0.4.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlComputerVisionYogaModel">
+      <Version>2.0.4.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlComputerVoiceAft">
+      <Version>2.0.5.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlComputerVoiceAsr">
+      <Version>2.0.5.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlComputerVoiceAsrPlugin">
+      <Version>2.0.5.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlComputerVoiceAsrSdk">
+      <Version>2.0.5.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlComputerVoiceRealtimetranscription">
+      <Version>2.0.5.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlComputerVoiceTts">
+      <Version>2.0.5.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlComputerVoiceTtsInner">
+      <Version>2.0.5.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlComputerVoiceTtsModelBee">
+      <Version>2.0.5.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlComputerVoiceTtsModelEagle">
+      <Version>2.0.5.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlNlpTextembedding">
+      <Version>2.0.4.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlProductVisualSearchPlugin">
+      <Version>2.0.3.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlSpeechSemanticsSounddectInner">
+      <Version>2.0.3.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlSpeechSemanticsSounddectModel">
+      <Version>2.0.3.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Hms.MlSpeechSemanticsSounddectSdk">
+      <Version>2.0.3.300</Version>
+    </PackageReference>
+    <PackageReference Include="Huawei.Mindspore.MindsporeLite">
+      <Version>5.0.4.300</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Glide">
+      <Version>4.9.0</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.Design" Version="28.0.0.3" />
+    <PackageReference Include="Xamarin.Android.Support.Core.Utils" Version="28.0.0.3" />
+    <PackageReference Include="Xamarin.Android.Support.CustomTabs" Version="28.0.0.3" />
+    <PackageReference Include="Xamarin.Android.Support.v4">
+      <Version>28.0.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.AppCompat">
+      <Version>1.1.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.Browser">
+      <Version>1.2.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.ConstraintLayout">
+      <Version>1.1.3.2</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.Legacy.Support.V4">
+      <Version>1.0.0.6</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.Lifecycle.LiveData">
+      <Version>2.2.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
+    <PackageReference Include="Xamarin.Google.Android.Material">
+      <Version>1.1.0.5</Version>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+    Other similar extension points exist, see Microsoft.Common.targets.
+    <Target Name="BeforeBuild">
+    </Target>
+    <Target Name="AfterBuild">
+    </Target>
+  -->
+</Project>

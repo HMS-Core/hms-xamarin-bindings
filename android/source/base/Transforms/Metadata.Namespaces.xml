@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--    Copyright 2020-2021. Huawei Technologies Co., Ltd. All rights reserved.
+
+        Licensed under the Apache License, Version 2.0 (the "License");
+        you may not use this file except in compliance with the License.
+        You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+        Unless required by applicable law or agreed to in writing, software
+        distributed under the License is distributed on an "AS IS" BASIS,
+        WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+        See the License for the specific language governing permissions and
+        limitations under the License. 
+-->
+<metadata>
+	<attr path="/api/package[@name='com.huawei.hms.actions']" name="managedName">Huawei.Hms.Actions</attr>
+	<attr path="/api/package[@name='com.huawei.hms.activity']" name="managedName">Huawei.Hms.Activity</attr>
+	<attr path="/api/package[@name='com.huawei.hms.activity.internal']" name="managedName">Huawei.Hms.Activity.Internal</attr>
+	<attr path="/api/package[@name='com.huawei.hms.adapter']" name="managedName">Huawei.Hms.Adapter</attr>
+	<attr path="/api/package[@name='com.huawei.hms.adapter.internal']" name="managedName">Huawei.Hms.Adapter.Internal</attr>
+	<attr path="/api/package[@name='com.huawei.hms.api']" name="managedName">Huawei.Hms.Api</attr>
+	<attr path="/api/package[@name='com.huawei.hms.common']" name="managedName">Huawei.Hms.Common</attr>
+	<attr path="/api/package[@name='com.huawei.hms.common.api']" name="managedName">Huawei.Hms.Common.Api</attr>
+	<attr path="/api/package[@name='com.huawei.hms.common.api.internal']" name="managedName">Huawei.Hms.Common.Api.Internal</attr>
+	<attr path="/api/package[@name='com.huawei.hms.common.data']" name="managedName">Huawei.Hms.Common.Data</attr>
+	<attr path="/api/package[@name='com.huawei.hms.common.internal']" name="managedName">Huawei.Hms.Common.Internal</attr>
+	<attr path="/api/package[@name='com.huawei.hms.common.internal.safeparcel']" name="managedName">Huawei.Hms.Common.Internal.Safeparcel</attr>
+	<attr path="/api/package[@name='com.huawei.hms.common.size']" name="managedName">Huawei.Hms.Common.Size</attr>
+	<attr path="/api/package[@name='com.huawei.hms.common.sqlite']" name="managedName">Huawei.Hms.Common.Sqlite</attr>
+	<attr path="/api/package[@name='com.huawei.hms.common.util']" name="managedName">Huawei.Hms.Common.Util</attr>
+	<attr path="/api/package[@name='com.huawei.hms.common.webserverpic']" name="managedName">Huawei.Hms.Common.Webserverpic</attr>
+	<attr path="/api/package[@name='com.huawei.hms.core.aidl']" name="managedName">Huawei.Hms.Core.Aidl</attr>
+	<attr path="/api/package[@name='com.huawei.hms.core.aidl.annotation']" name="managedName">Huawei.Hms.Core.Aidl.Annotation</attr>
+	<attr path="/api/package[@name='com.huawei.hms.security']" name="managedName">Huawei.Hms.Security</attr>
+	<attr path="/api/package[@name='com.huawei.hms.support.api.client']" name="managedName">Huawei.Hms.Support.Api.Client</attr>
+	<attr path="/api/package[@name='com.huawei.hms.support.api.core']" name="managedName">Huawei.Hms.Support.Api.Core</attr>
+	<attr path="/api/package[@name='com.huawei.hms.support.api.entity.auth']" name="managedName">Huawei.Hms.Support.Api.Entity.Auth</attr>
+	<attr path="/api/package[@name='com.huawei.hms.support.api.entity.core']" name="managedName">Huawei.Hms.Support.Api.Entity.Core</attr>
+	<attr path="/api/package[@name='com.huawei.hms.support.api']" name="managedName">Huawei.Hms.Support.Api</attr>
+	<attr path="/api/package[@name='com.huawei.hms.support.api.transport']" name="managedName">Huawei.Hms.Support.Api.Transport</attr>
+	<attr path="/api/package[@name='com.huawei.hms.support.hianalytics']" name="managedName">Huawei.Hms.Support.Hianalytics</attr>
+	<attr path="/api/package[@name='com.huawei.hms.utils']" name="managedName">Huawei.Hms.Utils</attr>
+</metadata>

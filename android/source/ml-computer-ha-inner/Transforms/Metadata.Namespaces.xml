@@ -1,0 +1,40 @@
+<!--Copyright 2020-2021. Huawei Technologies Co., Ltd. All rights reserved.
+
+        Licensed under the Apache License, Version 2.0 (the "License");
+        you may not use this file except in compliance with the License.
+        You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+        Unless required by applicable law or agreed to in writing, software
+        distributed under the License is distributed on an "AS IS" BASIS,
+        WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+        See the License for the specific language governing permissions and
+        limitations under the License.-->
+<metadata>
+  <attr path="/api/package[@name='com.huawei.hianalytics.mn.mn']" name="managedName">Huawei.Hianalytics.Mn.Mn</attr>
+  <attr path="/api/package[@name='com.huawei.hianalytics.mn.no.a.mn']" name="managedName">Huawei.Hianalytics.Mn.No.A.Mn</attr>
+  <attr path="/api/package[@name='com.huawei.hianalytics.mn.no.a.no']" name="managedName">Huawei.Hianalytics.Mn.No.A.No</attr>
+  <attr path="/api/package[@name='com.huawei.hianalytics.mn.no.a.op']" name="managedName">Huawei.Hianalytics.Mn.No.A.Op</attr>
+  <attr path="/api/package[@name='com.huawei.hianalytics.mn.no.b']" name="managedName">Huawei.Hianalytics.Mn.No.B</attr>
+  <attr path="/api/package[@name='com.huawei.hianalytics.mn.no.mn']" name="managedName">Huawei.Hianalytics.Mn.No.Mn</attr>
+  <attr path="/api/package[@name='com.huawei.hianalytics.mn.no.no']" name="managedName">Huawei.Hianalytics.Mn.No.No</attr>
+  <attr path="/api/package[@name='com.huawei.hianalytics.mn.no.op.mn']" name="managedName">Huawei.Hianalytics.Mn.No.Op.Mn</attr>
+  <attr path="/api/package[@name='com.huawei.hianalytics.mn.no.op.no']" name="managedName">Huawei.Hianalytics.Mn.No.Op.No</attr>
+  <attr path="/api/package[@name='com.huawei.hianalytics.mn.no.pq']" name="managedName">Huawei.Hianalytics.Mn.No.Pq</attr>
+  <attr path="/api/package[@name='com.huawei.hianalytics.mn.no.qr']" name="managedName">Huawei.Hianalytics.Mn.No.Qr</attr>
+  <attr path="/api/package[@name='com.huawei.hianalytics.mn.no.rs']" name="managedName">Huawei.Hianalytics.Mn.No.Rs</attr>
+  <attr path="/api/package[@name='com.huawei.hianalytics.mn.no.st']" name="managedName">Huawei.Hianalytics.Mn.No.St</attr>
+  <attr path="/api/package[@name='com.huawei.hianalytics.mn.no.tu']" name="managedName">Huawei.Hianalytics.Mn.No.Tu</attr>
+  <attr path="/api/package[@name='com.huawei.hianalytics.mn.no.uv']" name="managedName">Huawei.Hianalytics.Mn.No.Uv</attr>
+  <attr path="/api/package[@name='com.huawei.hianalytics.mn.op.mn']" name="managedName">Huawei.Hianalytics.Mn.Op.Mn</attr>
+  <attr path="/api/package[@name='com.huawei.hianalytics.mn.op.no']" name="managedName">Huawei.Hianalytics.Mn.Op.No</attr>
+  <attr path="/api/package[@name='com.huawei.hianalytics.mn.pq']" name="managedName">Huawei.Hianalytics.Mn.Pq</attr>
+  <attr path="/api/package[@name='com.huawei.hianalytics.mn.qr']" name="managedName">Huawei.Hianalytics.Mn.Qr</attr>
+  <attr path="/api/package[@name='com.huawei.hianalytics.mn.rs']" name="managedName">Huawei.Hianalytics.Mn.Rs</attr>
+  <attr path="/api/package[@name='com.huawei.hianalytics.mn.st']" name="managedName">Huawei.Hianalytics.Mn.St</attr>
+  <attr path="/api/package[@name='com.huawei.hianalytics.scankit']" name="managedName">Huawei.Hianalytics.Scankit</attr>
+  <attr path="/api/package[@name='com.huawei.hms.mlkit.common.ha.annotation']" name="managedName">Huawei.Hms.Mlkit.Common.Ha.Annotation</attr>
+  <attr path="/api/package[@name='com.huawei.hms.mlkit.common.ha.event']" name="managedName">Huawei.Hms.Mlkit.Common.Ha.Event</attr>
+  <attr path="/api/package[@name='com.huawei.hms.mlkit.common.ha']" name="managedName">Huawei.Hms.Mlkit.Common.Ha</attr>
+</metadata>

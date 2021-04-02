@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<declare-styleable name="RoundPercentBar">
+		<attr name="backgroundColor" format="color" />
+		<attr name="audioTypeColor" format="color" />
+		<attr name="videoTypeColor" format="color" />
+		<attr name="imageTypeColor" format="color" />
+		<attr name="docTypeColor" format="color" />
+		<attr name="appTypeColor" format="color" />
+		<attr name="archiveTypeColor" format="color" />
+		<attr name="otherTypeColor" format="color" />
+		<attr name="rectWidth" format="dimension" />
+		<attr name="textColor" format="color" />
+		<attr name="textSize" format="dimension" />
+		<attr name="roundMax" format="integer" />
+		<attr name="percentTextSize" format="dimension" />
+		<attr name="percentTextColor" format="color" />
+	</declare-styleable>
+
+	<declare-styleable name="RingProgressBar">
+		<attr name="ringBackgroundColor" format="color" />
+		<attr name="ringWidth" format="dimension" />
+		<attr name="ringTextColor" format="color" />
+		<attr name="ringTextSize" format="dimension" />
+		<attr name="ringMax" format="integer"></attr>
+		<attr name="ringPercentSize" format="dimension" />
+	</declare-styleable>
+
+	<declare-styleable name="Multi_Image_View">
+		<attr name="background" format="reference" />
+		<!-- normal mode -->
+		<attr name="layout_width_stack1" format="dimension" />
+		<attr name="layout_height_stack1" format="dimension" />
+		<attr name="src_stack1" format="reference" />
+		<attr name="background_stack1" format="reference" />
+		<attr name="offset_stack1" format="dimension" />
+		<attr name="alpha_stack1" format="float" />
+		<attr name="layout_width_stack2" format="dimension" />
+		<attr name="layout_height_stack2" format="dimension" />
+		<attr name="src_stack2" format="reference" />
+		<attr name="background_stack2" format="reference" />
+		<attr name="offset_stack2" format="dimension" />
+		<attr name="alpha_stack2" format="float" />
+	</declare-styleable>
+
+
+	<declare-styleable name="HidiskClassificationView">
+		<attr name="text_name" format="string" />
+		<attr name="text_count" format="string" />
+		<attr name="text_name_color" format="color" />
+		<attr name="text_count_color" format="color" />
+		<attr name="text_name_size" format="dimension" />
+		<attr name="text_count_size" format="dimension" />
+		<attr name="image_src" format="reference" />
+		<attr name="image_bg" format="reference" />
+		<attr name="image_width" format="dimension" />
+		<attr name="image_height" format="dimension" />
+	</declare-styleable>
+</resources>

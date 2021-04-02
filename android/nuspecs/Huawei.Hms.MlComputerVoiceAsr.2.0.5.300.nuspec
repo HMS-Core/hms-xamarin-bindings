@@ -1,0 +1,32 @@
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Huawei.Hms.MlComputerVoiceAsr</id>
+    <version>2.0.5.300</version>
+    <title>Huawei.Hms.MlComputerVoiceAsr</title>
+    <authors>Huawei</authors>
+    <owners>Huawei</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="file">LICENSE.txt</license>
+    <projectUrl>https://github.com/HMS-Core/hms-xamarin-bindings</projectUrl>
+    <icon>huawei.png</icon>
+    <description>Xamarin.Android bindings for HMS Core - MlComputerVoiceAsr</description>
+    <copyright>© Huawei Technologies Co., Ltd. All rights reserved.</copyright>
+    <tags>Huawei Hms MlComputerVoiceAsr</tags>
+    <dependencies>
+      <group targetFramework="MonoAndroid9.0">
+        <dependency id="Huawei.Agconnect.AgconnectCore" version="1.4.0.300" include="All" />
+        <dependency id="Square.OkHttp3" version="3.12.6" />
+        <dependency id="Huawei.Hms.MlComputerVoiceAsrSdk" version="2.0.5.300" include="All" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="Java.Interop" targetFramework="MonoAndroid9.0" />
+    </frameworkAssemblies>
+  </metadata>
+  <files>
+    <file src="bin/Release/Huawei.Hms.MlComputerVoiceAsr.dll" target="lib/monoandroid90/Huawei.Hms.MlComputerVoiceAsr.dll" />
+    <file src="../../icons/huawei.png" target="" />
+    <file src="THIRD PARTY OPEN SOURCE SOFTWARE NOTICE.txt" target="THIRD PARTY OPEN SOURCE SOFTWARE NOTICE.txt" />
+    <file src="../../LICENSE.txt" target="" />
+  </files>
+</package>

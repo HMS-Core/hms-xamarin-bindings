@@ -1,0 +1,44 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_title_margin"
+        android:paddingRight="@dimen/activity_title_margin"
+        android:paddingTop="@dimen/activity_title_margin"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        tools:context=".location.fusedlocation.SetMockLocationActivity">
+        <TextView
+            style="@style/TitleStyle"
+            android:text="@string/hwlocation_setMockLocation"/>
+        <TextView
+            android:text="@string/hwlocation_mockWarning"
+            style="@style/WarningStyle"/>
+        <Button
+            android:id="@+id/location_setMockLocation"
+            style="@style/ButtonStyle"
+            android:text="@string/hwlocation_setMockLocation" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="Suspicious0dp">
+        <include
+            layout="@layout/log_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </include>
+    </LinearLayout>
+</LinearLayout>

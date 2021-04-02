@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<item
+        android:id="@+id/navigation_sysIntegrity"
+        android:title="@string/sysIntegrity" />
+
+	<item
+        android:id="@+id/navigation_appsCheck"
+        android:title="@string/appsCheck" />
+
+	<item
+        android:id="@+id/navigation_urlCheck"
+        android:title="@string/urlCheck" />
+
+	<item
+		android:id="@+id/navigation_others"
+		android:title="@string/others" />
+
+</menu>

@@ -1,0 +1,34 @@
+<!--Copyright 2020-2021. Huawei Technologies Co., Ltd. All rights reserved.
+
+        Licensed under the Apache License, Version 2.0 (the "License");
+        you may not use this file except in compliance with the License.
+        You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+        Unless required by applicable law or agreed to in writing, software
+        distributed under the License is distributed on an "AS IS" BASIS,
+        WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+        See the License for the specific language governing permissions and
+        limitations under the License.-->
+<metadata>
+	<attr path="/api/package[@name='com.huawei.hms.push']" name="managedName">Huawei.Hms.Push</attr>
+	<attr path="/api/package[@name='com.huawei.hms.push.constant']" name="managedName">Huawei.Hms.Push.Constant</attr>
+	<attr path="/api/package[@name='com.huawei.hms.push.task']" name="managedName">Huawei.Hms.Push.Task</attr>
+	<attr path="/api/package[@name='com.huawei.hms.push.ups.entity']" name="managedName">Huawei.Hms.Push.Ups.Entity</attr>
+	<attr path="/api/package[@name='com.huawei.hms.push.ups']" name="managedName">Huawei.Hms.Push.Ups</attr>
+	<attr path="/api/package[@name='com.huawei.hms.push.utils']" name="managedName">Huawei.Hms.Push.Utils</attr>
+	<attr path="/api/package[@name='com.huawei.hms.push.utils.ha']" name="managedName">Huawei.Hms.Push.Utils.Ha</attr>
+	<attr path="/api/package[@name='com.huawei.hms.support.api.entity.push']" name="managedName">Huawei.Hms.Support.Api.Entity.Push</attr>
+	<attr path="/api/package[@name='com.huawei.hms.support.api.push.base']" name="managedName">Huawei.Hms.Support.Api.Push.Base</attr>
+	<attr path="/api/package[@name='com.huawei.hms.support.api.push']" name="managedName">Huawei.Hms.Support.Api.Push</attr>
+	<attr path="/api/package[@name='com.huawei.hms.support.api.push.pushselfshow.click']" name="managedName">Huawei.Hms.Support.Api.Push.Pushselfshow.Click</attr>
+	<attr path="/api/package[@name='com.huawei.hms.support.api.push.pushselfshow.entity']" name="managedName">Huawei.Hms.Support.Api.Push.Pushselfshow.Entity</attr>
+	<attr path="/api/package[@name='com.huawei.hms.support.api.push.pushselfshow.prepare']" name="managedName">Huawei.Hms.Support.Api.Push.Pushselfshow.Prepare</attr>
+	<attr path="/api/package[@name='com.huawei.hms.support.api.push.pushselfshow']" name="managedName">Huawei.Hms.Support.Api.Push.Pushselfshow</attr>
+	<attr path="/api/package[@name='com.huawei.hms.support.api.push.pushselfshow.utils']" name="managedName">Huawei.Hms.Support.Api.Push.Pushselfshow.Utils</attr>
+	<attr path="/api/package[@name='com.huawei.hms.support.api.push.service']" name="managedName">Huawei.Hms.Support.Api.Push.Service</attr>
+	<attr path="/api/package[@name='com.huawei.hms.support.api.push.utils']" name="managedName">Huawei.Hms.Support.Api.Push.Utils</attr>
+	<attr path="/api/package[@name='com.huawei.hms.support.api.push.utils.common.base']" name="managedName">Huawei.Hms.Support.Api.Push.Utils.Common.Base</attr>
+	<attr path="/api/package[@name='com.huawei.hms.support.api.push.utils.common']" name="managedName">Huawei.Hms.Support.Api.Push.Utils.Common</attr>
+</metadata>

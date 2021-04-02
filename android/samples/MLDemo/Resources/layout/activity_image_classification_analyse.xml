@@ -1,0 +1,67 @@
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context="com.huawei.mlkit.example.classification.ImageClassificationAnalyseActivity">
+
+    <ImageView
+        android:id="@+id/classification_image"
+        android:layout_width="500dp"
+        android:layout_height="400dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/classification_image">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/classification_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/classification_image"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/upsdk_white"
+        android:textSize="13sp">
+    </TextView>
+
+
+    <LinearLayout
+        android:id="@+id/top_layout_face"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/classification_detect"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="15dp"
+            android:background="@color/white"
+            android:layout_weight="1"
+            android:text="@string/detect_on_device"
+            android:textColor="@android:color/black">
+        </Button>
+        <Button
+            android:id="@+id/remote_classification_detect"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:text="@string/detect_on_cloud"
+            android:textColor="@android:color/black">
+        </Button>
+
+    </LinearLayout>
+
+</RelativeLayout>

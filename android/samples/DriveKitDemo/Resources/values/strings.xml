@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">Xamarin HMS Drive Demo</string>
+    <string name="action_settings">Settings</string>
+	<string name="str_copyright" priority="LT">Copyright © 2021 Huawei Software Technologies Co., Ltd. All rights reserved.</string>
+	<string name="log_in">Login with Huawei ID</string>
+	<string name="recent" priority="LT">Interface</string>
+	<string name="categoryfile" priority="translator">Request</string>
+
+	<!-- Description: User paste a file ,but  the file do not exist ,use this to notify . -->
+
+	<string name="send" priority="LT">send</string>
+	<string name="reset">reset</string>
+
+	<string name="netdisk_recently_deleted" priority="LT">Recently deleted</string>
+	<string name="netdisk_move_state_recycle_unenable" priority="LT">Unable to move file to Recently deleted.</string>
+	<string name="recovery" priority="LT">Restore</string>
+	<plurals name="recycle_permanently_remove_select_file">
+		<item priority="LT" quantity="one">"Slette {0} fil permanent?"</item>
+		<item priority="LT" quantity="other">"Slette {0} filer permanent?"</item>
+	</plurals>
+	<string name="recycle_remove_completely" priority="LT">Delete</string>
+	<string name="recycle_delete_time" priority="LT">Delete time:</string>
+	<string name="strongbox_original_path" priority="translator">"Original path: "</string>
+	<string name="details_panel_title" priority="translator">Details</string>
+	<string name="details_folder_name" priority="translator">"Folder name:"</string>
+	<string name="folder_info_include" priority="translator">Include:</string>
+	<string name="details_file_name" priority="translator">"File name:"</string>
+	<string name="file_info_size" priority="translator">File size:</string>
+	<string name="recycle_reduction" priority="LT">Restore</string>
+	<string name="start_new_watch" priority="LT">start new watch</string>
+	<string name="list_changes" priority="LT">list changes</string>
+
+	<string name="netdisk_appdata" priority="LT">My Application</string>
+	<string name="about_title">About</string>
+	<string name="about">About</string>
+	<string name="about_get">About.Get</string>
+	<string name="files">Files</string>
+	<string name="files_list">Files.List</string>
+	<string name="files_create">Files.CreateDir</string>
+	<string name="files_createfile">Files.CreateFile</string>
+	<string name="files_get">Files.Get</string>
+	<string name="files_subscribe">Files.Subscribe</string>
+	<string name="files_copy">Files.Copy</string>
+	<string name="files_update">Files.Update</string>
+	<string name="files_updatecontent">Files.UpdateContent</string>
+	<string name="files_delete">Files.Delete</string>
+	<string name="files_emptyrecycle">Files.EmptyRecycle</string>
+	<string name="changes">Changes</string>
+	<string name="changes_getstartcursor">Changes.GetStartCursor</string>
+	<string name="changes_subscribe">Changes.Subscribe</string>
+	<string name="changes_list">Changes.List</string>
+	<string name="channels">Channels</string>
+	<string name="channels_stop">Channels.Stop</string>
+	<string name="permissions">Permissions</string>
+	<string name="permissions_create">permissions.create</string>
+	<string name="permissions_list">permissions.list</string>
+	<string name="permissions_get">permissions.get</string>
+	<string name="permissions_update">permissions.update</string>
+	<string name="permissions_delete">permissions.delete</string>
+	<string name="comments">Comments</string>
+	<string name="comments_create">comments.create</string>
+	<string name="comments_list">comments.list</string>
+	<string name="comments_get">comments.get</string>
+	<string name="comments_update">comments.update</string>
+	<string name="comments_delete">comments.delete</string>
+	<string name="replies">Replies</string>
+	<string name="replies_create">replies.create</string>
+	<string name="replies_list">replies.list</string>
+	<string name="replies_get">replies.get</string>
+	<string name="replies_update">replies.update</string>
+	<string name="replies_delete">replies.delete</string>
+	<string name="historyversions_list">HistoryVersions.List</string>
+	<string name="historyversions_get">HistoryVersions.Get</string>
+	<string name="historyversions_update">HistoryVersions.Update</string>
+	<string name="historyversions_delete">HistoryVersions.Delete</string>
+	<string name="historyversions">HistoryVersions</string>
+	<string name="backup">AppDataBackUp</string>
+	<string name="databackup">DataBackUp</string>
+	<string name="restore">AppDataRestore</string>
+	<string name="datarestore">DataRestore</string>
+	<string name="onlineopen">OnlineOpen</string>
+	<string name="cloud_space_full" priority="translator">Cloud space is full, save failed, please upgrade cloud space first and try again</string>
+	<string name="menu_open_camera" priority="translator">Take photo</string>
+	<string name="menu_album" priority="translator">Select from Gallery</string>
+</resources>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">XamarinHmsNearbyDemo</string>
+    <string name="action_settings">Settings</string>
+    <string name="warn">Warn</string>
+    <string name="btn_confirm">Confirm</string>
+    <string name="Recevie_File">Recevie File</string>
+    <string name="Send_File">Send File</string>
+    <string name="Wifi_Sharing">Wifi Sharing</string>
+    <string name="QuickChat">Quick Chat</string>
+</resources>

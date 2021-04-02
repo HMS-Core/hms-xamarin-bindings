@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_start_place_search_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/start_place_nearby_place_search_activity"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_start_place_detail_search_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/start_place_detail_search_activity"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_start_place_suggestion_search_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/start_place_suggestion_search_activity"
+        android:textAllCaps="false" />
+    <Button
+        android:id="@+id/btn_start_keyword_search_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/start_keyword_search_activity"
+        android:textAllCaps="false" />
+    <Button
+        android:id="@+id/btn_start_auto_complete_search_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/start_auto_complete_search_activity"
+        android:textAllCaps="false" />
+
+</LinearLayout>

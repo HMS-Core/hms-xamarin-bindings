@@ -1,0 +1,37 @@
+<!--
+Copyright 2020-2021. Huawei Technologies Co., Ltd. All rights reserved.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+<metadata>
+  <attr path="/api/package[@name='com.huawei.hianalytics.abtesting']" name="managedName">Huawei.Hianalytics.Abtesting</attr>
+  <attr path="/api/package[@name='com.huawei.hianalytics.global']" name="managedName">Huawei.Hianalytics.Global</attr>
+  <attr path="/api/package[@name='com.huawei.hianalytics.log']" name="managedName">Huawei.Hianalytics.Log</attr>
+  <attr path="/api/package[@name='com.huawei.hianalytics.process']" name="managedName">Huawei.Hianalytics.Process</attr>
+  <attr path="/api/package[@name='com.huawei.hianalytics']" name="managedName">Huawei.Hianalytics</attr>
+  <attr path="/api/package[@name='com.huawei.hianalytics.util']" name="managedName">Huawei.Hianalytics.Util</attr>
+  <attr path="/api/package[@name='com.huawei.hianalytics.v2']" name="managedName">Huawei.Hianalytics.V2</attr>
+  <attr path="/api/package[@name='com.huawei.hms.nearby']" name="managedName">Huawei.Hms.Nearby</attr>
+  <attr path="/api/package[@name='com.huawei.hms.nearby.common']" name="managedName">Huawei.Hms.Nearby.Common</attr>
+  <attr path="/api/package[@name='com.huawei.hms.nearby.common.internal']" name="managedName">Huawei.Hms.Nearby.Common.Internal</attr>
+  <attr path="/api/package[@name='com.huawei.hms.nearby.common.message']" name="managedName">Huawei.Hms.Nearby.Common.Message</attr>
+  <attr path="/api/package[@name='com.huawei.hms.nearby.discovery']" name="managedName">Huawei.Hms.Nearby.Discovery</attr>
+  <attr path="/api/package[@name='com.huawei.hms.nearby.discovery.internal']" name="managedName">Huawei.Hms.Nearby.Discovery.Internal</attr>
+  <attr path="/api/package[@name='com.huawei.hms.nearby.framework.internal']" name="managedName">Huawei.Hms.Nearby.Framework.Internal</attr>
+  <attr path="/api/package[@name='com.huawei.hms.nearby.message']" name="managedName">Huawei.Hms.Nearby.Message</attr>
+  <attr path="/api/package[@name='com.huawei.hms.nearby.transfer']" name="managedName">Huawei.Hms.Nearby.Transfer</attr>
+  <attr path="/api/package[@name='com.huawei.hms.nearby.wifishare']" name="managedName">Huawei.Hms.Nearby.Wifishare</attr>
+  <attr path="/api/package[@name='com.huawei.nstackx.core']" name="managedName">Huawei.Nstackx.Core</attr>
+  <attr path="/api/package[@name='com.huawei.nstackx.core.util']" name="managedName">Huawei.Nstackx.Core.Util</attr>
+  <attr path="/api/package[@name='com.huawei.nstackx.service.transfer.wifi']" name="managedName">Huawei.Nstackx.Service.Transfer.Wifi</attr>
+</metadata>

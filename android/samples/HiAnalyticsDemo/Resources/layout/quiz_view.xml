@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="HiAnalyticsXamarinAndroidDemo.MainActivity">
+	
+	<FrameLayout
+		 android:id="@+id/frame_layout"
+         android:layout_width="match_parent"
+         android:layout_height="0dip"
+         android:layout_weight="1" >
+
+		<TextView
+            android:id="@+id/txtQuestion"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:padding="24dp"
+        />
+
+
+		<LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal">
+
+			<Button
+                android:id="@+id/true_button"
+                android:background="#43A047"
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20px"
+                android:text="@string/true_button"/>
+
+			<Button
+                android:id="@+id/false_button"
+                 android:background="@android:color/holo_red_dark"
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/false_button"/>
+		</LinearLayout>
+
+
+
+		<!--<Button
+            android:id="@+id/post_score_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:text="@string/post_score_button"/>-->
+
+		<!--<Button
+            android:id="@+id/next_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:text="@string/next_button"/>-->
+	</FrameLayout>
+
+	<include
+			  layout="@layout/bottom_navigation"
+			  android:layout_width="match_parent"
+			  android:layout_height="wrap_content"
+			  android:layout_gravity="bottom"
+        />
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<!--Copyright 2020-2021. Huawei Technologies Co., Ltd. All rights reserved.
+
+        Licensed under the Apache License, Version 2.0 (the "License");
+        you may not use this file except in compliance with the License.
+        You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+        Unless required by applicable law or agreed to in writing, software
+        distributed under the License is distributed on an "AS IS" BASIS,
+        WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+        See the License for the specific language governing permissions and
+        limitations under the License.-->
+<metadata>
+  <attr path="/api/package[@name='com.huawei.hms.adapter']" name="managedName">Huawei.Hms.Adapter</attr>
+  <attr path="/api/package[@name='com.huawei.hms.adapter.internal']" name="managedName">Huawei.Hms.Adapter.Internal</attr>
+  <attr path="/api/package[@name='com.huawei.hms.adapter.sysobs']" name="managedName">Huawei.Hms.Adapter.Sysobs</attr>
+  <attr path="/api/package[@name='com.huawei.hms.adapter.ui']" name="managedName">Huawei.Hms.Adapter.Ui</attr>
+  <attr path="/api/package[@name='com.huawei.hms.update.kpms']" name="managedName">Huawei.Hms.Update.Kpms</attr>
+  <attr path="/api/package[@name='com.huawei.hms.update.manager']" name="managedName">Huawei.Hms.Update.Manager</attr>
+  <attr path="/api/package[@name='com.huawei.hms.update.provider']" name="managedName">Huawei.Hms.Update.Provider</attr>
+  <attr path="/api/package[@name='com.huawei.hms.update.ui']" name="managedName">Huawei.Hms.Update.Ui</attr>
+  <attr path="/api/package[@name='com.huawei.hms.base.availableupdate']" name="managedName">Huawei.Hms.Base.Availableupdate</attr>
+</metadata>

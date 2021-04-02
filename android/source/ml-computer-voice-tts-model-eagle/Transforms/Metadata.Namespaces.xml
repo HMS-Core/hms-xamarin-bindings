@@ -1,0 +1,64 @@
+<!--    Copyright 2020-2021. Huawei Technologies Co., Ltd. All rights reserved.
+
+        Licensed under the Apache License, Version 2.0 (the "License");
+        you may not use this file except in compliance with the License.
+        You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+        Unless required by applicable law or agreed to in writing, software
+        distributed under the License is distributed on an "AS IS" BASIS,
+        WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+        See the License for the specific language governing permissions and
+        limitations under the License.-->
+<metadata>
+  <attr path="/api/package[@name='com.huawei.hms.mlkit.tts.eagle']" name="managedName">Huawei.Hms.Mlkit.Tts.Eagle</attr>
+  <attr path="/api/package[@name='com.huawei.hms.feature.dynamic.descriptors.huawei_module_mlkit_tts_eagle']" name="managedName">Huawei.Hms.Feature.Dynamic.Descriptors.Huawei_module_mlkit_tts_eagle</attr>
+  <attr path="/api/package[@name='com.huawei.hms.texttospeech.frontend.services']" name="managedName">Huawei.Hms.Texttospeech.Frontend.Services</attr>
+  <attr path="/api/package[@name='com.huawei.hms.texttospeech.frontend.services.context']" name="managedName">Huawei.Hms.Texttospeech.Frontend.Services.Context</attr>
+  <attr path="/api/package[@name='com.huawei.hms.texttospeech.frontend.services.entities']" name="managedName">Huawei.Hms.Texttospeech.Frontend.Services.Entities</attr>
+  <attr path="/api/package[@name='com.huawei.hms.texttospeech.frontend.services.impl']" name="managedName">Huawei.Hms.Texttospeech.Frontend.Services.Impl</attr>
+  <attr path="/api/package[@name='com.huawei.hms.texttospeech.frontend.services.normalizers']" name="managedName">Huawei.Hms.Texttospeech.Frontend.Services.Normalizers</attr>
+  <attr path="/api/package[@name='com.huawei.hms.texttospeech.frontend.services.parser']" name="managedName">Huawei.Hms.Texttospeech.Frontend.Services.Parser</attr>
+  <attr path="/api/package[@name='com.huawei.hms.texttospeech.frontend.services.parser.common']" name="managedName">Huawei.Hms.Texttospeech.Frontend.Services.Parser.Common</attr>
+  <attr path="/api/package[@name='com.huawei.hms.texttospeech.frontend.services.phonemizers']" name="managedName">Huawei.Hms.Texttospeech.Frontend.Services.Phonemizers</attr>
+  <attr path="/api/package[@name='com.huawei.hms.texttospeech.frontend.services.replacers']" name="managedName">Huawei.Hms.Texttospeech.Frontend.Services.Replacers</attr>
+  <attr path="/api/package[@name='com.huawei.hms.texttospeech.frontend.services.replacers.capitalletter']" name="managedName">Huawei.Hms.Texttospeech.Frontend.Services.Replacers.Capitalletter</attr>
+  <attr path="/api/package[@name='com.huawei.hms.texttospeech.frontend.services.replacers.capitalletter.patterns']" name="managedName">Huawei.Hms.Texttospeech.Frontend.Services.Replacers.Capitalletter.Patterns</attr>
+  <attr path="/api/package[@name='com.huawei.hms.texttospeech.frontend.services.replacers.date']" name="managedName">Huawei.Hms.Texttospeech.Frontend.Services.Replacers.Date</attr>
+  <attr path="/api/package[@name='com.huawei.hms.texttospeech.frontend.services.replacers.date.chinese']" name="managedName">Huawei.Hms.Texttospeech.Frontend.Services.Replacers.Date.Chinese</attr>
+  <attr path="/api/package[@name='com.huawei.hms.texttospeech.frontend.services.replacers.date.chinese.patterns']" name="managedName">Huawei.Hms.Texttospeech.Frontend.Services.Replacers.Date.Chinese.Patterns</attr>
+  <attr path="/api/package[@name='com.huawei.hms.texttospeech.frontend.services.replacers.date.commonpatterns']" name="managedName">Huawei.Hms.Texttospeech.Frontend.Services.Replacers.Date.Commonpatterns</attr>
+  <attr path="/api/package[@name='com.huawei.hms.texttospeech.frontend.services.replacers.link']" name="managedName">Huawei.Hms.Texttospeech.Frontend.Services.Replacers.Link</attr>
+  <attr path="/api/package[@name='com.huawei.hms.texttospeech.frontend.services.replacers.mathsymbols']" name="managedName">Huawei.Hms.Texttospeech.Frontend.Services.Replacers.Mathsymbols</attr>
+  <attr path="/api/package[@name='com.huawei.hms.texttospeech.frontend.services.replacers.money']" name="managedName">Huawei.Hms.Texttospeech.Frontend.Services.Replacers.Money</attr>
+  <attr path="/api/package[@name='com.huawei.hms.texttospeech.frontend.services.replacers.money.patterns']" name="managedName">Huawei.Hms.Texttospeech.Frontend.Services.Replacers.Money.Patterns</attr>
+  <attr path="/api/package[@name='com.huawei.hms.texttospeech.frontend.services.replacers.number']" name="managedName">Huawei.Hms.Texttospeech.Frontend.Services.Replacers.Number</attr>
+  <attr path="/api/package[@name='com.huawei.hms.texttospeech.frontend.services.replacers.shortening']" name="managedName">Huawei.Hms.Texttospeech.Frontend.Services.Replacers.Shortening</attr>
+  <attr path="/api/package[@name='com.huawei.hms.texttospeech.frontend.services.replacers.specialsymbols']" name="managedName">Huawei.Hms.Texttospeech.Frontend.Services.Replacers.Specialsymbols</attr>
+  <attr path="/api/package[@name='com.huawei.hms.texttospeech.frontend.services.replacers.time']" name="managedName">Huawei.Hms.Texttospeech.Frontend.Services.Replacers.Time</attr>
+  <attr path="/api/package[@name='com.huawei.hms.texttospeech.frontend.services.replacers.time.chinese']" name="managedName">Huawei.Hms.Texttospeech.Frontend.Services.Replacers.Time.Chinese</attr>
+  <attr path="/api/package[@name='com.huawei.hms.texttospeech.frontend.services.replacers.time.chinese.patterns']" name="managedName">Huawei.Hms.Texttospeech.Frontend.Services.Replacers.Time.Chinese.Patterns</attr>
+  <attr path="/api/package[@name='com.huawei.hms.texttospeech.frontend.services.replacers.time.commonpatterns']" name="managedName">Huawei.Hms.Texttospeech.Frontend.Services.Replacers.Time.Commonpatterns</attr>
+  <attr path="/api/package[@name='com.huawei.hms.texttospeech.frontend.services.replacers.time.english']" name="managedName">Huawei.Hms.Texttospeech.Frontend.Services.Replacers.Time.English</attr>
+  <attr path="/api/package[@name='com.huawei.hms.texttospeech.frontend.services.replacers.time.english.patterns']" name="managedName">Huawei.Hms.Texttospeech.Frontend.Services.Replacers.Time.English.Patterns</attr>
+  <attr path="/api/package[@name='com.huawei.hms.texttospeech.frontend.services.replacers.units']" name="managedName">Huawei.Hms.Texttospeech.Frontend.Services.Replacers.Units</attr>
+  <attr path="/api/package[@name='com.huawei.hms.texttospeech.frontend.services.replacers.units.chinese']" name="managedName">Huawei.Hms.Texttospeech.Frontend.Services.Replacers.Units.Chinese</attr>
+  <attr path="/api/package[@name='com.huawei.hms.texttospeech.frontend.services.replacers.units.chinese.patterns']" name="managedName">Huawei.Hms.Texttospeech.Frontend.Services.Replacers.Units.Chinese.Patterns</attr>
+  <attr path="/api/package[@name='com.huawei.hms.texttospeech.frontend.services.replacers.units.english']" name="managedName">Huawei.Hms.Texttospeech.Frontend.Services.Replacers.Units.English</attr>
+  <attr path="/api/package[@name='com.huawei.hms.texttospeech.frontend.services.replacers.units.english.patterns']" name="managedName">Huawei.Hms.Texttospeech.Frontend.Services.Replacers.Units.English.Patterns</attr>
+  <attr path="/api/package[@name='com.huawei.hms.texttospeech.frontend.services.tokens']" name="managedName">Huawei.Hms.Texttospeech.Frontend.Services.Tokens</attr>
+  <attr path="/api/package[@name='com.huawei.hms.texttospeech.frontend.services.tokens.entitymetaenum.number']" name="managedName">Huawei.Hms.Texttospeech.Frontend.Services.Tokens.Entitymetaenum.Number</attr>
+  <attr path="/api/package[@name='com.huawei.hms.texttospeech.frontend.services.tools']" name="managedName">Huawei.Hms.Texttospeech.Frontend.Services.Tools</attr>
+  <attr path="/api/package[@name='com.huawei.hms.texttospeech.frontend.services.utils.constants']" name="managedName">Huawei.Hms.Texttospeech.Frontend.Services.Utils.Constants</attr>
+  <attr path="/api/package[@name='com.huawei.hms.texttospeech.frontend.services.utils']" name="managedName">Huawei.Hms.Texttospeech.Frontend.Services.Utils</attr>
+  <attr path="/api/package[@name='com.huawei.hms.texttospeech.frontend.services.verbalizers']" name="managedName">Huawei.Hms.Texttospeech.Frontend.Services.Verbalizers</attr>
+  <attr path="/api/package[@name='com.huawei.hms.texttospeech.frontend.services.verbalizers.money']" name="managedName">Huawei.Hms.Texttospeech.Frontend.Services.Verbalizers.Money</attr>
+  <attr path="/api/package[@name='com.huawei.hms.texttospeech.frontend.services.verbalizers.number2words']" name="managedName">Huawei.Hms.Texttospeech.Frontend.Services.Verbalizers.Number2words</attr>
+  <attr path="/api/package[@name='com.huawei.hms.texttospeech.frontend.services.verbalizers.unit.chinese']" name="managedName">Huawei.Hms.Texttospeech.Frontend.Services.Verbalizers.Unit.Chinese</attr>
+  <attr path="/api/package[@name='com.huawei.hms.texttospeech.frontend.services.verbalizers.unit']" name="managedName">Huawei.Hms.Texttospeech.Frontend.Services.Verbalizers.Unit</attr>
+  <attr path="/api/package[@name='com.huawei.hms.texttospeech.frontend.services.verbalizers.unit.english']" name="managedName">Huawei.Hms.Texttospeech.Frontend.Services.Verbalizers.Unit.English</attr>
+  <attr path="/api/package[@name='com.huawei.hms.tts.voicesynthesizer.services']" name="managedName">Huawei.Hms.Tts.Voicesynthesizer.Services</attr>
+  <attr path="/api/package[@name='com.huawei.hms.tts.voicesynthesizer.tasks']" name="managedName">Huawei.Hms.Tts.Voicesynthesizer.Tasks</attr>
+  <attr path="/api/package[@name='com.huawei.hms.tts.voicesynthesizer.utils']" name="managedName">Huawei.Hms.Tts.Voicesynthesizer.Utils</attr>
+</metadata>

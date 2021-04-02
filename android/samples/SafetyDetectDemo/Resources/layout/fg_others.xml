@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/fg_wifidetect"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/btn_round_corner_normal"
+        android:text="@string/wifidetect"
+        android:textSize="@dimen/btn_text_size" />
+
+    <Button
+        android:id="@+id/fg_userdetect"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="@dimen/btn_height"
+        android:background="@drawable/btn_round_corner_normal"
+        android:text="@string/userdetect"
+        android:textSize="@dimen/btn_text_size" />
+
+        <Button
+        android:id="@+id/fg_risktoken"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="@dimen/btn_height"
+        android:background="@drawable/btn_round_corner_normal"
+        android:text="@string/risktoken"
+        android:textSize="@dimen/btn_text_size" />
+<!--
+     <Button
+        android:id="@+id/fg_antifraud"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="@dimen/btn_height"
+        android:background="@drawable/btn_round_corner_normal"
+        android:text="@string/initantifraud"
+        android:textSize="@dimen/btn_text_size" />-->
+
+</LinearLayout>

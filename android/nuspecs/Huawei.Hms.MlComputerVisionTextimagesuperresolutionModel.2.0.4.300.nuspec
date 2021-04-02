@@ -1,0 +1,33 @@
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Huawei.Hms.MlComputerVisionTextimagesuperresolutionModel</id>
+    <version>2.0.4.300</version>
+    <title>Huawei.Hms.MlComputerVisionTextimagesuperresolutionModel</title>
+    <authors>Huawei</authors>
+    <owners>Huawei</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="file">LICENSE.txt</license>
+    <projectUrl>https://github.com/HMS-Core/hms-xamarin-bindings</projectUrl>
+    <icon>huawei.png</icon>
+    <description>Xamarin.Android bindings for HMS Core - MlComputerVisionTextimagesuperresolutionModel</description>
+    <copyright>© Huawei Technologies Co., Ltd. All rights reserved.</copyright>
+    <tags>Huawei Hms MlComputerVisionTextimagesuperresolutionModel</tags>
+    <dependencies>
+      <group targetFramework="MonoAndroid9.0">
+        <dependency id="Huawei.Hms.DynamicApi" version="1.0.13.303" include="All" />
+        <dependency id="Huawei.Hms.MlComputerAidlbaseInner" version="2.0.5.300" include="All" />
+        <dependency id="Huawei.Hms.MlComputerCommonutilsInner" version="2.0.5.300" include="All" />
+        <dependency id="Huawei.Hms.MlComputerHaInner" version="2.0.5.300" include="All" />
+        <dependency id="Huawei.Hms.MlComputerVisionTextimagesuperresolutionInner" version="2.0.4.300" include="All" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="Java.Interop" targetFramework="MonoAndroid9.0" />
+    </frameworkAssemblies>
+  </metadata>
+  <files>
+    <file src="bin/Release/Huawei.Hms.MlComputerVisionTextimagesuperresolutionModel.dll" target="lib/monoandroid90/Huawei.Hms.MlComputerVisionTextimagesuperresolutionModel.dll" />
+    <file src="../../icons/huawei.png" target="" />
+    <file src="../../LICENSE.txt" target="" />
+  </files>
+</package>

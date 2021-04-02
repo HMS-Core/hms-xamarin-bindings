@@ -1,0 +1,61 @@
+﻿<!--
+Copyright 2020-2021. Huawei Technologies Co., Ltd. All rights reserved.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+<metadata>
+	 <attr path="/api/package[@name='com.huawei.hianalytics.ab.bc.ab']/class[@name='bc.ab']/field[@name='ab']" name="managedName">FieldAb</attr>
+  <attr path="/api/package[@name='com.huawei.hianalytics.ab.bc.cd.bc']/class[@name='ab']/field[@name='ab']" name="managedName">FieldAb</attr>
+  <attr path="/api/package[@name='com.huawei.hianalytics.ab.bc.cd.bc']/class[@name='bc']/field[@name='bc']" name="managedName">FieldBc</attr>
+  <attr path="/api/package[@name='com.huawei.hianalytics.ab.bc.cd.bc']/class[@name='cd']/field[@name='cd']" name="managedName">FieldCd</attr>
+  <attr path="/api/package[@name='com.huawei.hianalytics.ab.gh']/class[@name='ab']/field[@name='ab']" name="managedName">FieldAb</attr>
+  <attr path="/api/package[@name='com.huawei.hianalytics.ab.cd.ab']/class[@name='bc']/field[@name='bc']" name="managedName">FieldBc</attr>
+  <attr path="/api/package[@name='com.huawei.hms.utils']/class[@name='IOUtils']/method[@name='closeQuietly' and count(parameter)=1 and parameter[1][@type='java.io.OutputStream']]" name="managedName">CloseOutputStreamQuietly</attr>
+  <attr path="/api/package[@name='com.huawei.hms.utils']/class[@name='IOUtils']/method[@name='closeQuietly' and count(parameter)=1 and parameter[1][@type='java.io.InputStream']]" name="managedName">CloseInputStreamQuietly</attr>
+  <remove-node path="/api/package[@name='com.huawei.hianalytics.ab.bc.cd.bc']/interface[@name='fg']/method[@name='cd' and count(parameter)=0]" />
+  <remove-node path="/api/package[@name='com.huawei.hianalytics.ab.bc.ab']/interface[@name='fg']/method[@name='ab' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='byte[]']]" />
+  <remove-node path="/api/package[@name='com.huawei.hianalytics.ab.bc.ab']/interface[@name='fg']/method[@name='ab' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.lang.String']]" />
+  <remove-node path="/api/package[@name='com.huawei.hms.common.data']/class[@name='DataHolder']/method[@name='finalize' and count(parameter)=0]" />
+  <attr path="/api/package[@name='com.huawei.hms.common.data']/class[@name='DataHolderCreator']/method[@name='createFromParcel' and count(parameter)=1 and parameter[1][@type='android.os.Parcel']]" name="managedReturn">Java.Lang.Object</attr>
+  <attr path="/api/package[@name='com.huawei.hms.common.data']/class[@name='DataHolderCreator']/method[@name='newArray' and count(parameter)=1 and parameter[1][@type='int']]" name="managedReturn">Java.Lang.Object[]</attr>
+  <attr path="/api/package[@name='com.huawei.hms.support.api']/class[@name='ResolvePendingResult']/method[@name='onComplete' and count(parameter)=1 and parameter[1][@type='T']]" name="managedReturn">Java.Lang.Object</attr>
+  <attr path="/api/package[@name='com.huawei.hms.common.internal']/class[@name='DialogRedirectImpl']/method[@name='redirect' and count(parameter)=0]" name="visibility">protected</attr>
+  <remove-node path="/api/package[@name='com.huawei.hms.support.api.client']/class[@name='ResolvingResultCallbacks']/method[@name='onSuccess' and count(parameter)=1 and parameter[1][@type='R']]" />
+  <add-node path="/api/package[@name='com.huawei.hms.support.api.client']/class[@name='ResolvingResultCallbacks']">
+    <method name="onSuccess" return="void" abstract="false" native="false" synchronized="false" static="false" final="false" deprecated="not deprecated" visibility="public">
+      <parameter name="context" type="java.lang.Object" />
+    </method>
+  </add-node>
+  <add-node path="/api/package[@name='com.huawei.hms.common.data']/class[@name='DBInnerIter']">
+    <method name="remove" return="void" abstract="false" native="false" synchronized="false" static="false" final="false" deprecated="not deprecated" visibility="public" />
+  </add-node>
+
+	<attr path="/api/package[@name='com.huawei.hms.common']/class[@name='FeatureCreator']/method[@name='createFromParcel' and count(parameter)=1 and parameter[1][@type='android.os.Parcel']]"
+		name="managedReturn">Java.Lang.Object</attr>
+
+	<attr path="/api/package[@name='com.huawei.hms.common']/class[@name='FeatureCreator']/method[@name='newArray' and count(parameter)=1 and parameter[1][@type='int']]"
+			name="managedReturn">Java.Lang.Object[]</attr>
+
+	<attr path="/api/package[@name='com.huawei.hms.common.webserverpic']/class[@name='WebServerPicCreator']/method[@name='createFromParcel' and count(parameter)=1 and parameter[1][@type='android.os.Parcel']]"
+	name="managedReturn">Java.Lang.Object</attr>
+
+	<attr path="/api/package[@name='com.huawei.hms.common.webserverpic']/class[@name='WebServerPicCreator']/method[@name='newArray' and count(parameter)=1 and parameter[1][@type='int']]"
+			name="managedReturn">Java.Lang.Object[]</attr>
+
+  <remove-node path="/api/package[@name='com.huawei.hms.common.internal']/class[@name='AbstractClientBuilder']/method[@name='buildClient' and count(parameter)=4 and parameter[1][@type='android.content.Context'] and parameter[2][@type='com.huawei.hms.common.internal.ClientSettings'] and parameter[3][@type='com.huawei.hms.common.internal.BaseHmsClient.OnConnectionFailedListener'] and parameter[4][@type='com.huawei.hms.common.internal.BaseHmsClient.ConnectionCallbacks']]" />
+  
+  <remove-node path="/api/package[@name='com.huawei.hms.common.internal']/class[@name='TaskApiCall']/method[@name='doExecute' and count(parameter)=4 and parameter[1][@type='ClientT'] and parameter[2][@type='com.huawei.hms.common.internal.ResponseErrorCode'] and parameter[3][@type='java.lang.String'] and parameter[4][@type='com.huawei.hmf.tasks.TaskCompletionSource&lt;ResultT&gt;']]"/>
+
+  <remove-node path="/api/package[@name='com.huawei.hms.support.api']/class[@name='PendingResultImpl']/method[@name='onComplete' and count(parameter)=1 and parameter[1][@type='T']]" />
+
+</metadata>

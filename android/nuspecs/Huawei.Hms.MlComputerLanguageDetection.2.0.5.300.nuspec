@@ -1,0 +1,42 @@
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Huawei.Hms.MlComputerLanguageDetection</id>
+    <version>2.0.5.300</version>
+    <title>Huawei.Hms.MlComputerLanguageDetection</title>
+    <authors>Huawei</authors>
+    <owners>Huawei</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="file">LICENSE.txt</license>
+    <projectUrl>https://github.com/HMS-Core/hms-xamarin-bindings</projectUrl>
+    <icon>huawei.png</icon>
+    <description>Xamarin.Android bindings for HMS Core - MlComputerLanguageDetection</description>
+    <copyright>© Huawei Technologies Co., Ltd. All rights reserved.</copyright>
+    <tags>Huawei Hms MlComputerLanguageDetection</tags>
+    <dependencies>
+      <group targetFramework="MonoAndroid9.0">
+        <dependency id="Huawei.Agconnect.AgconnectCore" version="1.4.0.300" include="All" />
+        <dependency id="GoogleGson" version="2.8.5" />
+        <dependency id="Square.Retrofit2" version="2.7.2" />
+        <dependency id="Xamarin.Android.Retrofit2.ConverterScalars" version="2.4.0" />
+        <dependency id="Huawei.Hms.MlComputerHaInner" version="2.0.5.300" include="All" />
+        <dependency id="Huawei.Hms.MlComputerDynamic" version="2.0.5.300" include="All" />
+        <dependency id="Huawei.Hms.MlComputerGrsInner" version="2.0.5.300" include="All" />
+        <dependency id="Huawei.Hms.MlComputerAidlbaseInner" version="2.0.5.300" include="All" />
+        <dependency id="Huawei.Hms.MlComputerCommonutilsInner" version="2.0.5.300" include="All" />
+        <dependency id="Huawei.Hms.MlComputerSdkbaseInner" version="2.0.5.300" include="All" />
+        <dependency id="Huawei.Hms.MlComputerNet" version="2.0.5.300" include="All" />
+        <dependency id="Huawei.Hms.MlComputerLanguageInner" version="2.0.5.300" include="All" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="Java.Interop" targetFramework="MonoAndroid9.0" />
+    </frameworkAssemblies>
+  </metadata>
+  <files>
+    <file src="bin/Release/Huawei.Hms.MlComputerLanguageDetection.dll" target="lib/monoandroid90/Huawei.Hms.MlComputerLanguageDetection.dll" />
+    <file src="../../icons/huawei.png" target="" />
+    <file src="THIRD PARTY OPEN SOURCE SOFTWARE NOTICE.txt" target="THIRD PARTY OPEN SOURCE SOFTWARE NOTICE.txt" />
+    <file src="README.md" target="" />
+    <file src="../../LICENSE.txt" target="" />
+  </files>
+</package>

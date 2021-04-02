@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context="com.huawei.mlkit.example.face.StillFaceAnalyseActivity">
+
+    <ImageView
+        android:id="@+id/image_foreground"
+        android:layout_width="500dp"
+        android:layout_height="230dp">
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/image_result"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/image_foreground"
+        android:layout_width="500dp"
+        android:layout_height="300dp">
+    </ImageView>
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/segment_detect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="15dp"
+            android:layout_margin="10dp"
+            android:textSize="10sp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/upsdk_white"
+            android:text="@string/detect"
+            android:textColor="@color/black">
+        </Button>
+        <Button
+            android:id="@+id/change_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="15dp"
+            android:layout_margin="10dp"
+            android:textSize="10sp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/upsdk_white"
+            android:text="@string/change_photo"
+            android:textColor="@color/black">
+        </Button>
+    </LinearLayout>
+
+</RelativeLayout>

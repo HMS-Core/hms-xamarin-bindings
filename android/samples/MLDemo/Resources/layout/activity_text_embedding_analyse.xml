@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:text="Dictionary version:"
+                android:textSize="40px" />
+
+            <TextView
+                android:id="@+id/tv_dic_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text7"
+                android:hint="Version:"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:textSize="40px" />
+
+            <Button
+                android:id="@+id/bt_dic_info"
+                android:layout_width="141dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_dic_info"
+                android:layout_alignParentEnd="true"
+                android:hint="Dictionary version" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/texts1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:text="Words (separated by commas):"
+                android:textSize="60px" />
+
+            <EditText
+                android:id="@+id/et_words2v"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/texts1"
+                android:hint="Enter multiple words separated by commas (,)."
+                android:lines="1"
+                android:text="China,Japan,USA" />
+
+            <Button
+                android:id="@+id/bt_words2v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_words2v"
+                android:layout_alignParentEnd="true"
+                android:hint="WordBatchVector" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:text="word:"
+                android:textSize="60px" />
+
+            <EditText
+                android:id="@+id/et_word2v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/text1"
+                android:hint="Please enter words"
+                android:lines="1"
+                android:text="hello" />
+
+            <Button
+                android:id="@+id/bt_word2v"
+                android:layout_width="141dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_word2v"
+                android:layout_alignParentEnd="true"
+                android:hint="WordVector" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#A9A9A9" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:text="sentence:"
+                android:textSize="60px" />
+
+            <EditText
+                android:id="@+id/et_sentence2v"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/text2"
+                android:hint="Please enter a sentence"
+                android:lines="1"
+                android:text="hello world" />
+
+            <Button
+                android:id="@+id/bt_sentence2v"
+                android:layout_width="141dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_sentence2v"
+                android:layout_alignParentEnd="true"
+                android:hint="SentenceVector" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#A9A9A9" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="57dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:text="word:"
+                android:textSize="60px" />
+
+            <EditText
+                android:id="@+id/et1_word2s"
+                android:layout_width="138dp"
+                android:layout_height="68dp"
+                android:layout_toRightOf="@id/text3"
+                android:hint="first word"
+                android:lines="1"
+                android:text="hello" />
+
+            <EditText
+                android:id="@+id/et2_word2s"
+                android:layout_width="161dp"
+                android:layout_height="68dp"
+                android:layout_marginLeft="-1dp"
+                android:layout_toRightOf="@id/et1_word2s"
+                android:hint="second word"
+                android:lines="1"
+                android:text="world" />
+
+            <Button
+                android:id="@+id/bt_word2s"
+                android:layout_width="141dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et2_word2s"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="4dp"
+                android:hint="WordSimilarity" />
+
+            <TextView
+                android:id="@+id/word2s"
+                android:layout_width="wrap_content"
+                android:layout_height="58dp"
+                android:layout_below="@id/text3"
+                android:layout_marginTop="25dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:text="Similarity:"
+                android:textSize="60px" />
+
+            <TextView
+                android:id="@+id/tv_word2s"
+                android:layout_width="132dp"
+                android:layout_height="61dp"
+                android:layout_below="@id/text3"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="27dp"
+                android:layout_toRightOf="@id/word2s"
+                android:hint="[0,1]"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:textSize="40px" />
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#A9A9A9" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:text="sentence:"
+                android:textSize="60px" />
+
+            <EditText
+                android:id="@+id/et1_sentence2s"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/text4"
+                android:hint="Please enter the first sentence"
+                android:lines="1"
+                android:text="I love dad" />
+
+            <TextView
+                android:id="@+id/text41"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et1_sentence2s"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:text="sentence:"
+                android:textSize="60px" />
+
+            <EditText
+                android:id="@+id/et2_sentence2s"
+                android:layout_width="257dp"
+                android:layout_height="56dp"
+                android:layout_below="@id/et1_sentence2s"
+                android:layout_toRightOf="@id/text41"
+                android:hint="Please enter the second sentence"
+                android:lines="1"
+                android:text="I love mom" />
+
+            <Button
+                android:id="@+id/bt_sentence2s"
+                android:layout_width="142dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et2_sentence2s"
+                android:layout_alignParentEnd="true"
+                android:hint="SentenceSimilarity" />
+
+            <TextView
+                android:id="@+id/sentenceST"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et2_sentence2s"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:text="Similarity:"
+                android:textSize="60px" />
+
+            <TextView
+                android:id="@+id/tv_sentence2s"
+                android:layout_width="115dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et2_sentence2s"
+                android:layout_toRightOf="@id/sentenceST"
+                android:hint="[0,1]"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:textSize="40px" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#A9A9A9" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:text="word:"
+                android:textSize="60px" />
+
+            <EditText
+                android:id="@+id/et_word_for_simil"
+                android:layout_width="76dp"
+                android:layout_height="59dp"
+                android:layout_toRightOf="@id/text5"
+                android:hint="Please enter words"
+                android:lines="1"
+                android:text="happy" />
+
+            <TextView
+                android:id="@+id/text6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_toRightOf="@id/et_word_for_simil"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:text="Quantity:"
+                android:textSize="60px" />
+
+            <EditText
+                android:id="@+id/et_num_for_simil"
+                android:layout_width="48dp"
+                android:layout_height="59dp"
+                android:layout_toRightOf="@id/text6"
+                android:hint="Please enter the quantity"
+                android:lines="1"
+                android:text="5" />
+
+            <TextView
+                android:id="@+id/simil_words"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text5"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:text="Similar words:"
+                android:textSize="60px" />
+
+            <TextView
+                android:id="@+id/tv_simil_words"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text5"
+                android:layout_toRightOf="@id/simil_words"
+                android:hint="Similar words"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:textSize="60px" />
+
+            <Button
+                android:id="@+id/bt_word_for_simil"
+                android:layout_width="141dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_simil_words"
+                android:layout_alignParentEnd="true"
+                android:hint="SimilarWords" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

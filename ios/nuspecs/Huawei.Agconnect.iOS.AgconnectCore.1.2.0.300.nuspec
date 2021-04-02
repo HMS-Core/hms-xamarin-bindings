@@ -1,0 +1,24 @@
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Huawei.Agconnect.iOS.AgconnectCore</id>
+    <version>1.2.0.300</version>
+    <title>Huawei.Agconnect.iOS.AgconnectCore</title>
+    <authors>Huawei</authors>
+    <owners>Huawei</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+     <license type="file">LICENSE.txt</license>
+    <projectUrl>https://github.com/HMS-Core/hms-xamarin-bindings</projectUrl>
+    <icon>huawei.png</icon>
+    <description>C# bindings for Huawei AgconnectCore iOS Library</description>
+    <copyright>© Huawei Technologies Co., Ltd. All rights reserved.</copyright>
+    <tags>Huawei Agconnect AgconnectCore</tags>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="Xamarin.iOS" targetFramework="Xamarin.iOS1.0" />
+    </frameworkAssemblies>
+  </metadata>
+  <files>
+    <file src="Huawei.Agconnect.AgconnectCore.dll" target="lib/xamarinios10/Huawei.Agconnect.AgconnectCore.dll" />
+    <file src="../../../../icons/huawei.png" target="" /> 
+    <file src="../../../../LICENSE.txt" target="" />
+  </files>
+</package>

@@ -1,0 +1,180 @@
+﻿<!--Copyright 2020. Huawei Technologies Co., Ltd. All rights reserved.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+<metadata>
+
+	<!--Renaming IResolvableTaskResult Params-->
+	<attr path="/api/package[@name='com.huawei.hms.wallet']/interface[@name='IResolvableTaskResult']/method[@name='addIntent' and count(parameter)=1 and parameter[1][@type='android.content.Intent']]/parameter[1]" name="managedName">intent</attr>
+
+	<!--Renaming Wallet Params-->
+	<attr path="/api/package[@name='com.huawei.hms.wallet']/class[@name='Wallet']/method[@name='getWalletPassClient' and count(parameter)=1 and parameter[1][@type='android.app.Activity']]/parameter[1]" name="managedName">activity</attr>
+
+	<!--Renaming CreateWalletPassRequest Params-->
+	<attr path="/api/package[@name='com.huawei.hms.wallet']/class[@name='CreateWalletPassRequest']/constructor[@name='CreateWalletPassRequest' and count(parameter)=1 and parameter[1][@type='java.lang.String']]/parameter[1]" name="managedName">jwe</attr>
+
+	<attr path="/api/package[@name='com.huawei.hms.wallet']/class[@name='CreateWalletPassRequest']/method[@name='writeToParcel' and count(parameter)=2 and parameter[1][@type='android.os.Parcel'] and parameter[2][@type='int']] /parameter[1]" name="managedName">parcel</attr>
+
+	<attr path="/api/package[@name='com.huawei.hms.wallet']/class[@name='CreateWalletPassRequest']/method[@name='writeToParcel' and count(parameter)=2 and parameter[1][@type='android.os.Parcel'] and parameter[2][@type='int']] /parameter[2]" name="managedName">flags</attr>
+
+	<!--Renaming CreateWalletPassRequest.Builder Params-->
+	<attr path="/api/package[@name='com.huawei.hms.wallet']/class[@name='CreateWalletPassRequest.Builder']/method[@name='setContent' and count(parameter)=1 and parameter[1][@type='java.lang.String']]/parameter[1]" name="managedName">content</attr>
+
+	<!--Renaming WalletPassClient Params-->
+	<attr path="/api/package[@name='com.huawei.hms.wallet']/class[@name='WalletPassClient']/constructor[@name='WalletPassClient' and count(parameter)=1 and parameter[1][@type='android.app.Activity']]/parameter[1]" name="managedName">activity</attr>
+
+	<attr path="/api/package[@name='com.huawei.hms.wallet']/class[@name='WalletPassClient']/method[@name='createWalletPass' and count(parameter)=1 and parameter[1][@type='com.huawei.hms.wallet.CreateWalletPassRequest']]/parameter[1]" name="managedName">request</attr>
+
+	<!--Renaming AutoResolvableForegroundIntentResult Params-->
+	<attr path="/api/package[@name='com.huawei.hms.wallet']/class[@name='AutoResolvableForegroundIntentResult']/method[@name='addIntent' and count(parameter)=1 and parameter[1][@type='android.content.Intent']]/parameter[1]" name="managedName">intent</attr>
+
+	<!--Renaming ResolveTaskHelper Params-->
+	<attr path="/api/package[@name='com.huawei.hms.wallet']/class[@name='ResolveTaskHelper']/method[@name='excuteTask' and count(parameter)=3 and parameter[1][@type='com.huawei.hmf.tasks.Task&lt;TResult&gt;'] and parameter[2][@type='android.app.Activity'] and parameter[3][@type='int']]/parameter[1]" name="managedName">task</attr>
+
+	<attr path="/api/package[@name='com.huawei.hms.wallet']/class[@name='ResolveTaskHelper']/method[@name='excuteTask' and count(parameter)=3 and parameter[1][@type='com.huawei.hmf.tasks.Task&lt;TResult&gt;'] and parameter[2][@type='android.app.Activity'] and parameter[3][@type='int']]/parameter[2]" name="managedName">activity</attr>
+
+	<attr path="/api/package[@name='com.huawei.hms.wallet']/class[@name='ResolveTaskHelper']/method[@name='excuteTask' and count(parameter)=3 and parameter[1][@type='com.huawei.hmf.tasks.Task&lt;TResult&gt;'] and parameter[2][@type='android.app.Activity'] and parameter[3][@type='int']]/parameter[3]" name="managedName">requestCode</attr>
+
+	<!--Renaming BarCode.Builder Params-->
+	<attr path="/api/package[@name='com.huawei.hms.wallet.pass']/class[@name='BarCode.Builder']/method[@name='setText' and count(parameter)=1 and parameter[1][@type='java.lang.String']]/parameter[1]" name="managedName">text</attr>
+
+	<attr path="/api/package[@name='com.huawei.hms.wallet.pass']/class[@name='BarCode.Builder']/method[@name='setType' and count(parameter)=1 and parameter[1][@type='java.lang.String']]/parameter[1]" name="managedName">type</attr>
+
+	<attr path="/api/package[@name='com.huawei.hms.wallet.pass']/class[@name='BarCode.Builder']/method[@name='setValue' and count(parameter)=1 and parameter[1][@type='java.lang.String']]/parameter[1]" name="managedName">value</attr>
+
+	<!--Renaming AppendField.Builder Params-->
+	<attr path="/api/package[@name='com.huawei.hms.wallet.pass']/class[@name='AppendField.Builder']/method[@name='setKey' and count(parameter)=1 and parameter[1][@type='java.lang.String']]/parameter[1]" name="managedName">key</attr>
+
+	<attr path="/api/package[@name='com.huawei.hms.wallet.pass']/class[@name='AppendField.Builder']/method[@name='setValue' and count(parameter)=1 and parameter[1][@type='java.lang.String']]/parameter[1]" name="managedName">value</attr>
+
+	<attr path="/api/package[@name='com.huawei.hms.wallet.pass']/class[@name='AppendField.Builder']/method[@name='setLabel' and count(parameter)=1 and parameter[1][@type='java.lang.String']]/parameter[1]" name="managedName">label</attr>
+
+	<!--Renaming CommonField.Builder Params-->
+	<attr path="/api/package[@name='com.huawei.hms.wallet.pass']/class[@name='CommonField.Builder']/method[@name='setKey' and count(parameter)=1 and parameter[1][@type='java.lang.String']]/parameter[1]" name="managedName">key</attr>
+
+	<attr path="/api/package[@name='com.huawei.hms.wallet.pass']/class[@name='CommonField.Builder']/method[@name='setValue' and count(parameter)=1 and parameter[1][@type='java.lang.String']]/parameter[1]" name="managedName">value</attr>
+
+	<attr path="/api/package[@name='com.huawei.hms.wallet.pass']/class[@name='CommonField.Builder']/method[@name='setLabel' and count(parameter)=1 and parameter[1][@type='java.lang.String']]/parameter[1]" name="managedName">label</attr>
+
+	<!--Renaming PassStatus.Builder Params-->
+	<attr path="/api/package[@name='com.huawei.hms.wallet.pass']/class[@name='PassStatus.Builder']/method[@name='setState' and count(parameter)=1 and parameter[1][@type='java.lang.String']]/parameter[1]" name="managedName">state</attr>
+
+	<attr path="/api/package[@name='com.huawei.hms.wallet.pass']/class[@name='PassStatus.Builder']/method[@name='setEffectTime' and count(parameter)=1 and parameter[1][@type='java.lang.String']]/parameter[1]" name="managedName">effectTime</attr>
+
+	<attr path="/api/package[@name='com.huawei.hms.wallet.pass']/class[@name='PassStatus.Builder']/method[@name='setExpireTime' and count(parameter)=1 and parameter[1][@type='java.lang.String']]/parameter[1]" name="managedName">expireTime</attr>
+
+	<!--Renaming RelatedPassInfo Params-->
+	<attr path="/api/package[@name='com.huawei.hms.wallet.pass']/class[@name='RelatedPassInfo']/method[@name='setPassClassId' and count(parameter)=1 and parameter[1][@type='java.lang.String']]/parameter[1]" name="managedName">passClassId</attr>
+
+	<attr path="/api/package[@name='com.huawei.hms.wallet.pass']/class[@name='RelatedPassInfo']/method[@name='setPassId' and count(parameter)=1 and parameter[1][@type='java.lang.String']]/parameter[1]" name="managedName">passId</attr>
+
+	<!--Renaming PassObject.Builder Params-->
+	<attr path="/api/package[@name='com.huawei.hms.wallet.pass']/class[@name='PassObject.Builder']/method[@name='setPassTypeIdentifier' and count(parameter)=1 and parameter[1][@type='java.lang.String']]/parameter[1]" name="managedName">passTypeIdentifier</attr>
+
+	<attr path="/api/package[@name='com.huawei.hms.wallet.pass']/class[@name='PassObject.Builder']/method[@name='setCurrencyCode' and count(parameter)=1 and parameter[1][@type='java.lang.String']]/parameter[1]" name="managedName">currencyCode</attr>
+
+	<attr path="/api/package[@name='com.huawei.hms.wallet.pass']/class[@name='PassObject.Builder']/method[@name='addUrlList' and count(parameter)=1 and parameter[1][@type='java.util.Collection&lt;com.huawei.hms.wallet.pass.AppendField&gt;']]/parameter[1]" name="managedName">urlList</attr>
+
+	<attr path="/api/package[@name='com.huawei.hms.wallet.pass']/class[@name='PassObject.Builder']/method[@name='setPassStyleIdentifier' and count(parameter)=1 and parameter[1][@type='java.lang.String']]/parameter[1]" name="managedName">passStyleIdentifier</attr>
+
+	<attr path="/api/package[@name='com.huawei.hms.wallet.pass']/class[@name='PassObject.Builder']/method[@name='setOrganizationPassId' and count(parameter)=1 and parameter[1][@type='java.lang.String']]/parameter[1]" name="managedName">organizationPassId</attr>
+
+	<attr path="/api/package[@name='com.huawei.hms.wallet.pass']/class[@name='PassObject.Builder']/method[@name='setSerialNumber' and count(parameter)=1 and parameter[1][@type='java.lang.String']]/parameter[1]" name="managedName">serialNumber</attr>
+
+	<attr path="/api/package[@name='com.huawei.hms.wallet.pass']/class[@name='PassObject.Builder']/method[@name='setStatus' and count(parameter)=1 and parameter[1][@type='com.huawei.hms.wallet.pass.PassStatus']]/parameter[1]" name="managedName">status</attr>
+
+	<attr path="/api/package[@name='com.huawei.hms.wallet.pass']/class[@name='PassObject.Builder']/method[@name='addRelatedPassIds' and count(parameter)=1 and parameter[1][@type='java.util.Collection&lt;com.huawei.hms.wallet.pass.RelatedPassInfo&gt;']]/parameter[1]" name="managedName">relatedPassIds</attr>
+
+	<attr path="/api/package[@name='com.huawei.hms.wallet.pass']/class[@name='PassObject.Builder']/method[@name='addLocationList' and count(parameter)=1 and parameter[1][@type='java.util.Collection&lt;com.huawei.hms.wallet.pass.Location&gt;']]/parameter[1]" name="managedName">locationList</attr>
+
+	<attr path="/api/package[@name='com.huawei.hms.wallet.pass']/class[@name='PassObject.Builder']/method[@name='setBarCode' and count(parameter)=1 and parameter[1][@type='com.huawei.hms.wallet.pass.BarCode']]/parameter[1]" name="managedName">barCode</attr>
+
+	<attr path="/api/package[@name='com.huawei.hms.wallet.pass']/class[@name='PassObject.Builder']/method[@name='addCommonFields' and count(parameter)=1 and parameter[1][@type='java.util.Collection&lt;com.huawei.hms.wallet.pass.CommonField&gt;']]/parameter[1]" name="managedName">commonFields</attr>
+
+	<attr path="/api/package[@name='com.huawei.hms.wallet.pass']/class[@name='PassObject.Builder']/method[@name='addAppendFields' and count(parameter)=1 and parameter[1][@type='java.util.Collection&lt;com.huawei.hms.wallet.pass.AppendField&gt;']]/parameter[1]" name="managedName">appendFields</attr>
+
+	<attr path="/api/package[@name='com.huawei.hms.wallet.pass']/class[@name='PassObject.Builder']/method[@name='addMessageList' and count(parameter)=1 and parameter[1][@type='java.util.Collection&lt;com.huawei.hms.wallet.pass.AppendField&gt;']]/parameter[1]" name="managedName">messageList</attr>
+
+	<attr path="/api/package[@name='com.huawei.hms.wallet.pass']/class[@name='PassObject.Builder']/method[@name='addImageList' and count(parameter)=1 and parameter[1][@type='java.util.Collection&lt;com.huawei.hms.wallet.pass.AppendField&gt;']]/parameter[1]" name="managedName">imageList</attr>
+
+	<attr path="/api/package[@name='com.huawei.hms.wallet.pass']/class[@name='PassObject.Builder']/method[@name='addTextList' and count(parameter)=1 and parameter[1][@type='java.util.Collection&lt;com.huawei.hms.wallet.pass.AppendField&gt;']]/parameter[1]" name="managedName">textList</attr>
+
+	<!--Renaming WalletPassApi Params-->
+	<attr path="/api/package[@name='com.hw.passsdk']/class[@name='WalletPassApi']/method[@name='canAddPass' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.lang.String']]/parameter[1]" name="managedName">appId</attr>
+
+	<attr path="/api/package[@name='com.hw.passsdk']/class[@name='WalletPassApi']/method[@name='canAddPass' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.lang.String']]/parameter[2]" name="managedName">passTypeId</attr>
+
+	<attr path="/api/package[@name='com.hw.passsdk']/class[@name='WalletPassApi']/method[@name='addPass' and count(parameter)=1 and parameter[1][@type='java.lang.String']]/parameter[1]" name="managedName">hwPassData</attr>
+
+	<attr path="/api/package[@name='com.hw.passsdk']/class[@name='WalletPassApi']/method[@name='requireAccessToken' and count(parameter)=1 and parameter[1][@type='java.lang.String']]/parameter[1]" name="managedName">passTypeId</attr>
+
+	<attr path="/api/package[@name='com.hw.passsdk']/class[@name='WalletPassApi']/method[@name='requireAccessCardSec' and count(parameter)=3 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.lang.String'] and parameter[3][@type='java.lang.String']]/parameter[1]" name="managedName">passTypeId</attr>
+
+	<attr path="/api/package[@name='com.hw.passsdk']/class[@name='WalletPassApi']/method[@name='requireAccessCardSec' and count(parameter)=3 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.lang.String'] and parameter[3][@type='java.lang.String']]/parameter[2]" name="managedName">passId</attr>
+
+	<attr path="/api/package[@name='com.hw.passsdk']/class[@name='WalletPassApi']/method[@name='requireAccessCardSec' and count(parameter)=3 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.lang.String'] and parameter[3][@type='java.lang.String']]/parameter[3]" name="managedName">sign</attr>
+
+	<attr path="/api/package[@name='com.hw.passsdk']/class[@name='WalletPassApi']/method[@name='modifyNFCCard' and count(parameter)=6 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.lang.String'] and parameter[3][@type='java.lang.String'] and parameter[4][@type='java.lang.String'] and parameter[5][@type='java.lang.String'] and parameter[6][@type='com.huawei.wallet.hmspass.service.IpassModifyNFCCardImpl']]/parameter[1]" name="managedName">passTypeId</attr>
+
+	<attr path="/api/package[@name='com.hw.passsdk']/class[@name='WalletPassApi']/method[@name='modifyNFCCard' and count(parameter)=6 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.lang.String'] and parameter[3][@type='java.lang.String'] and parameter[4][@type='java.lang.String'] and parameter[5][@type='java.lang.String'] and parameter[6][@type='com.huawei.wallet.hmspass.service.IpassModifyNFCCardImpl']]/parameter[2]" name="managedName">passId</attr>
+
+	<attr path="/api/package[@name='com.hw.passsdk']/class[@name='WalletPassApi']/method[@name='modifyNFCCard' and count(parameter)=6 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.lang.String'] and parameter[3][@type='java.lang.String'] and parameter[4][@type='java.lang.String'] and parameter[5][@type='java.lang.String'] and parameter[6][@type='com.huawei.wallet.hmspass.service.IpassModifyNFCCardImpl']]/parameter[3]" name="managedName">cardParams</attr>
+
+	<attr path="/api/package[@name='com.hw.passsdk']/class[@name='WalletPassApi']/method[@name='modifyNFCCard' and count(parameter)=6 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.lang.String'] and parameter[3][@type='java.lang.String'] and parameter[4][@type='java.lang.String'] and parameter[5][@type='java.lang.String'] and parameter[6][@type='com.huawei.wallet.hmspass.service.IpassModifyNFCCardImpl']]/parameter[4]" name="managedName">reason</attr>
+
+	<attr path="/api/package[@name='com.hw.passsdk']/class[@name='WalletPassApi']/method[@name='modifyNFCCard' and count(parameter)=6 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.lang.String'] and parameter[3][@type='java.lang.String'] and parameter[4][@type='java.lang.String'] and parameter[5][@type='java.lang.String'] and parameter[6][@type='com.huawei.wallet.hmspass.service.IpassModifyNFCCardImpl']]/parameter[5]" name="managedName">sign</attr>
+
+	<attr path="/api/package[@name='com.hw.passsdk']/class[@name='WalletPassApi']/method[@name='modifyNFCCard' and count(parameter)=6 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.lang.String'] and parameter[3][@type='java.lang.String'] and parameter[4][@type='java.lang.String'] and parameter[5][@type='java.lang.String'] and parameter[6][@type='com.huawei.wallet.hmspass.service.IpassModifyNFCCardImpl']]/parameter[6]" name="managedName">callBack</attr>
+
+	<attr path="/api/package[@name='com.hw.passsdk']/class[@name='WalletPassApi']/method[@name='readNFCCard' and count(parameter)=5 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.lang.String'] and parameter[3][@type='java.lang.String'] and parameter[4][@type='java.lang.String'] and parameter[5][@type='java.lang.String']]/parameter[1]" name="managedName">passTypeId</attr>
+
+	<attr path="/api/package[@name='com.hw.passsdk']/class[@name='WalletPassApi']/method[@name='readNFCCard' and count(parameter)=5 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.lang.String'] and parameter[3][@type='java.lang.String'] and parameter[4][@type='java.lang.String'] and parameter[5][@type='java.lang.String']]/parameter[2]" name="managedName">passId</attr>
+
+	<attr path="/api/package[@name='com.hw.passsdk']/class[@name='WalletPassApi']/method[@name='readNFCCard' and count(parameter)=5 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.lang.String'] and parameter[3][@type='java.lang.String'] and parameter[4][@type='java.lang.String'] and parameter[5][@type='java.lang.String']]/parameter[3]" name="managedName">cardParams</attr>
+
+	<attr path="/api/package[@name='com.hw.passsdk']/class[@name='WalletPassApi']/method[@name='readNFCCard' and count(parameter)=5 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.lang.String'] and parameter[3][@type='java.lang.String'] and parameter[4][@type='java.lang.String'] and parameter[5][@type='java.lang.String']]/parameter[4]" name="managedName">reason</attr>
+
+	<attr path="/api/package[@name='com.hw.passsdk']/class[@name='WalletPassApi']/method[@name='readNFCCard' and count(parameter)=5 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.lang.String'] and parameter[3][@type='java.lang.String'] and parameter[4][@type='java.lang.String'] and parameter[5][@type='java.lang.String']]/parameter[5]" name="managedName">sign</attr>
+
+	<attr path="/api/package[@name='com.hw.passsdk']/class[@name='WalletPassApi']/method[@name='deletePass' and count(parameter)=3 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.lang.String'] and parameter[3][@type='java.lang.String']]/parameter[1]" name="managedName">passTypeId</attr>
+
+	<attr path="/api/package[@name='com.hw.passsdk']/class[@name='WalletPassApi']/method[@name='deletePass' and count(parameter)=3 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.lang.String'] and parameter[3][@type='java.lang.String']]/parameter[2]" name="managedName">passId</attr>
+
+	<attr path="/api/package[@name='com.hw.passsdk']/class[@name='WalletPassApi']/method[@name='deletePass' and count(parameter)=3 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.lang.String'] and parameter[3][@type='java.lang.String']]/parameter[3]" name="managedName">sign</attr>
+
+	<attr path="/api/package[@name='com.hw.passsdk']/class[@name='WalletPassApi']/method[@name='queryPassStatus' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.lang.String']]/parameter[1]" name="managedName">passTypeId</attr>
+
+	<attr path="/api/package[@name='com.hw.passsdk']/class[@name='WalletPassApi']/method[@name='queryPassStatus' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.lang.String']]/parameter[2]" name="managedName">passId</attr>
+
+	<attr path="/api/package[@name='com.hw.passsdk']/class[@name='WalletPassApi']/method[@name='requirePassDeviceId' and count(parameter)=1 and parameter[1][@type='java.lang.String']]/parameter[1]" name="managedName">passTypeId</attr>
+
+	<attr path="/api/package[@name='com.hw.passsdk']/class[@name='WalletPassApi']/method[@name='queryPass' and count(parameter)=1 and parameter[1][@type='java.lang.String']]/parameter[1]" name="managedName">requestBody</attr>
+
+	<attr path="/api/package[@name='com.hw.passsdk']/class[@name='WalletPassApi']/method[@name='requestRegister' and count(parameter)=1 and parameter[1][@type='java.lang.String']]/parameter[1]" name="managedName">registerRequestBody</attr>
+
+	<attr path="/api/package[@name='com.hw.passsdk']/class[@name='WalletPassApi']/method[@name='confirmRegister' and count(parameter)=1 and parameter[1][@type='java.lang.String']]/parameter[1]" name="managedName">registerConfirmBody</attr>
+
+	<attr path="/api/package[@name='com.hw.passsdk']/class[@name='WalletPassApi']/method[@name='requestPersonalize' and count(parameter)=1 and parameter[1][@type='java.lang.String']]/parameter[1]" name="managedName">personalizeRequestBody</attr>
+
+	<attr path="/api/package[@name='com.hw.passsdk']/class[@name='WalletPassApi']/method[@name='confirmPersonalize' and count(parameter)=1 and parameter[1][@type='java.lang.String']]/parameter[1]" name="managedName">personalizeConfirmBody</attr>
+
+	<attr path="/api/package[@name='com.hw.passsdk']/class[@name='WalletPassApi']/method[@name='requestTransaction' and count(parameter)=1 and parameter[1][@type='java.lang.String']]/parameter[1]" name="managedName">requestTransBody</attr>
+
+	<attr path="/api/package[@name='com.hw.passsdk']/class[@name='WalletPassApi']/method[@name='confirmTransaction' and count(parameter)=1 and parameter[1][@type='java.lang.String']]/parameter[1]" name="managedName">confirmTransBody</attr>
+
+	<!-- Renaming Location Params-->
+	<attr path="/api/package[@name='com.huawei.hms.wallet.pass']/class[@name='Location']/constructor[@name='Location' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.lang.String']]/parameter[1]" name="managedName">longitude</attr>
+
+	<attr path="/api/package[@name='com.huawei.hms.wallet.pass']/class[@name='Location']/constructor[@name='Location' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.lang.String']]/parameter[2]" name="managedName">latitude</attr>
+</metadata>

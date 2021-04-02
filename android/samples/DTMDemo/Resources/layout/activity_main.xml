@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/colorWhite"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/btnAppsFlyerTag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="@string/btn_appsflyer_tag"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorPrimaryDark"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btnHiAnalyticsTag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="@string/btn_hianalytics_tag"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorPrimaryDark"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btnFirebaseTag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="@string/btn_firebase_tag"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorPrimaryDark"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+
+
+</LinearLayout>

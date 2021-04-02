@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        style="@style/HiDisk_EMUI10_list_item_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/emui10_list_min_height_64"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingBottom="@dimen/emui10_welcome_img_height"
+        android:layout_centerInParent="true">
+        <ImageView
+            android:id="@+id/welcome_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/image_cloud_setting">
+        </ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/HiDisk_EMUI10_list_item_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/emui10_list_min_height_64"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="@dimen/emui10_elementsMarginVerticalM"
+        android:paddingBottom="@dimen/emui10_elementsMarginVerticalM">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:scaleType="centerInside"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/emui10_elementsMarginHorizontalM"
+                android:fontFamily="HwChinese-medium"
+                android:text="@string/app_name"
+                android:textColor="@color/emui10_textColorSecondary"
+                android:textSize="@dimen/emui10_title_14" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/splash_info"
+            android:layout_marginTop="@dimen/emui10_elementsMarginVerticalM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="@color/emui10_textColorSecondary"
+            android:textSize="@dimen/emui10_title_9" />
+    </LinearLayout>
+
+</RelativeLayout>

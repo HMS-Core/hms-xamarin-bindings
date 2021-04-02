@@ -1,0 +1,54 @@
+<resources>
+  <string name="app_name">Xamarin HMS Site Kit Demo</string>
+  <string name="action_settings">Settings</string>
+  <string name="start_place_nearby_place_search_activity">Nearby Place Search</string>
+  <string name="start_place_detail_search_activity">Place Detail Search</string>
+  <string name="start_place_suggestion_search_activity">Place Suggestion Search</string>
+  <string name="start_keyword_search_activity">Keyowrd Search</string>
+  <string name="start_auto_complete_search_activity">Query AutoComplete Search</string>
+  <string name="search_place">Search Place</string>
+  <string name="search_nearby_places">Search Nearby Places</string>
+  <string name="search_place_suggestion">Search Place Suggestion</string>
+  <string name="search_keyword">Keyowrd Search</string>
+  <string name="search_auto_complete">Query AutoComplete Search</string>
+  <string name="get_place_details">Get Place Details</string>
+  <string name="parameters">Parameters</string>
+  <string name="result">Result</string>
+  <string name="query_">Query: </string>
+  <string name="latitude_">Latitude: </string>
+  <string name="longitude_">Latitude: </string>
+  <string name="radius_">Radius: </string>
+  <string name="language_">Language: </string>
+  <string name="country_code_">Country Code: </string>
+  <string name="page_index_">Page Index: </string>
+  <string name="page_size_">Page Size: </string>
+  <string name="site_id_">Site ID: </string>
+  <string name="input_query">Eiffel Tower</string>
+  <string name="input_query_pss">Paris</string>
+  <string name="input_latitude">48.893478</string>
+  <string name="input_longitude">2.334595</string>
+  <string name="input_radius">500</string>
+  <string name="input_language">En</string>
+  <string name="input_country_code">FR</string>
+  <string name="input_page_index">1</string>
+  <string name="input_page_size">20</string>
+  <string name="input_site_id">977B75943A9F01D561FF2073AE1D9353</string>
+
+  <!-- TextSearch -->
+  <string name="text_search_query_label" translatable="false">Query:</string>
+  <string name="text_search_query_def_value" translatable="false">SQUARE</string>
+  <string name="text_search_location_label" translatable="false">Location:</string>
+  <string name="text_search_location_lat_def_value" translatable="false">48.8815</string>
+  <string name="text_search_location_lng_def_value" translatable="false">2.4444</string>
+  <string name="text_search_radius_label" translatable="false">Radius:</string>
+  <string name="text_search_radius_def_value" translatable="false">50</string>
+  <string name="text_search_poitype_label" translatable="false">POIType:</string>
+  <string name="text_search_country_label" translatable="false">Country:</string>
+  <string name="text_search_language_label" translatable="false">Language:</string>
+  <string name="text_search_pageindex_label" translatable="false">PageIndex:</string>
+  <string name="text_search_pagesize_label" translatable="false">PageSize:</string>
+
+  <!-- Common -->
+  <string name="children_label" translatable="false">children:</string>
+  <string name="strictBounds_label" translatable="false">strictBounds:</string>
+</resources>

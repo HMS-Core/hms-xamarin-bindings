@@ -1,0 +1,38 @@
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Huawei.Hms.MlComputerModelDownload</id>
+    <version>2.0.4.300</version>
+    <title>Huawei.Hms.MlComputerModelDownload</title>
+    <authors>Huawei</authors>
+    <owners>Huawei</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="file">LICENSE.txt</license>
+    <projectUrl>https://github.com/HMS-Core/hms-xamarin-bindings</projectUrl>
+    <icon>huawei.png</icon>
+    <description>Xamarin.Android bindings for HMS Core - MlComputerModelDownload</description>
+    <copyright>© Huawei Technologies Co., Ltd. All rights reserved.</copyright>
+    <tags>Huawei Hms MlComputerModelDownload</tags>
+    <dependencies>
+      <group targetFramework="MonoAndroid9.0">
+        <dependency id="Huawei.Hmf.Tasks" version="1.4.1.300" include="All" />
+        <dependency id="Huawei.Hms.MlComputerAgcInner" version="2.0.3.300" include="All" />
+        <dependency id="Huawei.Hms.MlComputerHaInner" version="2.0.3.300" include="All" />
+        <dependency id="Huawei.Hms.MlComputerCommonutilsInner" version="2.0.3.300" include="All" />
+        <dependency id="Huawei.Hms.MlComputerSdkbaseInner" version="2.0.3.300" include="All" />
+        <dependency id="Huawei.Hms.MlComputerNet" version="2.0.3.300" include="All" />
+        <dependency id="Huawei.Hms.MlComputerGrsInner" version="2.0.3.300" include="All" />
+        <dependency id="Square.OkHttp3" version="3.12.0" />
+        <dependency id="GoogleGson" version="2.8.5" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="Java.Interop" targetFramework="MonoAndroid9.0" />
+    </frameworkAssemblies>
+  </metadata>
+  <files>
+    <file src="bin/Release/Huawei.Hms.MlComputerModelDownload.dll" target="lib/monoandroid90/Huawei.Hms.MlComputerModelDownload.dll" />
+    <file src="../../icons/huawei.png" target="" />
+    <file src="THIRD PARTY OPEN SOURCE SOFTWARE NOTICE.txt" target="THIRD PARTY OPEN SOURCE SOFTWARE NOTICE.txt" />
+    <file src="../../LICENSE.txt" target="" />
+  </files>
+</package>

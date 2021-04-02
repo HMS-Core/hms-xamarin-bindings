@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">XamarinAREngineDemo</string>
+    <string name="action_settings">Settings</string>
+	<string name="plane_other">Other</string>
+	<string name="plane_floor">Floor</string>
+	<string name="plane_wall">Wall</string>
+	<string name="plane_table">Table</string>
+	<string name="plane_seat">Seat</string>
+	<string name="plane_ceiling">Ceiling</string>
+</resources>

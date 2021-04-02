@@ -1,0 +1,25 @@
+<!--Copyright 2020-2021. Huawei Technologies Co., Ltd. All rights reserved.
+
+        Licensed under the Apache License, Version 2.0 (the "License");
+        you may not use this file except in compliance with the License.
+        You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+        Unless required by applicable law or agreed to in writing, software
+        distributed under the License is distributed on an "AS IS" BASIS,
+        WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+        See the License for the specific language governing permissions and
+        limitations under the License.-->
+<metadata>
+  <attr path="/api/package[@name='com.huawei.hms.ml.common.annotation']" name="managedName">Huawei.Hms.Ml.Common.Annotation</attr>
+  <attr path="/api/package[@name='com.huawei.hms.ml.common.base']" name="managedName">Huawei.Hms.Ml.Common.Base</attr>
+  <attr path="/api/package[@name='com.huawei.hms.ml.common']" name="managedName">Huawei.Hms.Ml.Common</attr>
+  <attr path="/api/package[@name='com.huawei.hms.ml.common.face']" name="managedName">Huawei.Hms.Ml.Common.Face</attr>
+  <attr path="/api/package[@name='com.huawei.hms.ml.common.imgseg']" name="managedName">Huawei.Hms.Ml.Common.Imgseg</attr>
+  <attr path="/api/package[@name='com.huawei.hms.ml.common.label']" name="managedName">Huawei.Hms.Ml.Common.Label</attr>
+  <attr path="/api/package[@name='com.huawei.hms.ml.common.object']" name="managedName">Huawei.Hms.Ml.Common.Object</attr>
+  <attr path="/api/package[@name='com.huawei.hms.ml.common.ocr']" name="managedName">Huawei.Hms.Ml.Common.Ocr</attr>
+  <attr path="/api/package[@name='com.huawei.hms.ml.common.utils']" name="managedName">Huawei.Hms.Ml.Common.Utils</attr>
+  <attr path="/api/package[@name='com.huawei.hms.mlkit.common.internal.client']" name="managedName">Huawei.Hms.Mlkit.Common.Internal.Client</attr>
+</metadata>

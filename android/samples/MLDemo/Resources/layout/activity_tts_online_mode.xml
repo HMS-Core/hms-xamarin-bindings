@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">v
+
+        <EditText
+            android:id="@+id/edit_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/bg_edit_text"
+            android:gravity="top"
+            android:minLines="5"
+            android:padding="5dp"
+            android:text="HUAWEI Machine Learning  Kit"
+            android:textSize="14sp"
+            tools:layout_editor_absoluteY="47dp" />
+
+        <ImageView
+            android:layout_alignParentEnd="true"
+            android:id="@+id/close"
+            android:layout_width="20dp"
+            android:layout_margin="25dp"
+            android:layout_height="20dp"
+            android:src="@drawable/close" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_edit_text"
+        android:layout_below="@+id/edit_input"
+        android:gravity="top"
+        android:minLines="5"
+        android:padding="5dp"
+        android:textSize="14sp" />
+
+
+    <Button
+        android:id="@+id/btn_speak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_margin="15dp"
+        android:text="startSpeak" />
+
+    <Button
+        android:id="@+id/btn_stop_speak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_speak"
+        android:layout_margin="15dp"
+        android:text="stopSpeak" />
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/mapInLanguage"
+        android:name="com.huawei.hms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_gravity="center"
+        android:layout_weight="3" />
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+            <Button
+            android:id="@+id/Chinese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SetChinese"
+            android:onClick="SetChinese"
+            android:textAllCaps="false" />
+            <Button
+            android:id="@+id/Turkish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SetTurkish"
+            android:onClick="SetTurkish"
+            android:textAllCaps="false" />
+            <Button
+            android:id="@+id/Arabic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SetArabic"
+            android:onClick="SetArabic"
+            android:textAllCaps="false" />
+            <Button
+            android:id="@+id/English"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SetEnglish"
+            android:onClick="SetEnglish"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+
+</LinearLayout>

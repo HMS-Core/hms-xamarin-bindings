@@ -1,0 +1,34 @@
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Huawei.Hms.DtmApi</id>
+    <version>5.2.0.300</version>
+    <title>Huawei.Hms.DtmApi</title>
+    <authors>Huawei</authors>
+    <owners>Huawei</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="file">LICENSE.txt</license>
+    <projectUrl>https://github.com/HMS-Core/hms-xamarin-bindings</projectUrl>
+    <icon>huawei.png</icon>
+    <description>Xamarin.Android bindings for HMS Core - DtmApi</description>
+    <copyright>© Huawei Technologies Co., Ltd. All rights reserved.</copyright>
+    <tags>Huawei Hms DtmApi</tags>
+    <dependencies>
+      <group targetFramework="MonoAndroid9.0">
+        <dependency id="Huawei.Hms.DtmCore" version="5.2.0.300" include="All" />
+        <dependency id="Huawei.Hms.DynamicApi" version="1.0.15.301" include="All" />
+        <dependency id="Huawei.Hms.Base" version="5.2.0.300" include="All" />
+        <dependency id="Huawei.Android.Hms.SecuritySsl" version="1.1.5.306" include="All" />
+        <dependency id="Huawei.Hms.NetworkGrs" version="4.0.20.301" include="All" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="Java.Interop" targetFramework="MonoAndroid9.0" />
+    </frameworkAssemblies>
+  </metadata>
+  <files>
+    <file src="bin/Release/Huawei.Hms.DtmApi.dll" target="lib/monoandroid90/Huawei.Hms.DtmApi.dll" />
+    <file src="../../icons/huawei.png" target="" />
+    <file src="README.md" target="" />
+    <file src="../../LICENSE.txt" target="" />
+  </files>
+</package>

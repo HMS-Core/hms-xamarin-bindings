@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{75F6A000-4313-4361-9A9B-E90FB763C702}</ProjectGuid>
+    <ProjectTypeGuids>{10368E6C-D01B-4462-8E8B-01FC667A7035};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{77efb91c-a7e9-4b0e-a7c5-31eeec3c6d46}</TemplateGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Huawei.Hms.Nearby</RootNamespace>
+    <AssemblyName>Huawei.Hms.Nearby</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>True</Deterministic>
+    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
+    <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
+    <AndroidClassParser>class-parse</AndroidClassParser>
+    <AndroidCodegenTarget>XAJavaInterop1</AndroidCodegenTarget>
+    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>portable</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Android" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Jars\AboutJars.txt" />
+    <None Include="Additions\AboutAdditions.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <TransformFile Include="Transforms\Metadata.xml" />
+    <TransformFile Include="Transforms\EnumFields.xml" />
+    <TransformFile Include="Transforms\EnumMethods.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <TransformFile Include="Transforms\Metadata.Namespaces.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <LibraryProjectZip Include="..\..\externals\nearby.aar" Link="Jars\%(Filename)%(Extension)" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\agconnect-core\agconnect-core.csproj">
+      <Project>{dc61b5ff-1065-4c4b-878d-b0f05fee296f}</Project>
+      <Name>agconnect-core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\availableupdate\availableupdate.csproj">
+      <Project>{577822ba-43aa-4415-b45e-2d690f31d5e3}</Project>
+      <Name>availableupdate</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\base\base.csproj">
+      <Project>{b60bc663-13af-4d39-9b6c-2bccd5c0b777}</Project>
+      <Name>base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\device\device.csproj">
+      <Project>{735d9f1e-a2cf-466b-98a1-1722d7fa2898}</Project>
+      <Name>device</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\log\log.csproj">
+      <Project>{90cdea4a-d708-4f14-b975-07918c77806a}</Project>
+      <Name>log</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\network-common\network-common.csproj">
+      <Project>{756cf6a2-4055-464d-b9b1-35faf5eef6d8}</Project>
+      <Name>network-common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\network-grs\network-grs.csproj">
+      <Project>{0f4eaa93-9d3a-4050-8470-3391cba73937}</Project>
+      <Name>network-grs</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\security-base\security-base.csproj">
+      <Project>{1e172284-993d-4f86-9f33-86950b1911f3}</Project>
+      <Name>security-base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\security-ecc\security-ecc.csproj">
+      <Project>{362553e7-e19e-46c8-814e-c5fed7815025}</Project>
+      <Name>security-ecc</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\security-encrypt\security-encrypt.csproj">
+      <Project>{11dcf699-e329-454c-b435-6e33540d896f}</Project>
+      <Name>security-encrypt</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\security-intent\security-intent.csproj">
+      <Project>{71ae3414-cea6-4662-9988-958b6126213a}</Project>
+      <Name>security-intent</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\security-ssl\security-ssl.csproj">
+      <Project>{f2e9130c-ab62-4c86-a740-634c22861c0b}</Project>
+      <Name>security-ssl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\stats\stats.csproj">
+      <Project>{12fabbc8-59ed-4794-8c49-be6fcab9e367}</Project>
+      <Name>stats</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\tasks\tasks.csproj">
+      <Project>{422129cc-0712-4dd5-9f39-6de8d64b52a2}</Project>
+      <Name>tasks</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ui\ui.csproj">
+      <Project>{bf819fd6-efa7-4e2a-8e42-80bdaf850748}</Project>
+      <Name>ui</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\update\update.csproj">
+      <Project>{acfcf020-3e94-4930-862e-93f3afc33c36}</Project>
+      <Name>update</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

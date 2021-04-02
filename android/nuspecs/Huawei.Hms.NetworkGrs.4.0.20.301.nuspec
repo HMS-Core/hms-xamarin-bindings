@@ -1,0 +1,31 @@
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Huawei.Hms.NetworkGrs</id>
+    <version>4.0.20.301</version>
+    <title>Huawei.Hms.NetworkGrs</title>
+    <authors>Huawei</authors>
+    <owners>Huawei</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="file">LICENSE.txt</license>
+    <projectUrl>https://github.com/HMS-Core/hms-xamarin-bindings</projectUrl>
+    <icon>huawei.png</icon>
+    <description>Xamarin.Android bindings for HMS Core - NetworkGrs</description>
+    <copyright>© Huawei Technologies Co., Ltd. All rights reserved.</copyright>
+    <tags>Huawei Hms NetworkGrs</tags>
+    <dependencies>
+      <group targetFramework="MonoAndroid9.0">
+        <dependency id="Huawei.Hms.NetworkCommon" version="4.0.20.301" include="All" />
+        <dependency id="Huawei.Hms.NetworkFrameworkCompat" version="4.0.20.301" include="All" />
+        <dependency id="Huawei.Android.Hms.SecuritySsl" version="1.1.5.301" include="All" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="Java.Interop" targetFramework="MonoAndroid9.0" />
+    </frameworkAssemblies>
+  </metadata>
+  <files>
+    <file src="bin/Release/Huawei.Hms.NetworkGrs.dll" target="lib/monoandroid90/Huawei.Hms.NetworkGrs.dll" />
+    <file src="../../icons/huawei.png" target="" />
+    <file src="../../LICENSE.txt" target="" />
+  </files>
+</package>

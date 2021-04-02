@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--    Copyright 2020-2021. Huawei Technologies Co., Ltd. All rights reserved.
+
+        Licensed under the Apache License, Version 2.0 (the "License");
+        you may not use this file except in compliance with the License.
+        You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+        Unless required by applicable law or agreed to in writing, software
+        distributed under the License is distributed on an "AS IS" BASIS,
+        WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+        See the License for the specific language governing permissions and
+        limitations under the License. 
+-->
+<metadata>
+	<attr path="/api/package[@name='com.huawei.hms.account.internal.ui.activity']" name="managedName">Huawei.Hms.Account.Internal.Ui.Activity</attr>
+	<attr path="/api/package[@name='com.huawei.hms.common.internal.bean']" name="managedName">Huawei.Hms.Common.Internal.Bean</attr>
+	<attr path="/api/package[@name='com.huawei.hms.common.internal.constant']" name="managedName">Huawei.Hms.Common.Internal.Constant</attr>
+	<attr path="/api/package[@name='com.huawei.hms.common.utils']" name="managedName">Huawei.Hms.Common.Utils</attr>
+	<attr path="/api/package[@name='com.huawei.hms.hwid']" name="managedName">Huawei.Hms.Hwid</attr>
+	<attr path="/api/package[@name='com.huawei.hms.hwid.internal.ui.activity']" name="managedName">Huawei.Hms.Hwid.Internal.Ui.Activity</attr>
+	<attr path="/api/package[@name='com.huawei.hms.support.account']" name="managedName">Huawei.Hms.Support.Account</attr>
+	<attr path="/api/package[@name='com.huawei.hms.support.account.common']" name="managedName">Huawei.Hms.Support.Account.Common</attr>
+	<attr path="/api/package[@name='com.huawei.hms.support.account.request']" name="managedName">Huawei.Hms.Support.Account.Request</attr>
+	<attr path="/api/package[@name='com.huawei.hms.support.account.result']" name="managedName">Huawei.Hms.Support.Account.Result</attr>
+	<attr path="/api/package[@name='com.huawei.hms.support.account.service']" name="managedName">Huawei.Hms.Support.Account.Service</attr>
+	<attr path="/api/package[@name='com.huawei.hms.support.api.account']" name="managedName">Huawei.Hms.Support.Api.Account</attr>
+	<attr path="/api/package[@name='com.huawei.hms.support.api.entity.account']" name="managedName">Huawei.Hms.Support.Api.Entity.Account</attr>
+	<attr path="/api/package[@name='com.huawei.hms.support.api.entity.common']" name="managedName">Huawei.Hms.Support.Api.Entity.Common</attr>
+	<attr path="/api/package[@name='com.huawei.hms.support.api.entity.hwid']" name="managedName">Huawei.Hms.Support.Api.Entity.Hwid</attr>
+	<attr path="/api/package[@name='com.huawei.hms.support.api.hwid']" name="managedName">Huawei.Hms.Support.Api.Hwid</attr>
+	<attr path="/api/package[@name='com.huawei.hms.support.feature.request']" name="managedName">Huawei.Hms.Support.Feature.Request</attr>
+	<attr path="/api/package[@name='com.huawei.hms.support.feature.result']" name="managedName">Huawei.Hms.Support.Feature.Result</attr>
+	<attr path="/api/package[@name='com.huawei.hms.support.feature.service']" name="managedName">Huawei.Hms.Support.Feature.Service</attr>
+	<attr path="/api/package[@name='com.huawei.hms.support.hwid.common']" name="managedName">Huawei.Hms.Support.Hwid.Common</attr>
+	<attr path="/api/package[@name='com.huawei.hms.support.hwid']" name="managedName">Huawei.Hms.Support.Hwid</attr>
+	<attr path="/api/package[@name='com.huawei.hms.support.hwid.request']" name="managedName">Huawei.Hms.Support.Hwid.Request</attr>
+	<attr path="/api/package[@name='com.huawei.hms.support.hwid.result']" name="managedName">Huawei.Hms.Support.Hwid.Result</attr>
+	<attr path="/api/package[@name='com.huawei.hms.support.hwid.service']" name="managedName">Huawei.Hms.Support.Hwid.Service</attr>
+	<attr path="/api/package[@name='com.huawei.hms.support.hwid.tools']" name="managedName">Huawei.Hms.Support.Hwid.Tools</attr>
+	<attr path="/api/package[@name='com.huawei.hms.support.hwid.ui']" name="managedName">Huawei.Hms.Support.Hwid.Ui</attr>
+	<attr path="/api/package[@name='com.huawei.hms.support.sms.common']" name="managedName">Huawei.Hms.Support.Sms.Common</attr>
+	<attr path="/api/package[@name='com.huawei.hms.support.sms']" name="managedName">Huawei.Hms.Support.Sms</attr>
+</metadata>

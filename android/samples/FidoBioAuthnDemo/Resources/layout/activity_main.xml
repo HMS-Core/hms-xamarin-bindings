@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_text_finger_auth_without_crpObj"
+        style="@style/hw_btn_style"
+        android:layout_width="@dimen/btn_width"
+        android:layout_height="@dimen/btn_height"
+        android:text="@string/btn_text_finger_auth_no_crpObj"/>
+
+    <Button
+        android:id="@+id/btn_text_finger_auth_with_crpObj"
+        style="@style/hw_btn_style"
+        android:layout_width="@dimen/btn_width"
+        android:layout_height="@dimen/btn_height"
+        android:text="@string/btn_text_finger_auth_with_crpObj"/>
+
+    <Button
+        android:id="@+id/btn_text_face_auth_with_crpObj"
+        style="@style/hw_btn_style"
+        android:layout_width="@dimen/btn_width"
+        android:layout_height="@dimen/btn_height"
+        android:text="@string/btn_text_face_auth_with_crpObj"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include
+            layout="@layout/log_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </include>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<!--Copyright 2020-2021. Huawei Technologies Co., Ltd. All rights reserved.
+
+        Licensed under the Apache License, Version 2.0 (the "License");
+        you may not use this file except in compliance with the License.
+        You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+        Unless required by applicable law or agreed to in writing, software
+        distributed under the License is distributed on an "AS IS" BASIS,
+        WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+        See the License for the specific language governing permissions and
+        limitations under the License.-->
+<metadata>
+  <attr path="/api/package[@name='com.huawei.hms.mlsdk.classification.internal.client.bo']" name="managedName">Huawei.Hms.Mlsdk.Classification.Internal.Client.Bo</attr>
+  <attr path="/api/package[@name='com.huawei.hms.mlsdk.classification.internal.client']" name="managedName">Huawei.Hms.Mlsdk.Classification.Internal.Client</attr>
+  <attr path="/api/package[@name='com.huawei.hms.mlsdk.classification']" name="managedName">Huawei.Hms.Mlsdk.Classification</attr>
+  <attr path="/api/package[@name='com.huawei.hms.mlsdk.cloud']" name="managedName">Huawei.Hms.Mlsdk.Cloud</attr>
+  <attr path="/api/package[@name='com.huawei.hms.mlsdk.document.internal.client.bo']" name="managedName">Huawei.Hms.Mlsdk.Document.Internal.Client.Bo</attr>
+  <attr path="/api/package[@name='com.huawei.hms.mlsdk.document.internal.client']" name="managedName">Huawei.Hms.Mlsdk.Document.Internal.Client</attr>
+  <attr path="/api/package[@name='com.huawei.hms.mlsdk.document']" name="managedName">Huawei.Hms.Mlsdk.Document</attr>
+  <attr path="/api/package[@name='com.huawei.hms.mlsdk.face.face3d']" name="managedName">Huawei.Hms.Mlsdk.Face.Face3d</attr>
+  <attr path="/api/package[@name='com.huawei.hms.mlsdk.face.internal.client']" name="managedName">Huawei.Hms.Mlsdk.Face.Internal.Client</attr>
+  <attr path="/api/package[@name='com.huawei.hms.mlsdk.face']" name="managedName">Huawei.Hms.Mlsdk.Face</attr>
+  <attr path="/api/package[@name='com.huawei.hms.mlsdk.imgseg.client']" name="managedName">Huawei.Hms.Mlsdk.Imgseg.Client</attr>
+  <attr path="/api/package[@name='com.huawei.hms.mlsdk.imgseg']" name="managedName">Huawei.Hms.Mlsdk.Imgseg</attr>
+  <attr path="/api/package[@name='com.huawei.hms.mlsdk.internal.client.rest']" name="managedName">Huawei.Hms.Mlsdk.Internal.Client.Rest</attr>
+  <attr path="/api/package[@name='com.huawei.hms.mlsdk.landmark.bo']" name="managedName">Huawei.Hms.Mlsdk.Landmark.Bo</attr>
+  <attr path="/api/package[@name='com.huawei.hms.mlsdk.landmark']" name="managedName">Huawei.Hms.Mlsdk.Landmark</attr>
+  <attr path="/api/package[@name='com.huawei.hms.mlsdk']" name="managedName">Huawei.Hms.Mlsdk</attr>
+  <attr path="/api/package[@name='com.huawei.hms.mlsdk.objects.internal.client']" name="managedName">Huawei.Hms.Mlsdk.Objects.Internal.Client</attr>
+  <attr path="/api/package[@name='com.huawei.hms.mlsdk.objects']" name="managedName">Huawei.Hms.Mlsdk.Objects</attr>
+  <attr path="/api/package[@name='com.huawei.hms.mlsdk.productvisionsearch.cloud.bo']" name="managedName">Huawei.Hms.Mlsdk.Productvisionsearch.Cloud.Bo</attr>
+  <attr path="/api/package[@name='com.huawei.hms.mlsdk.productvisionsearch.cloud']" name="managedName">Huawei.Hms.Mlsdk.Productvisionsearch.Cloud</attr>
+  <attr path="/api/package[@name='com.huawei.hms.mlsdk.productvisionsearch']" name="managedName">Huawei.Hms.Mlsdk.Productvisionsearch</attr>
+  <attr path="/api/package[@name='com.huawei.hms.mlsdk.text.internal.client.bo']" name="managedName">Huawei.Hms.Mlsdk.Text.Internal.Client.Bo</attr>
+  <attr path="/api/package[@name='com.huawei.hms.mlsdk.text.internal.client']" name="managedName">Huawei.Hms.Mlsdk.Text.Internal.Client</attr>
+  <attr path="/api/package[@name='com.huawei.hms.mlsdk.text']" name="managedName">Huawei.Hms.Mlsdk.Text</attr>
+</metadata>

@@ -1,0 +1,21 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+	<style name="HiDisk_EMUI10_list_item_margin">
+		<item name="android:layout_marginStart">@dimen/emui10_margin_start_24</item>
+		<item name="android:layout_marginEnd">@dimen/emui10_margin_end_24</item>
+	</style>
+
+	<style name="Widget.Emui.HwButton" parent="@android:style/Widget.Holo.Button">
+		<item name="android:background">@drawable/hwbutton_default_emui</item>
+		<item name="android:textColor">@color/hwbutton_text_normal_emui</item>
+		<item name="android:minHeight">@dimen/hwbutton_emui_min_height</item>
+		<item name="android:textAllCaps">true</item>
+	</style>
+</resources>

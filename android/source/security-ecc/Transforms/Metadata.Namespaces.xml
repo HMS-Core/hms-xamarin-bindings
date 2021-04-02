@@ -1,0 +1,46 @@
+﻿<!--    Copyright 2020-2021. Huawei Technologies Co., Ltd. All rights reserved.
+
+        Licensed under the Apache License, Version 2.0 (the "License");
+        you may not use this file except in compliance with the License.
+        You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+        Unless required by applicable law or agreed to in writing, software
+        distributed under the License is distributed on an "AS IS" BASIS,
+        WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+        See the License for the specific language governing permissions and
+        limitations under the License. 
+-->
+<metadata>
+	<attr path="/api/package[@name='com.huawei.android.ecc.asn1']" name="managedName">Huawei.Android.Ecc.Asn1</attr>
+	<attr path="/api/package[@name='com.huawei.android.ecc.asn1.pkcs']" name="managedName">Huawei.Android.Ecc.Asn1.Pkcs</attr>
+	<attr path="/api/package[@name='com.huawei.android.ecc.asn1.sec']" name="managedName">Huawei.Android.Ecc.Asn1.Sec</attr>
+	<attr path="/api/package[@name='com.huawei.android.ecc.asn1.x509']" name="managedName">Huawei.Android.Ecc.Asn1.X509</attr>
+	<attr path="/api/package[@name='com.huawei.android.ecc.asn1.x9']" name="managedName">Huawei.Android.Ecc.Asn1.X9</attr>
+	<attr path="/api/package[@name='com.huawei.android.ecc']" name="managedName">Huawei.Android.Ecc</attr>
+	<attr path="/api/package[@name='com.huawei.android.ecc.crypto.agreement']" name="managedName">Huawei.Android.Ecc.Crypto.Agreement</attr>
+	<attr path="/api/package[@name='com.huawei.android.ecc.crypto']" name="managedName">Huawei.Android.Ecc.Crypto</attr>
+	<attr path="/api/package[@name='com.huawei.android.ecc.crypto.digests']" name="managedName">Huawei.Android.Ecc.Crypto.Digests</attr>
+	<attr path="/api/package[@name='com.huawei.android.ecc.crypto.ec']" name="managedName">Huawei.Android.Ecc.Crypto.Ec</attr>
+	<attr path="/api/package[@name='com.huawei.android.ecc.crypto.generators']" name="managedName">Huawei.Android.Ecc.Crypto.Generators</attr>
+	<attr path="/api/package[@name='com.huawei.android.ecc.crypto.params']" name="managedName">Huawei.Android.Ecc.Crypto.Params</attr>
+	<attr path="/api/package[@name='com.huawei.android.ecc.jcajce.provider.asymmetric']" name="managedName">Huawei.Android.Ecc.Jcajce.Provider.Asymmetric</attr>
+	<attr path="/api/package[@name='com.huawei.android.ecc.jcajce.provider.asymmetric.util']" name="managedName">Huawei.Android.Ecc.Jcajce.Provider.Asymmetric.Util</attr>
+	<attr path="/api/package[@name='com.huawei.android.ecc.jcajce.provider.config']" name="managedName">Huawei.Android.Ecc.Jcajce.Provider.Config</attr>
+	<attr path="/api/package[@name='com.huawei.android.ecc.jcajce.provider.symmetric.util']" name="managedName">Huawei.Android.Ecc.Jcajce.Provider.Symmetric.Util</attr>
+	<attr path="/api/package[@name='com.huawei.android.ecc.jcajce.provider.util']" name="managedName">Huawei.Android.Ecc.Jcajce.Provider.Util</attr>
+	<attr path="/api/package[@name='com.huawei.android.ecc.jce']" name="managedName">Huawei.Android.Ecc.Jce</attr>
+	<attr path="/api/package[@name='com.huawei.android.ecc.jce.interfaces']" name="managedName">Huawei.Android.Ecc.Jce.Interfaces</attr>
+	<attr path="/api/package[@name='com.huawei.android.ecc.jce.provider']" name="managedName">Huawei.Android.Ecc.Jce.Provider</attr>
+	<attr path="/api/package[@name='com.huawei.android.ecc.jce.spec']" name="managedName">Huawei.Android.Ecc.Jce.Spec</attr>
+	<attr path="/api/package[@name='com.huawei.android.ecc.math.ec']" name="managedName">Huawei.Android.Ecc.Math.Ec</attr>
+	<attr path="/api/package[@name='com.huawei.android.ecc.math.ec.custom.sec']" name="managedName">Huawei.Android.Ecc.Math.Ec.Custom.Sec</attr>
+	<attr path="/api/package[@name='com.huawei.android.ecc.math.ec.endo']" name="managedName">Huawei.Android.Ecc.Math.Ec.Endo</attr>
+	<attr path="/api/package[@name='com.huawei.android.ecc.math.field']" name="managedName">Huawei.Android.Ecc.Math.Field</attr>
+	<attr path="/api/package[@name='com.huawei.android.ecc.math.raw']" name="managedName">Huawei.Android.Ecc.Math.Raw</attr>
+	<attr path="/api/package[@name='com.huawei.android.ecc.util']" name="managedName">Huawei.Android.Ecc.Util</attr>
+	<attr path="/api/package[@name='com.huawei.android.ecc.util.encoders']" name="managedName">Huawei.Android.Ecc.Util.Encoders</attr>
+	<attr path="/api/package[@name='com.huawei.android.ecc.util.io']" name="managedName">Huawei.Android.Ecc.Util.Io</attr>
+</metadata>
+

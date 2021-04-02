@@ -1,0 +1,39 @@
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".document.ImageDocumentAnalyseActivity">
+
+    <ImageView
+        android:id="@+id/text_image"
+        android:layout_width="500dp"
+        android:layout_height="350dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/document_image">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/document_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/text_image"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:textSize="13sp">
+    </TextView>
+
+    <Button
+        android:id="@+id/document_detect"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:text="@string/detect_on_cloud"
+        android:textColor="@color/black">
+    </Button>
+</RelativeLayout>

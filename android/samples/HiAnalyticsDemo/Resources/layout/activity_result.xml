@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <TextView
+        android:text="Your Score"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textColor="#43A047"
+        android:layout_marginBottom="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1" />
+
+    <TextView
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+         android:layout_marginBottom="30dp"
+        android:textColor="#43A047"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtScore" />
+
+    <Button
+        android:id ="@+id/submitButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="Submit Score"
+        android:textColor="@android:color/white"
+        android:background="@drawable/rounded_button"
+        android:padding="15dp"
+ />
+
+</LinearLayout>

@@ -1,0 +1,623 @@
+﻿<!--
+Copyright 2020. Huawei Technologies Co., Ltd. All rights reserved.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+<metadata>
+	<!--NAME COMMANDS-->
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.beans.inner']/class[@name='AdEventReport']/method[@name='d' and count(parameter)=0]"
+		  name="name">LowerD</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.beans.inner']/class[@name='AdEventReport']/method[@name='b' and count(parameter)=0]"
+		  name="name">LowerB</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.beans.inner']/class[@name='AdEventReport']/method[@name='c' and count(parameter)=0]"
+		  name="name">LowerC</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.beans.inner']/class[@name='AdEventReport']/method[@name='f' and count(parameter)=0]"
+		  name="name">LowerF</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.beans.inner']/class[@name='AdEventReport']/method[@name='i' and count(parameter)=0]"
+		  name="name">LowerI</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.beans.inner']/class[@name='AdEventReport']/method[@name='l' and count(parameter)=0]"
+		  name="name">LowerL</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.beans.inner']/class[@name='ApiStatisticsReq']/method[@name='b' and count(parameter)=0]"
+		  name="name">LowerStatisticB</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.inter.data']/class[@name='AppInfo']/method[@name='b' and count(parameter)=0]"
+		  name="name">LowerAppInfoB</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.inter.data']/class[@name='AppInfo']/method[@name='c' and count(parameter)=0]"
+	  name="name">LowerAppInfoC</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.inter.data']/class[@name='AppInfo']/method[@name='d' and count(parameter)=0]"
+	  name="name">LowerAppInfoD</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.inter.data']/class[@name='AppInfo']/method[@name='f' and count(parameter)=0]"
+	  name="name">LowerAppInfoF</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.inter.data']/class[@name='AppInfo']/method[@name='i' and count(parameter)=0]"
+	  name="name">LowerAppInfoI</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.inter.data']/class[@name='AdContentData']/method[@name='a' and count(parameter)=0]"
+	  name="name">LowerAdContentDataA</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.inter.data']/class[@name='AdContentData']/method[@name='b' and count(parameter)=0]"
+	  name="name">LowerAdContentDataB</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.inter.data']/class[@name='AdContentData']/method[@name='c' and count(parameter)=0]"
+	  name="name">LowerAdContentDataC</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.inter.data']/class[@name='AdContentData']/method[@name='d' and count(parameter)=0]"
+	  name="name">LowerAdContentDataD</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.inter.data']/class[@name='AdContentData']/method[@name='e' and count(parameter)=0]"
+	  name="name">LowerAdContentDataE</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.inter.data']/class[@name='AdContentData']/method[@name='f' and count(parameter)=0]"
+	  name="name">LowerAdContentDataF</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.inter.data']/class[@name='AdContentData']/method[@name='g' and count(parameter)=0]"
+	  name="name">LowerAdContentDataG</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.inter.data']/class[@name='AdContentData']/method[@name='h' and count(parameter)=0]"
+	  name="name">LowerAdContentDataH</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.inter.data']/class[@name='AdContentData']/method[@name='i' and count(parameter)=0]"
+	  name="name">LowerAdContentDataI</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.inter.data']/class[@name='AdContentData']/method[@name='j' and count(parameter)=0]"
+	  name="name">LowerAdContentDataJ</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.inter.data']/class[@name='AdContentData']/method[@name='k' and count(parameter)=0]"
+	  name="name">LowerAdContentDataK</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.inter.data']/class[@name='AdContentData']/method[@name='l' and count(parameter)=0]"
+	  name="name">LowerAdContentDataL</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.inter.data']/class[@name='AdContentData']/method[@name='m' and count(parameter)=0]"
+	  name="name">LowerAdContentDataM</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.inter.data']/class[@name='AdContentData']/method[@name='n' and count(parameter)=0]"
+	  name="name">LowerAdContentDataN</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.inter.data']/class[@name='AdContentData']/method[@name='o' and count(parameter)=0]"
+	  name="name">LowerAdContentDataO</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.inter.data']/class[@name='AdContentData']/method[@name='s' and count(parameter)=0]"
+	  name="name">LowerAdContentDataS</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.inter.data']/class[@name='AdContentData']/method[@name='v' and count(parameter)=0]"
+	  name="name">LowerAdContentDataV</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.inter.data']/class[@name='AdContentData']/method[@name='z' and count(parameter)=0]"
+	  name="name">LowerAdContentDataZ</attr>
+
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.beans.metadata']/class[@name='ApkInfo']/method[@name='f' and count(parameter)=0]"
+	  name="name">GetLowerApkInfoF</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.beans.metadata']/class[@name='ApkInfo']/method[@name='f' and count(parameter)=1 and parameter[1][@type='java.lang.String']]"
+	  name="name">LowerApkInfoF</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.beans.metadata']/class[@name='ApkInfo']/method[@name='i' and count(parameter)=0]"
+	  name="name">LowerApkInfoI</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.beans.metadata']/class[@name='ApkInfo']/method[@name='l' and count(parameter)=0]"
+	  name="name">LowerApkInfoL</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.beans.metadata']/class[@name='ApkInfo']/method[@name='b' and count(parameter)=0]"
+	  name="name">LowerApkInfoB</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.beans.metadata']/class[@name='ApkInfo']/method[@name='b' and count(parameter)=1 and parameter[1][@type='java.lang.String']]"
+	  name="name">GetLowerApkInfoB</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.beans.metadata']/class[@name='ApkInfo']/method[@name='c' and count(parameter)=0]"
+	  name="name">LowerApkInfoC</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.beans.metadata']/class[@name='ApkInfo']/method[@name='c' and count(parameter)=1 and parameter[1][@type='java.lang.String']]"
+	  name="name">GetLowerApkInfoC</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.beans.metadata']/class[@name='ApkInfo']/method[@name='d' and count(parameter)=0]"
+	  name="name">LowerApkInfoD</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.beans.metadata']/class[@name='ApkInfo']/method[@name='d' and count(parameter)=1 and parameter[1][@type='java.lang.String']]"
+	  name="name">GetLowerApkInfoD</attr>
+
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.beans.server']/class[@name='AppConfigRsp']/method[@name='b' and count(parameter)=0]"
+	  name="name">LowerAppConfigRspB</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.beans.server']/class[@name='AppConfigRsp']/method[@name='c' and count(parameter)=0]"
+	  name="name">LowerAppConfigRspC</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.beans.server']/class[@name='AppConfigRsp']/method[@name='d' and count(parameter)=0]"
+	  name="name">LowerAppConfigRspD</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.beans.server']/class[@name='AppConfigRsp']/method[@name='f' and count(parameter)=0]"
+	  name="name">LowerAppConfigRspF</attr>
+
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.beans.metadata']/class[@name='VideoInfo']/method[@name='b' and count(parameter)=0]"
+	  name="name">LowerVideoInfoB</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.beans.metadata']/class[@name='VideoInfo']/method[@name='c' and count(parameter)=0]"
+	  name="name">LowerVideoInfoC</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.beans.metadata']/class[@name='VideoInfo']/method[@name='d' and count(parameter)=0]"
+	  name="name">LowerVideoInfoD</attr>
+
+
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.beans.metadata']/class[@name='MetaData']/method[@name='b' and count(parameter)=0]"
+	  name="name">LowerMetaDataB</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.beans.metadata']/class[@name='MetaData']/method[@name='c' and count(parameter)=0]"
+	  name="name">LowerMetaDataC</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.beans.metadata']/class[@name='MetaData']/method[@name='d' and count(parameter)=0]"
+	  name="name">LowerMetaDataD</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.beans.metadata']/class[@name='MetaData']/method[@name='f' and count(parameter)=0]"
+	  name="name">LowerMetaDataF</attr>
+
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.inter.data']/class[@name='c']/method[@name='d' and count(parameter)=0]"
+	  name="name">LowerD</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.inter.data']/class[@name='r']/method[@name='b' and count(parameter)=0]"
+	  name="name">LowerB</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.inter.data']/class[@name='r']/method[@name='c' and count(parameter)=0]"
+  name="name">LowerC</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.inter.data']/class[@name='r']/method[@name='d' and count(parameter)=0]"
+  name="name">LowerD</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.inter.data']/class[@name='r']/method[@name='f' and count(parameter)=0]"
+  name="name">LowerF</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.inter.data']/class[@name='AdContentData']/method[@name='p' and count(parameter)=0]"
+  name="name">LowerP</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='gs']/method[@name='b' and count(parameter)=0]"
+  name="name">LowerB</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='en']/method[@name='l' and count(parameter)=0]"
+  name="name">LowerL</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='en']/method[@name='i' and count(parameter)=0]"
+  name="name">LowerI</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='en']/method[@name='f' and count(parameter)=0]"
+  name="name">LowerF</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='en']/method[@name='d' and count(parameter)=0]"
+  name="name">LowerD</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='en']/method[@name='c' and count(parameter)=0]"
+  name="name">LowerC</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='en']/method[@name='b' and count(parameter)=0]"
+  name="name">LowerB</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.media']/class[@name='b']/method[@name='d' and count(parameter)=0]"
+  name="name">GetLowerD</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.media']/class[@name='b']/method[@name='c' and count(parameter)=0]"
+  name="name">LowerD</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.media']/class[@name='b']/method[@name='b' and count(parameter)=0]"
+  name="name">LowerInvokeB</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.beans.inner']/class[@name='ApiStatisticsReq']/method[@name='c' and count(parameter)=0]"
+	name="name">LowerC</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.beans.inner']/class[@name='ApiStatisticsReq']/method[@name='d' and count(parameter)=0]"
+	name="name">LowerD</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.beans.metadata']/class[@name='DelayInfo']/method[@name='b' and count(parameter)=0]"
+	name="name">LowerB</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.beans.metadata']/class[@name='DelayInfo']/method[@name='c' and count(parameter)=0]"
+	name="name">LowerC</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.beans.parameter']/class[@name='AdSlotParam']/method[@name='b' and count(parameter)=0]"
+	name="name">LowerB</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.inter.data']/class[@name='AdContentData']/method[@name='q' and count(parameter)=0]"
+	name="name">LowerQ</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.inter.data']/class[@name='AdContentData']/method[@name='r' and count(parameter)=0]"
+	name="name">LowerR</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.inter.data']/class[@name='AdContentData']/method[@name='t' and count(parameter)=0]"
+	name="name">LowerT</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.inter.data']/class[@name='AdContentData']/method[@name='u' and count(parameter)=0]"
+	name="name">LowerU</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.inter.data']/class[@name='AppInfo']/method[@name='l' and count(parameter)=0]"
+	name="name">LowerL</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='ey']/method[@name='b' and count(parameter)=0]"
+	name="name">LowerB</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='ey']/method[@name='c' and count(parameter)=0]"
+	name="name">LowerC</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='ey']/method[@name='d' and count(parameter)=0]"
+	name="name">LowerD</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='ey']/method[@name='f' and count(parameter)=0]"
+	name="name">LowerF</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='ey']/method[@name='i' and count(parameter)=0]"
+	name="name">LowerI</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='ey']/method[@name='l' and count(parameter)=0]"
+	name="name">LowerL</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.download']/interface[@name='c']/field[@name='C']"
+	name="name">FieldC</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.beans.inner']/class[@name='AnalysisEventReport']/method[@name='b' and count(parameter)=0]"
+	name="name">LowerB</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='hd']/method[@name='b' and count(parameter)=0]"
+	name="name">LowerB</attr>
+	<!--OBFUSCATED COMMANDS-->
+	<attr path="/api/package[@name='com.huawei.hms.ads.base']/class[@name='a']"
+	  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='AdListener']"
+	 name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.inter.data']/interface[@name='d']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.beans.inner']/interface[@name='a']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.beans.inner']/interface[@name='b']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/interface[@name='fw']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.download']/interface[@name='d']"
+  name="obfuscated">false</attr>
+
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.inter.data']/class[@name='i']"
+  name="obfuscated">false</attr>
+
+
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.annotations']/interface[@name='b']"
+  name="obfuscated">false</attr>
+
+	<attr path="/api/package[@name='com.huawei.hms.ads']/interface[@name='fd']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='jz']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='kj']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='s']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='q']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='lc']"
+	name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='l']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='ld']"
+	name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='lh']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='li']"
+	 name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='kq']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='ky']"
+	name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='kx']"
+	name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='kp']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='ko']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='kn']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='kl']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='kk']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='ki']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='kh']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='kg']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='kf']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='ke']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='kd']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='kc']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='kb']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='ka']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/interface[@name='k']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='jy']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='jx']"
+name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='jw']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='jv']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='ju']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='jt']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='js']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='jr']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='jq']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='jp']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='jo']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='jn']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/interface[@name='jm']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='jl']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='jk']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='jj']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='ji']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='jh']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/interface[@name='jg']"
+  name="obfuscated">false</attr>
+
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='if']"
+	name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='id']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='i']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='h']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/interface[@name='ha']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='hb']"
+	name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='hc']"
+	name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='hd']"
+	name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/interface[@name='he']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='hf']"
+	  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='hg']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='hh']"
+	name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='hi']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='hj']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='hk']"
+	name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='hl']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='hp']"
+	name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='hr']"
+	name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='ht']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/interface[@name='hu']"
+	name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='hy']"
+	name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/interface[@name='hz']"
+	name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/interface[@name='gz']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='gy']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='gx']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/interface[@name='gw']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='gv']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/interface[@name='gu']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='gt']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='gs']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='gr']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='gq']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='gp']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='go']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/interface[@name='gn']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/interface[@name='gm']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='gl']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/interface[@name='gk']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='gj']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='gi']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/interface[@name='gh']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/interface[@name='gb']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/interface[@name='ga']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/interface[@name='fz']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/interface[@name='fy']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/interface[@name='fx']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/interface[@name='fw']"
+	name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='fv']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='fu']"
+	name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/interface[@name='ft']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='fs']"
+	name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='fr']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='fq']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='fp']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='fo']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='fn']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='fm']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/interface[@name='fl']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/interface[@name='fk']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='fj']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='fi']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='fh']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='fg']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/interface[@name='ff']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='fe']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/interface[@name='fc']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='fb']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='ez']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='ey']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/interface[@name='ex']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='ew']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='ev']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='eu']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='lj']"
+	name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='lk']"
+	name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='eq']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='ep']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/interface[@name='em']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/interface[@name='el']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/interface[@name='ek']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/interface[@name='ef']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/interface[@name='ee']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/interface[@name='eb']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/interface[@name='dv']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/interface[@name='dv']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/interface[@name='dm']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/interface[@name='dk']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/interface[@name='dj']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/interface[@name='di']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/interface[@name='dg']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/interface[@name='df']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/interface[@name='de']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/interface[@name='dd']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/interface[@name='dc']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/interface[@name='db']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/interface[@name='cz']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/interface[@name='cy']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='cx']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/interface[@name='cw']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/interface[@name='cv']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/interface[@name='cu']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/interface[@name='ct']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/interface[@name='cs']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/interface[@name='cr']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/interface[@name='cp']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/interface[@name='co']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/interface[@name='cn']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/interface[@name='cm']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/interface[@name='ck']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/interface[@name='cg']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='cf']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='cb']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/interface[@name='ca']"
+	name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='bz']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='by']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='bx']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='bw']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/interface[@name='md']"
+	name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/interface[@name='n']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.hms.ads']/interface[@name='ContentClassification']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.inter']/interface[@name='IHiAd']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.inter.data']/class[@name='r']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.inter.data']/class[@name='p']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.inter.data']/interface[@name='k']"
+  name="obfuscated">false</attr>
+
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.annotations']/interface[@name='d']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.annotations']/interface[@name='c']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.annotations']/interface[@name='a']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.beans.inner']/class[@name='b']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.beans.metadata']/class[@name='a']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.download']/interface[@name='d']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.download']/interface[@name='c']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.download']/class[@name='b']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.download']/class[@name='a']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.download.app']/interface[@name='j']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.download.app']/class[@name='h']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.download.app']/class[@name='g']"
+  name="obfuscated">false</attr>
+
+
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.msgnotify']/class[@name='b']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.msgnotify']/class[@name='a']"
+  name="obfuscated">false</attr>
+
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.media']/class[@name='d']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.media']/class[@name='c']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.media']/class[@name='b']"
+  name="obfuscated">false</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.media']/interface[@name='a']"
+  name="obfuscated">false</attr>
+
+	<!--CHANGE FIELD NAME-->
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.download']/interface[@name='c']/field[@name='C']"
+  name="managedName">GetC</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.inter.listeners']/interface[@name='AppDownloadListener']/method[@name='Code' and count(parameter)=1 and parameter[1][@type='java.lang.String']]" name="managedName">AppDownloadListenerCodeHandler</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.inter.listeners']/interface[@name='AppDownloadListener']/method[@name='Code' and count(parameter)=2 and parameter[1][@type='com.huawei.openalliance.ad.inter.data.AppInfo'] and parameter[2][@type='int']]" name="managedName">AppInfoCodeHandler</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.download.app']/class[@name='i']/field[@name='I']"
+  name="managedName">DownloadAppI</attr>
+
+	<!--VISIBILITY-->
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='kf']"
+	  name="visibility">public</attr>
+
+
+
+	<!--ARGS TYPE-->
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.inter.listeners']/interface[@name='AppDownloadListener']/method[@name='Code' and count(parameter)=2 and parameter[1][@type='com.huawei.openalliance.ad.download.app.i'] and parameter[2][@type='com.huawei.openalliance.ad.inter.data.AppInfo']]" name="argsType">AppICodeEventArgs</attr>
+	<attr path="/api/package[@name='com.huawei.openalliance.ad.inter.listeners']/interface[@name='AppDownloadListener']/method[@name='Code' and count(parameter)=2 and parameter[1][@type='com.huawei.openalliance.ad.inter.data.AppInfo'] and parameter[2][@type='int']]" name="argsType">AppInfoCodeEventArgs</attr>
+
+	<attr path="/api/package[@name='com.huawei.hms.ads']/class[@name='fa']/method[@name='Code' and count(parameter)=0]" name="argsType">CodeHandlerNoParams</attr>
+
+</metadata>

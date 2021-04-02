@@ -1,0 +1,117 @@
+﻿<!--    Copyright 2020. Huawei Technologies Co., Ltd. All rights reserved.
+
+        Licensed under the Apache License, Version 2.0 (the "License");
+        you may not use this file except in compliance with the License.
+        You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+        Unless required by applicable law or agreed to in writing, software
+        distributed under the License is distributed on an "AS IS" BASIS,
+        WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+        See the License for the specific language governing permissions and
+        limitations under the License. 
+-->
+<metadata>
+	
+	<!-- member names cannot be the same as their enclosing type	-->
+	<attr path="/api/package[@name='com.huawei.hianalytics.mn.no.a.mn']/class[@name='mn']/field[@name='mn']"
+	  name="managedName">hianalyticsAMnMnMn</attr>
+	<attr path="/api/package[@name='com.huawei.hianalytics.mn.no.a.no']/class[@name='mn']/field[@name='mn']"
+	  name="managedName">hianalyticsANoMnMn</attr>	
+	<attr path="/api/package[@name='com.huawei.hianalytics.mn.no.a.no']/class[@name='no']/field[@name='no']"
+	  name="managedName">hianalyticsANoNoNo</attr>	
+	<attr path="/api/package[@name='com.huawei.hianalytics.mn.no.a.no']/class[@name='op']/field[@name='op']"
+	  name="managedName">hianalyticsANoOpOp</attr>	
+	<attr path="/api/package[@name='com.huawei.hianalytics.mn.no.a.no']/class[@name='pq']/field[@name='pq']"
+	  name="managedName">hianalyticsANoPqPq</attr>	
+	<attr path="/api/package[@name='com.huawei.hianalytics.mn.no.a.op']/class[@name='no']/field[@name='no']"
+	  name="managedName">hianalyticsAOpNoNo</attr>		
+	<attr path="/api/package[@name='com.huawei.hianalytics.mn.no.b']/class[@name='mn']/field[@name='mn']"
+	  name="managedName">hianalyticsNoBMnMn</attr>	
+	<attr path="/api/package[@name='com.huawei.hianalytics.mn.no.mn']/class[@name='mn']/field[@name='mn']"
+	  name="managedName">hianalyticsNoMnMnMn</attr>	
+	<attr path="/api/package[@name='com.huawei.hianalytics.mn.no.mn']/class[@name='no']/field[@name='no']"
+	  name="managedName">hianalyticsNoMnNoNo</attr>	
+	<attr path="/api/package[@name='com.huawei.hianalytics.mn.no.op.mn']/class[@name='mn']/field[@name='mn']"
+	  name="managedName">hianalyticsOpMnMnMn</attr>	
+	<attr path="/api/package[@name='com.huawei.hianalytics.mn.no.op.mn']/class[@name='no']/field[@name='no']"
+	  name="managedName">hianalyticsOpMnNoNo</attr>
+	<attr path="/api/package[@name='com.huawei.hianalytics.mn.no.op.mn']/class[@name='op']/field[@name='op']"
+	  name="managedName">hianalyticsOpMnOpOp</attr>
+	<attr path="/api/package[@name='com.huawei.hianalytics.mn.no.op.mn']/class[@name='pq']/field[@name='pq']"
+	  name="managedName">hianalyticsOpMnPqPq</attr>	
+	<attr path="/api/package[@name='com.huawei.hianalytics.mn.no.op.mn']/class[@name='qr']/field[@name='qr']"
+	  name="managedName">hianalyticsOpMnQrQr</attr>
+	<attr path="/api/package[@name='com.huawei.hianalytics.mn.no.op.no']/class[@name='pq']/field[@name='pq']"
+	  name="managedName">hianalyticsOpNoPqPq</attr>
+	<attr path="/api/package[@name='com.huawei.hianalytics.mn.no.op.no']/class[@name='qr']/field[@name='qr']"
+	  name="managedName">hianalyticsOpNoQrQr</attr>
+	<attr path="/api/package[@name='com.huawei.hianalytics.mn.no.pq']/class[@name='mn']/field[@name='mn']"
+	  name="managedName">hianalyticsNoPqMnMn</attr>
+	<attr path="/api/package[@name='com.huawei.hianalytics.mn.no.pq']/class[@name='no']/field[@name='no']"
+	  name="managedName">hianalyticsNoPqNoNo</attr>
+	<attr path="/api/package[@name='com.huawei.hianalytics.mn.no.pq']/class[@name='op']/field[@name='op']"
+	  name="managedName">hianalyticsNoPqOpOp</attr>	
+	<attr path="/api/package[@name='com.huawei.hianalytics.mn.no.qr']/class[@name='mn']/field[@name='mn']"
+	  name="managedName">hianalyticsNoQrMnMn</attr>
+	<attr path="/api/package[@name='com.huawei.hianalytics.mn.no.qr']/class[@name='no']/field[@name='no']"
+	  name="managedName">hianalyticsNoQrNoNo</attr>	
+	<attr path="/api/package[@name='com.huawei.hianalytics.mn.no.rs']/class[@name='mn']/field[@name='mn']"
+	  name="managedName">hianalyticsNoRsMnMn</attr>	
+	<attr path="/api/package[@name='com.huawei.hianalytics.mn.no.st']/class[@name='mn']/field[@name='mn']"
+	  name="managedName">hianalyticsNoStMnMn</attr>			
+	<attr path="/api/package[@name='com.huawei.hianalytics.mn.no.st']/class[@name='no']/field[@name='no']"
+	  name="managedName">hianalyticsNoStNoNo</attr>	
+	<attr path="/api/package[@name='com.huawei.hianalytics.mn.no.tu']/class[@name='mn']/field[@name='mn']"
+	  name="managedName">hianalyticsNoTuMnMn</attr>	
+	<attr path="/api/package[@name='com.huawei.hianalytics.mn.no.tu']/class[@name='no']/field[@name='no']"
+	  name="managedName">hianalyticsNoTuNoNo</attr>	
+	<attr path="/api/package[@name='com.huawei.hianalytics.mn.op.mn']/class[@name='mn']/field[@name='mn']"
+	  name="managedName">hianalyticsOpMnMnMn</attr>
+	<attr path="/api/package[@name='com.huawei.hianalytics.mn.op.no']/class[@name='mn']/field[@name='mn']"
+	  name="managedName">hianalyticsOpNoMnMn</attr>	
+	<attr path="/api/package[@name='com.huawei.hianalytics.mn.rs']/class[@name='mn']/field[@name='mn']"
+	  name="managedName">hianalyticsMrRsMnMn</attr>		
+	<attr path="/api/package[@name='com.huawei.hianalytics.mn.rs']/class[@name='no']/field[@name='no']"
+	  name="managedName">hianalyticsMnRsNoNo</attr>	
+	<attr path="/api/package[@name='com.huawei.hianalytics.scankit']/class[@name='mn']/field[@name='mn']"
+	  name="managedName">hianalyticsScanKitMnMn</attr>
+	<attr path="/api/package[@name='com.huawei.hianalytics.mn.op.no']/class[@name='mn.mn']"
+	  name="managedName">hianalyOpNoMnMn</attr>
+	<attr  path="/api/package[@name='com.huawei.hianalytics.mn.no.mn']/class[@name='no.mn']/field[@name='mn']"
+	  name="managedName">hianalyNoMnNoMn</attr>
+	<attr  path="/api/package[@name='com.huawei.hianalytics.mn.no.no']/class[@name='mn.mn']"
+	  name="managedName">hianalyNoNoMnMn</attr>
+	<attr  path="/api/package[@name='com.huawei.hianalytics.mn.no.op.no']/class[@name='mn']/field[@name='mn']"
+	  name="managedName">hianalyOpNoMnfield</attr>
+	<attr path="/api/package[@name='com.huawei.hianalytics.mn.no.op.no']/class[@name='no']/field[@name='no']"
+	  name="managedName">hianalyOpNoNofield</attr>
+	<attr path="/api/package[@name='com.huawei.hianalytics.mn.no.op.no']/class[@name='op']/field[@name='op']"
+      name="managedName">hianalyOpNoOpfield</attr>
+	<attr path="/api/package[@name='com.huawei.hianalytics.mn.op.mn']/class[@name='no']/field[@name='no']"
+	  name="managedName">hianalyOpMnNofield</attr>
+	<attr path="/api/package[@name='com.huawei.hianalytics.mn.st']/class[@name='mn']/field[@name='mn']"
+	  name="managedName">hianalyMnStMnField</attr>
+
+	<!-- Type 'Pq' already defines a member called 'Mn' with the same parameter types -->	
+	<attr path="/api/package[@name='com.huawei.hianalytics.mn.no.b']/class[@name='pq']/method[@name='mn' and count(parameter)=1 and parameter[1][@type='java.io.OutputStream']]"
+	  name="managedName">Mn2</attr>
+	
+	<!-- removed nodes -->
+	<remove-node path="/api/package[@name='com.huawei.hianalytics.mn.qr']/class[@name='op']/method[@name='op' and count(parameter)=0]"/>
+	<remove-node path="/api/package[@name='com.huawei.hianalytics.mn.no.op.no']/interface[@name='rs']/method[@name='op' and count(parameter)=0]" />
+	<remove-node path="/api/package[@name='com.huawei.hianalytics.mn.no.mn']/interface[@name='rs']/method[@name='mn' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='byte[]']]"/>
+	<remove-node path="/api/package[@name='com.huawei.hianalytics.mn.no.mn']/interface[@name='rs']/method[@name='mn' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.lang.String']]"/>
+
+	<!-- added nodes -->
+	<add-node path="/api/package[@name='com.huawei.hianalytics.mn.no.mn']/interface[@name='rs']/method[@name='mn' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='byte[]']]">
+		<method  name="Mn"  return="Java.Lang.Object"  visibility="public">
+			<parameter name="p0" type="Java.Lang.Object">
+			</parameter>
+			<parameter name="p1" type="Java.Lang.Object[]">
+			</parameter>
+		</method>
+	</add-node>
+	
+</metadata>

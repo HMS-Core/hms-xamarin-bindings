@@ -1,0 +1,67 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/health_kit_icon"
+        style="@style/health_kit_icon"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/health_kit_icon" />
+
+    <TextView
+        android:id="@+id/health_auth_desc_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/health_auth_desc_title"
+        android:text="@string/health_auth_health_kit_waitting" />
+
+    <TextView
+        android:id="@+id/health_auth_desc"
+        style="@style/health_auth_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/health_auth_health_kit_desc" />
+
+    <TextView
+        android:id="@+id/health_auth_fail_tips"
+        style="@style/health_auth_fail_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/health_auth_health_kit_fail_tips_connect" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/health_login_auth"
+            style="@style/health_auth_button"
+            android:textAllCaps="false"
+            android:layout_width="800px"
+            android:layout_height="wrap_content"
+            android:text="@string/health_login_auth" />
+
+        <Button
+            android:id="@+id/health_auth_confirm"
+            style="@style/health_auth_button"
+            android:textAllCaps="false"
+            android:layout_width="800px"
+           android:layout_height="wrap_content"
+            android:text="@string/confirm" />
+
+        <Button
+            android:id="@+id/health_auth_retry"
+            style="@style/health_auth_button"
+            android:textAllCaps="false"
+            android:layout_width="800px"
+            android:layout_height="wrap_content"
+            android:text="@string/health_auth_retry" />
+
+    </LinearLayout>
+
+</LinearLayout>

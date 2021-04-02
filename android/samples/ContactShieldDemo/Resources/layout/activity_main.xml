@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:visibility="visible">
+
+        <Switch
+            android:id="@+id/swContactShieldStatus"
+            android:layout_width="235dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="24dp"
+            android:switchMinWidth="75dp"
+            android:textSize="17sp"
+            android:text="@string/contactshield_switch"
+            android:textColor="@color/primaryText"
+            android:thumb="@drawable/switch_thumb_selector"
+            android:track="@drawable/switch_track_selector" />
+
+        <TextView
+            android:id="@+id/tvReportInfoText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/report_button_message"
+            android:textColor="@color/primaryText"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnReport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@color/colorAccent"
+            android:text="@string/report_button"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/textFontWhite" />
+
+        <TextView
+            android:id="@+id/tvCheckInfoText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/check_button_message"
+            android:textColor="@color/primaryText"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@color/colorAccent"
+            android:text="@string/check_button"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/textFontWhite" />
+
+        <Button
+            android:id="@+id/btnSummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@color/colorAccent"
+            android:text="@string/summary_button"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/textFontWhite" />
+
+        <Button
+            android:id="@+id/btnDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@color/colorAccent"
+            android:text="@string/details_button"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/textFontWhite" />
+
+
+        <Button
+            android:id="@+id/btnWindowMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@color/colorAccent"
+            android:text="@string/windowmode_button"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/textFontWhite" />
+
+        <Button
+            android:id="@+id/btnClearAllData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@color/colorAccent"
+            android:text="@string/clearalldata_button"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/textFontWhite" />
+
+
+    </LinearLayout>
+</ScrollView>

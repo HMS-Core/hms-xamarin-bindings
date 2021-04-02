@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnSaveLoyaltyCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:background="@color/colorAccent"
+        android:textColor="@color/colorTextIcons"
+        android:text="@string/save_loyalty_card"
+        android:layout_marginBottom="20dp"
+        />
+
+    <Button
+        android:id="@+id/btnSaveGiftCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:background="@color/colorAccent"
+        android:textColor="@color/colorTextIcons"
+        android:text="@string/save_gift_card"
+        android:layout_marginBottom="20dp"
+        />
+
+    <Button
+        android:id="@+id/btnSaveCouponCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:background="@color/colorAccent"
+        android:textColor="@color/colorTextIcons"
+        android:text="@string/save_coupon_card"
+        />
+</LinearLayout>

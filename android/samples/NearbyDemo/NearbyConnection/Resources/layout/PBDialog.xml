@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     android:layout_margin="30px">
+    <TextView
+        android:text="Sending file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:layout_marginBottom="20px"
+        android:layout_marginLeft="30px"/>
+    <ProgressBar
+        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="150px"
+        android:minHeight="40px"
+        android:max="100"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:id="@+id/progressBar1" />
+
+    <TextView
+        android:id="@+id/tv_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_marginTop="10px"
+        android:layout_marginLeft="30px"
+        android:text="178k/180k" />
+
+</LinearLayout>

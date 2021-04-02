@@ -1,0 +1,682 @@
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#eee"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:src="@drawable/ml"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"/>
+        <TextView
+            android:text="Text Related Services"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginBottom="15dp"
+            android:id="@+id/text_related_services" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="15dp"
+            android:background="@android:color/darker_gray"/>
+        <LinearLayout
+            android:id="@+id/top_layout_face"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn_document"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_margin="10dp"
+                android:textSize="10sp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:drawableTop="@drawable/document_smaller"
+                android:background="@drawable/button_rounded"
+                android:text="Document Analyzer">
+            </Button>
+            <Button
+                android:id="@+id/btn_form_recognition"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_margin="10dp"
+                android:textSize="10sp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:drawableTop="@drawable/idcard_smaller"
+                android:background="@drawable/button_rounded"
+                android:text="Form Recognition">
+            </Button>
+            <Button
+                android:id="@+id/btn_textEmbedding"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_margin="10dp"
+                android:textSize="10sp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:drawableTop="@drawable/textembedding_smaller"
+                android:background="@drawable/button_rounded"
+                android:text="Text Embedding">
+            </Button>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/top_layout8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+                <Button
+                android:id="@+id/btn_gcr"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_margin="10dp"
+                android:textSize="10sp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:drawableTop="@drawable/generalcard_smaller"
+                android:background="@drawable/button_rounded"
+                android:text="General Card Analyzer">
+            </Button>
+             <Button
+                android:id="@+id/btn_bcr"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_margin="10dp"
+                android:textSize="10sp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:drawableTop="@drawable/bankcard_smaller"
+                android:background="@drawable/button_rounded"
+                android:text="Bank Card Analyzer">
+            </Button>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/top_layout_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn_text"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_margin="10dp"
+                android:textSize="10sp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:drawableTop="@drawable/text_smaller"
+                android:background="@drawable/button_rounded"
+                android:text="Text Analyzer">
+            </Button>
+
+            <Button
+                android:id="@+id/btn_translate"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_margin="10dp"
+                android:textSize="10sp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:drawableTop="@drawable/translate_smaller"
+                android:background="@drawable/button_rounded"
+                android:text="Translate">
+            </Button>
+
+        </LinearLayout>
+
+        <TextView
+            android:text="Voice Related Services"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginBottom="15dp"
+            android:id="@+id/voice_related_services" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="15dp"
+            android:background="@android:color/darker_gray"/>
+        <LinearLayout
+            android:id="@+id/top_layout_audio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/btn_asr"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_margin="10dp"
+                android:textSize="10sp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:drawableTop="@drawable/asr_smaller"
+                android:background="@drawable/button_rounded"
+                android:text="Automatic Speech Recognition">
+            </Button>
+
+            <Button
+                android:id="@+id/btn_aft"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_margin="10dp"
+                android:textSize="10sp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:drawableTop="@drawable/tts_smaller"
+                android:background="@drawable/button_rounded"
+                android:text="Audio File Transcription">
+            </Button>
+            <Button
+                android:id="@+id/btn_tts"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_margin="10dp"
+                android:textSize="10sp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:drawableTop="@drawable/tts_smaller"
+                android:background="@drawable/button_rounded"
+                android:text="Text to Speech">
+            </Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/top_layout9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn_sound_detect"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_margin="10dp"
+                android:textSize="10sp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:drawableTop="@drawable/sounddetect_smaller"
+                android:background="@drawable/button_rounded"
+                android:text="Sound Detection">
+            </Button>
+
+            <Button
+                android:id="@+id/btn_realtime_transcription"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_margin="10dp"
+                android:textSize="10sp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:drawableTop="@drawable/rtt_smaller"
+                android:background="@drawable/button_rounded"
+                android:text="Realtime Transcription">
+            </Button>
+        </LinearLayout>
+        <TextView
+            android:text="Image Related Services"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginBottom="15dp"
+            android:id="@+id/image_related_services" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="15dp"
+            android:background="@android:color/darker_gray"/>
+
+        <LinearLayout
+            android:id="@+id/top_layout_scene"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_image_scene_detection"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_margin="10dp"
+                android:textSize="10sp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:drawableTop="@drawable/scene_smaller"
+                android:background="@drawable/button_rounded"
+                android:text="Image Scene Detection">
+            </Button>
+
+            <Button
+                android:id="@+id/btn_live_scene_detection"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_margin="10dp"
+                android:textSize="10sp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:drawableTop="@drawable/scene_smaller"
+                android:background="@drawable/button_rounded"
+                android:text="Live Scene Detection">
+            </Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/top_layout_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_imgseg_live"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_margin="10dp"
+                android:textSize="10sp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:drawableTop="@drawable/imgsegment_smaller"
+                android:background="@drawable/button_rounded"
+                android:text="live imgseg">
+            </Button>
+
+            <Button
+                android:id="@+id/btn_img_super_res"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_margin="10dp"
+                android:textSize="10sp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:drawableTop="@drawable/isr_smaller"
+                android:background="@drawable/button_rounded"
+                android:text="Image Super Resolution">
+            </Button>
+
+            <Button
+                android:id="@+id/btn_doc_skew_correction"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_margin="10dp"
+                android:textSize="10sp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:drawableTop="@drawable/tisr_smaller"
+                android:background="@drawable/button_rounded"
+                android:text="Document Skew Correction">
+            </Button>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/top_layout_imgseg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+
+
+            <Button
+                android:id="@+id/btn_imgseg_image"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_margin="10dp"
+                android:textSize="10sp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:drawableTop="@drawable/imgsegment_smaller"
+                android:background="@drawable/button_rounded"
+                android:text="image Segmentation">
+            </Button>
+            <Button
+                android:id="@+id/btn_object"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_margin="10dp"
+                android:textSize="10sp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:drawableTop="@drawable/object_smaller"
+                android:background="@drawable/button_rounded"
+                android:text="Object Detection">
+            </Button>
+
+            <Button
+                android:id="@+id/btn_classification"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_margin="10dp"
+                android:textSize="10sp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:drawableTop="@drawable/classify_smaller"
+                android:background="@drawable/button_rounded"
+                android:text="Image Classification">
+            </Button>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/top_layout_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_productvisionsearch"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_margin="10dp"
+                android:textSize="10sp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:drawableTop="@drawable/product_smaller"
+                android:background="@drawable/button_rounded"
+                android:text="Product Vision Search">
+            </Button>
+
+            <Button
+                android:id="@+id/btn_landmark"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_margin="10dp"
+                android:textSize="10sp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:drawableTop="@drawable/landmark_smaller"
+                android:background="@drawable/button_rounded"
+                android:text="Landmark Analyzer">
+            </Button>
+
+            <Button
+                android:id="@+id/btn_text_img_super_res"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_margin="10dp"
+                android:textSize="10sp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:drawableTop="@drawable/tisr_smaller"
+                android:background="@drawable/button_rounded"
+                android:text="Text Image Super Resolution">
+            </Button>
+
+        </LinearLayout>
+        <TextView
+            android:text="Face/Body Related Services"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginBottom="15dp"
+            android:id="@+id/body_related_services" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="15dp"
+            android:background="@android:color/darker_gray"/>
+        <LinearLayout
+            android:id="@+id/top_layout6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_liveness_detection"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_margin="10dp"
+                android:textSize="10sp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:drawableTop="@drawable/liveness_smaller"
+                android:background="@drawable/button_rounded"
+                android:text="Liveness Detection">
+            </Button>
+
+            <Button
+                android:id="@+id/btn_skeleton_image"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_margin="10dp"
+                android:textSize="10sp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:drawableTop="@drawable/skeleton_smaller"
+                android:background="@drawable/button_rounded"
+                android:text="IMAGE SKELETON Detection">
+            </Button>
+
+            <Button
+                android:id="@+id/btn_skeleton_live"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_margin="10dp"
+                android:textSize="10sp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:drawableTop="@drawable/skeleton_smaller"
+                android:background="@drawable/button_rounded"
+                android:text="LIVE SKELETON Detection">
+            </Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hand_analyzer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/btn_handkeypoint_still"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_margin="10dp"
+                android:textSize="10sp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:drawableTop="@drawable/handkey_smaller"
+                android:background="@drawable/button_rounded"
+                android:text="Image Handkeypoint Detection">
+            </Button>
+            <Button
+                android:id="@+id/btn_handkeypoint_live"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_margin="10dp"
+                android:textSize="10sp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:drawableTop="@drawable/handkey_smaller"
+                android:background="@drawable/button_rounded"
+                android:text="Live Handkeypoint Detection">
+            </Button>
+
+            <Button
+                android:id="@+id/btn_face_image"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_margin="10dp"
+                android:textSize="10sp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:drawableTop="@drawable/face_smaller"
+                android:background="@drawable/button_rounded"
+                android:text="Image Face Analyzer">
+            </Button>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/top_layout_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_3dface_image"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_margin="10dp"
+                android:textSize="10sp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:drawableTop="@drawable/face_smaller"
+                android:background="@drawable/button_rounded"
+                android:text="Image 3d Face Analyzer">
+            </Button>
+
+            <Button
+                android:id="@+id/btn_live_3dface"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_margin="10dp"
+                android:textSize="10sp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:drawableTop="@drawable/face_smaller"
+                android:background="@drawable/button_rounded"
+                android:text="Live 3d Face Analyzer">
+            </Button>
+
+            <Button
+                android:id="@+id/btn_face_live"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:textSize="10sp"
+                android:padding="10dp"
+                android:drawableTop="@drawable/face_smaller"
+                android:background="@drawable/button_rounded"
+                android:text="Live Face Analyzer">
+            </Button>
+        </LinearLayout>
+        <TextView
+            android:text="Custom Model"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginBottom="15dp"
+            android:id="@+id/custom_model_service" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="15dp"
+            android:background="@android:color/darker_gray"/>
+
+        <LinearLayout
+            android:id="@+id/top_layout7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_custom_model"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_margin="10dp"
+                android:textSize="10sp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:drawableTop="@drawable/idcard_smaller"
+                android:background="@drawable/button_rounded"
+                android:text="Custom Model">
+            </Button>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

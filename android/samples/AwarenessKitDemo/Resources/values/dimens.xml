@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+	<dimen name="activity_title_margin">10dp</dimen>
+</resources>

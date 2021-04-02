@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    android:orientation="vertical">
+
+    <HmsXamarinMLDemo.Camera.LensEnginePreview
+        android:id="@+id/hand_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <HmsXamarinMLDemo.Camera.GraphicOverlay
+            android:id="@+id/hand_overlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </HmsXamarinMLDemo.Camera.LensEnginePreview>
+
+    <Button
+        android:id="@+id/handswitch"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/front_back_switch"
+        android:textOff=""
+        android:textOn="" />
+
+</RelativeLayout>
