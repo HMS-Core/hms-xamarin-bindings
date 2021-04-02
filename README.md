@@ -49,7 +49,7 @@ The bootstrapper script will automatically download Cake.exe and all the require
 dotnet tool install -g cake.tool
 ```
 
-When building on macOS, you may also need to install [CocoaPods][31]:
+When building on macOS, you may also need to install CocoaPods:
 
 ```sh
 # Homebrew
