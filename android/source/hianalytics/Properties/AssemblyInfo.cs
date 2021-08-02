@@ -11,5 +11,5 @@ using Android.App;
 [assembly: AssemblyMetadata("AssemblyCopyright", "© Huawei Technologies Co., Ltd. All rights reserved.")]
 
 
-[assembly: AssemblyMetadata("AssemblyVersion", "5.0.5.300")]
+[assembly: AssemblyMetadata("AssemblyVersion", "6.0.0.300")]
 [assembly: AssemblyMetadata("AssemblyFileVersion", "1.0.0.0")]

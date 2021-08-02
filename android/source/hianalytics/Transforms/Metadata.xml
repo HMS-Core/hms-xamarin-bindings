@@ -33,24 +33,22 @@
   
   <attr path="/api/package[@name='com.huawei.hms.analytics']/interface[@name='v']" name="obfuscated">false</attr>
   <attr path="/api/package[@name='com.huawei.hms.analytics']/interface[@name='v']" name="managedName">IV</attr>
-  <attr path="/api/package[@name='com.huawei.hms.analytics']/interface[@name='w']" name="obfuscated">false</attr>
-  <attr path="/api/package[@name='com.huawei.hms.analytics']/interface[@name='w']" name="managedName">IW</attr>
-  <attr path="/api/package[@name='com.huawei.hms.analytics']/interface[@name='y']" name="obfuscated">false</attr>
-  <attr path="/api/package[@name='com.huawei.hms.analytics']/interface[@name='y']" name="managedName">IY</attr>
-  <attr path="/api/package[@name='com.huawei.hms.analytics']/interface[@name='z']" name="obfuscated">false</attr>
-  <attr path="/api/package[@name='com.huawei.hms.analytics']/interface[@name='z']" name="managedName">IZ</attr>
-  
+  <attr path="/api/package[@name='com.huawei.hms.analytics']/class[@name='az']" name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.huawei.hms.analytics']/class[@name='ba']" name="obfuscated">false</attr>
+
   <attr path="/api/package[@name='com.huawei.hms.analytics']/class[@name='g']" name="obfuscated">false</attr>
   <attr path="/api/package[@name='com.huawei.hms.analytics']/class[@name='an']" name="obfuscated">false</attr>
   <attr path="/api/package[@name='com.huawei.hms.analytics']/class[@name='ikl']" name="managedName">IklClass</attr>
 
-  <add-node path="/api/package[@name='com.huawei.hms.analytics']/class[@name='def.klm']">
+
+  <add-node path="/api/package[@name='com.huawei.hms.analytics']/class[@name='cde.klm']">
     <method name="onSuccess" return="void" abstract="false" native="false" synchronized="false" static="false" final="false" deprecated="not deprecated" visibility="public">
       <parameter name="result" type="java.lang.Object" />
     </method>
   </add-node>
 
-   
+  <remove-node path="/api/package[@name='com.huawei.hms.analytics']/class[@name='ikl']/method[@name='lmn' and count(parameter)=1 and parameter[1][@type='boolean']]"></remove-node>
+  
   
   <!--Depreceated-->
 	<attr path="/api/package[@name='com.huawei.hms.analytics']/class[@name='HiAnalyticsInstance']/method[@name='setCurrentActivity' and count(parameter)=3 and parameter[1][@type='android.app.Activity'] and parameter[2][@type='java.lang.String'] and parameter[3][@type='java.lang.String']]" name="deprecated">Please use PageStart() and PageEnd() methods instead.</attr>
@@ -66,7 +64,7 @@
 	<remove-node  path="/api/package[@name='com.huawei.hms.analytics.database']/class[@name='APIEventDao']/method[@name='readKey' and count(parameter)=2 and parameter[1][@type='android.database.Cursor'] and parameter[2][@type='int']]"></remove-node>
 	<remove-node path="/api/package[@name='com.huawei.hms.analytics.database']/class[@name='EventDao']/method[@name='readKey' and count(parameter)=2 and parameter[1][@type='android.database.Cursor'] and parameter[2][@type='int']]"></remove-node>
 	<remove-node path="/api/package[@name='com.huawei.hms.analytics.database']/class[@name='APIEventDao']/method[@name='readEntity' and count(parameter)=2 and parameter[1][@type='android.database.Cursor'] and parameter[2][@type='int']]"></remove-node> 
-
-
 </metadata>
+
+
 

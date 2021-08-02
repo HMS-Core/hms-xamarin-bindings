@@ -1,0 +1,27 @@
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Huawei.Hms.HianalyticsCore</id>
+    <version>6.0.0.300</version>
+    <title>Huawei.Hms.HianalyticsCore</title>
+    <authors>Huawei</authors>
+    <owners>Huawei</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="file">LICENSE.txt</license>
+    <projectUrl>https://github.com/HMS-Core/hms-xamarin-bindings</projectUrl>
+    <icon>huawei.png</icon>
+    <description>Xamarin.Android bindings for HMS Core - HianalyticsCore</description>
+    <copyright>© Huawei Technologies Co., Ltd. All rights reserved.</copyright>
+    <tags>Huawei Hms HianalyticsCore</tags>
+    <dependencies>
+      <group targetFramework="MonoAndroid9.0" />
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="Java.Interop" targetFramework="MonoAndroid9.0" />
+    </frameworkAssemblies>
+  </metadata>
+  <files>
+    <file src="bin/Release/Huawei.Hms.HianalyticsCore.dll" target="lib/monoandroid90/Huawei.Hms.HianalyticsCore.dll" />
+    <file src="../../icons/huawei.png" target="" />
+    <file src="../../LICENSE.txt" target="" />
+  </files>
+</package>

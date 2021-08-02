@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="false">
+        <LinearLayout
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:padding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/clors_dis"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/mwc_subject"
+                    android:textColor="#000000"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mwc_detail"
+                    android:textColor="#99000000"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/button_defaultView"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/clors_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="loadScanKitBtnClick"
+                android:text="@string/default_view_decoe"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/button_newView"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/clors_btn"
+                android:text="@string/customized_view_decode"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/button_bitmap"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/clors_btn"
+                android:text="@string/bitmap_api_decode"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/button_multisyn"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/clors_btn"
+                android:text="@string/multiProcessor_api_syn_decode"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/button_multiAsyn"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/clors_btn"
+                android:text="@string/multiProcessor_api_asyn_decode"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+            <Button
+                android:id="@+id/button_generateQR"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/clors_btn"
+                android:text="@string/generate_QR_code"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </ScrollView>

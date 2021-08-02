@@ -3,8 +3,8 @@
 </p>
 
 <p align="center">
-  <a href="NUGET_URL"><img src="https://img.shields.io/nuget/dt/Huawei.Hms.Push?label=Downloads&color=%23007EC6&style=for-the-badge"alt="downloads"></a>
-  <a href="NUGET_URL"><img src="https://img.shields.io/nuget/v/Huawei.Hms.Push?color=%23ed2a1c&style=for-the-badge" alt="Nuget version"></a>
+  <a href="https://www.nuget.org/packages/Huawei.Hms.Push/"><img src="https://img.shields.io/nuget/dt/Huawei.Hms.Push?label=Downloads&color=%23007EC6&style=for-the-badge"alt="downloads"></a>
+  <a href="https://www.nuget.org/packages/Huawei.Hms.Push/"><img src="https://img.shields.io/nuget/v/Huawei.Hms.Push?color=%23ed2a1c&style=for-the-badge" alt="Nuget version"></a>
   <a href="/LICENSE.txt"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg?color=%3bcc62&style=for-the-badge" alt="License"></a>
 </p>
 
@@ -20,7 +20,7 @@ The Xamarin SDK provides adaption code used for HUAWEI Push Kit in Xamarin platf
 
 In the Solution Explorer panel of your application, right click on the solution name and select Manage NuGet Packages. Search for **Huawei.Hms.Push** and install the package into your Xamarin.Android projects.
 
-You can change the `Version` option to specify a [preview version](https://www.nuget.org/packages/NUGET_PACKAGE_ID) to install.
+You can change the `Version` option to specify a [preview version](https://www.nuget.org/packages/Huawei.Hms.Push) to install.
 
 ## Documentation
 

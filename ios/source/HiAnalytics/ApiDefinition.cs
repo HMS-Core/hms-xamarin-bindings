@@ -55,55 +55,83 @@ namespace Huawei.Hms.Analytics
 	{
 		// +(void)config;
 		[Static]
-		[Export("config")]
-		//[DllImport("/externals/HiAnalytics.Framework", CallingConvention = CallingConvention.Cdecl)]
-		void Config();
+		[Export ("config")]
+		void Config ();
 
 		// +(void)setReportPolicies:(NSArray<HAReportPolicy *> * _Nullable)policies;
 		[Static]
-		[Export("setReportPolicies:")]
-		void SetReportPolicies([NullAllowed] HAReportPolicy[] policies);
+		[Export ("setReportPolicies:")]
+		void SetReportPolicies ([NullAllowed] HAReportPolicy[] policies);
 
 		// +(void)onEvent:(NSString * _Nonnull)eventId setParams:(NSDictionary<NSString *,id> * _Nonnull)params;
 		[Static]
-		[Export("onEvent:setParams:")]
-		void OnEvent(string eventId, NSDictionary<NSString, NSObject> @params);
+		[Export ("onEvent:setParams:")]
+		void OnEvent (string eventId, NSDictionary<NSString, NSObject> @params);
 
-		// +(void)setUserProfile:(NSString * _Nonnull)name setValue:(NSString * _Nonnull)value;
+		// +(void)addDefaultEventParams:(NSDictionary<NSString *,id> * _Nullable)params;
 		[Static]
-		[Export("setUserProfile:setValue:")]
-		void SetUserProfile(string name, string value);
+		[Export ("addDefaultEventParams:")]
+		void AddDefaultEventParams ([NullAllowed] NSDictionary<NSString, NSObject> @params);
+
+		// +(void)setUserProfile:(NSString * _Nonnull)name setValue:(NSString * _Nullable)value;
+		[Static]
+		[Export ("setUserProfile:setValue:")]
+		void SetUserProfile (string name, [NullAllowed] string value);
 
 		// +(NSDictionary<NSString *,id> * _Nullable)userProfiles:(BOOL)preDefined;
 		[Static]
-		[Export("userProfiles:")]
+		[Export ("userProfiles:")]
 		[return: NullAllowed]
-		NSDictionary<NSString, NSObject> UserProfiles(bool preDefined);
+		NSDictionary<NSString, NSObject> UserProfiles (bool preDefined);
 
 		// +(void)setAnalyticsEnabled:(BOOL)enabled;
 		[Static]
-		[Export("setAnalyticsEnabled:")]
-		void SetAnalyticsEnabled(bool enabled);
+		[Export ("setAnalyticsEnabled:")]
+		void SetAnalyticsEnabled (bool enabled);
+
+		// +(BOOL)isRestrictionEnabled;
+		[Static]
+		[Export ("isRestrictionEnabled")]
+		bool IsRestrictionEnabled { get; }
+
+		// +(void)setCollectAdsIdEnabled:(BOOL)isEnabled;
+		[Static]
+		[Export ("setCollectAdsIdEnabled:")]
+		void SetCollectAdsIdEnabled (bool isEnabled);
+
+		// +(void)setRestrictionEnabled:(BOOL)enabled;
+		[Static]
+		[Export ("setRestrictionEnabled:")]
+		void SetRestrictionEnabled (bool enabled);
+
+		// +(void)setRestrictionShared:(BOOL)enabled;
+		[Static]
+		[Export ("setRestrictionShared:")]
+		void SetRestrictionShared (bool enabled);
+
+		// +(BOOL)isRestrictionShared;
+		[Static]
+		[Export ("isRestrictionShared")]
+		bool IsRestrictionShared { get; }
 
 		// +(NSString * _Nonnull)AAID;
 		[Static]
-		[Export("AAID")]
-		//[Verify(MethodToProperty)]
+		[Export ("AAID")]
 		string AAID { get; }
 
 		// +(void)setUserId:(NSString * _Nullable)userId;
 		[Static]
-		[Export("setUserId:")]
-		void SetUserId([NullAllowed] string userId);
+		[Export ("setUserId:")]
+		void SetUserId ([NullAllowed] string userId);
 
 		// +(void)setSessionDuration:(NSTimeInterval)milliseconds;
 		[Static]
-		[Export("setSessionDuration:")]
-		void SetSessionDuration(double milliseconds);
+		[Export ("setSessionDuration:")]
+		void SetSessionDuration (double milliseconds);
 
 		// +(void)clearCachedData;
 		[Static]
-		[Export("clearCachedData")]
-		void ClearCachedData();
+		[Export ("clearCachedData")]
+		void ClearCachedData ();
 	}
 }

@@ -1,0 +1,47 @@
+﻿<!--    Copyright 2020-2021. Huawei Technologies Co., Ltd. All rights reserved.
+
+        Licensed under the Apache License, Version 2.0 (the "License");
+        you may not use this file except in compliance with the License.
+        You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+        Unless required by applicable law or agreed to in writing, software
+        distributed under the License is distributed on an "AS IS" BASIS,
+        WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+        See the License for the specific language governing permissions and
+        limitations under the License. 
+-->
+
+<metadata>
+  <!--HiAnalytics-->
+  <attr path="/api/package[@name='com.huawei.hms.analytics']/class[@name='HiAnalytics']/method[@name='getInstance' and count(parameter)=1 and parameter[1][@type='android.app.Activity']]/parameter[1]" name="managedName">activity</attr>
+ <attr path="/api/package[@name='com.huawei.hms.analytics']/class[@name='HiAnalytics']/method[@name='getInstance' and count(parameter)=1 and parameter[1][@type='android.content.Context']]/parameter[1]" name="managedName">context</attr>
+
+  <!--HiAnalyticsInstance-->
+  <attr path="/api/package[@name='com.huawei.hms.analytics']/class[@name='HiAnalyticsInstance']/method[@name='addDefaultEventParams' and count(parameter)=1 and parameter[1][@type='android.os.Bundle']]/parameter[1]" name="managedName">params</attr>
+   <attr path="/api/package[@name='com.huawei.hms.analytics']/class[@name='HiAnalyticsInstance']/method[@name='getUserProfiles' and count(parameter)=1 and parameter[1][@type='boolean']]/parameter[1]" name="managedName">predefined</attr>
+  <attr path="/api/package[@name='com.huawei.hms.analytics']/class[@name='HiAnalyticsInstance']/method[@name='onEvent' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='android.os.Bundle']]/parameter[1]" name="managedName">eventId</attr>
+  <attr path="/api/package[@name='com.huawei.hms.analytics']/class[@name='HiAnalyticsInstance']/method[@name='onEvent' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='android.os.Bundle']]/parameter[2]" name="managedName">params</attr>
+  <attr path="/api/package[@name='com.huawei.hms.analytics']/class[@name='HiAnalyticsInstance']/method[@name='pageEnd' and count(parameter)=1 and parameter[1][@type='java.lang.String']]/parameter[1]" name="managedName">pageName</attr>
+  <attr path="/api/package[@name='com.huawei.hms.analytics']/class[@name='HiAnalyticsInstance']/method[@name='pageStart' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.lang.String']]/parameter[1]" name="managedName">pageName</attr>
+  <attr path="/api/package[@name='com.huawei.hms.analytics']/class[@name='HiAnalyticsInstance']/method[@name='pageStart' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.lang.String']]/parameter[2]" name="managedName">className</attr>
+  <attr path="/api/package[@name='com.huawei.hms.analytics']/class[@name='HiAnalyticsInstance']/method[@name='setAnalyticsEnabled' and count(parameter)=1 and parameter[1][@type='boolean']]/parameter[1]" name="managedName">enabled</attr>
+  <attr path="/api/package[@name='com.huawei.hms.analytics']/class[@name='HiAnalyticsInstance']/method[@name='setAutoCollectionEnabled' and count(parameter)=1 and parameter[1][@type='boolean']]/parameter[1]" name="managedName">isEnabled</attr>
+  <attr path="/api/package[@name='com.huawei.hms.analytics']/class[@name='HiAnalyticsInstance']/method[@name='setCollectAdsIdEnabled' and count(parameter)=1 and parameter[1][@type='boolean']]/parameter[1]" name="managedName">enabled</attr>
+  <attr path="/api/package[@name='com.huawei.hms.analytics']/class[@name='HiAnalyticsInstance']/method[@name='setCurrentActivity' and count(parameter)=3 and parameter[1][@type='android.app.Activity'] and parameter[2][@type='java.lang.String'] and parameter[3][@type='java.lang.String']]/parameter[1]" name="managedName">activity</attr>
+  <attr path="/api/package[@name='com.huawei.hms.analytics']/class[@name='HiAnalyticsInstance']/method[@name='setCurrentActivity' and count(parameter)=3 and parameter[1][@type='android.app.Activity'] and parameter[2][@type='java.lang.String'] and parameter[3][@type='java.lang.String']]/parameter[2]" name="managedName">activityName</attr>
+  <attr path="/api/package[@name='com.huawei.hms.analytics']/class[@name='HiAnalyticsInstance']/method[@name='setCurrentActivity' and count(parameter)=3 and parameter[1][@type='android.app.Activity'] and parameter[2][@type='java.lang.String'] and parameter[3][@type='java.lang.String']]/parameter[3]" name="managedName">className</attr>
+  <attr path="/api/package[@name='com.huawei.hms.analytics']/class[@name='HiAnalyticsInstance']/method[@name='setMinActivitySessions' and count(parameter)=1 and parameter[1][@type='long']]/parameter[1]" name="managedName">milliseconds</attr>
+  <attr path="/api/package[@name='com.huawei.hms.analytics']/class[@name='HiAnalyticsInstance']/method[@name='setPushToken' and count(parameter)=1 and parameter[1][@type='java.lang.String']]/parameter[1]" name="managedName">token</attr>
+  <attr path="/api/package[@name='com.huawei.hms.analytics']/class[@name='HiAnalyticsInstance']/method[@name='setReportPolicies' and count(parameter)=1 and parameter[1][@type='java.util.Set&lt;com.huawei.hms.analytics.type.ReportPolicy&gt;']]/parameter[1]" name="managedName">policies</attr>
+  <attr path="/api/package[@name='com.huawei.hms.analytics']/class[@name='HiAnalyticsInstance']/method[@name='setSessionDuration' and count(parameter)=1 and parameter[1][@type='long']]/parameter[1]" name="managedName">milliseconds</attr>
+  <attr path="/api/package[@name='com.huawei.hms.analytics']/class[@name='HiAnalyticsInstance']/method[@name='setUserId' and count(parameter)=1 and parameter[1][@type='java.lang.String']]/parameter[1]" name="managedName">userId</attr>
+  <attr path="/api/package[@name='com.huawei.hms.analytics']/class[@name='HiAnalyticsInstance']/method[@name='setUserProfile' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.lang.String']]/parameter[1]" name="managedName">name</attr>
+  <attr path="/api/package[@name='com.huawei.hms.analytics']/class[@name='HiAnalyticsInstance']/method[@name='setUserProfile' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.lang.String']]/parameter[2]" name="managedName">value</attr>
+  
+  
+  <!--HiAnalyticsTools-->
+  <attr path="/api/package[@name='com.huawei.hms.analytics']/class[@name='HiAnalyticsTools']/method[@name='enableLog' and count(parameter)=1 and parameter[1][@type='int']]/parameter[1]" name="managedName">level</attr>
+  
+</metadata>
