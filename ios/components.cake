@@ -1,9 +1,10 @@
-var AGC_VERSION = "1.2.0.300";
+var AGC_VERSION = "1.3.2.301";
+var ANALYTICS_VERSION = "6.0.0.300";
 
 var SLN_PATH = "./source/HmsCoreXamarinBindings.iOS.sln"; 
 
-Artifact AGC_CORE_ARTIFACT      = new Artifact ("AgconnectCore", "Agconnect","1.2.0.300" ,"10.0"); 
-Artifact ANALYTICS_KIT_ARTIFACT      = new Artifact ("HiAnalytics","Hms" ,"5.0.5.300" ,"10.0"); 
+Artifact AGC_CORE_ARTIFACT      = new Artifact ("AgconnectCore", "Agconnect",AGC_VERSION ,"10.0"); 
+Artifact ANALYTICS_KIT_ARTIFACT      = new Artifact ("HiAnalytics","Hms" ,ANALYTICS_VERSION ,"10.0"); 
 
 var ARTIFACTS = new Dictionary<string, Artifact> {
 	{ "AGConnectCore", AGC_CORE_ARTIFACT },
@@ -25,6 +26,6 @@ void SetArtifactsPodSpecs ()
 	};
 
 	ANALYTICS_KIT_ARTIFACT.PodSpecs = new [] {
-		PodSpec.Create ("HiAnalytics",   "5.0.5.300")
+		PodSpec.Create ("HiAnalytics",   ANALYTICS_VERSION)
 	};
 }

@@ -94,9 +94,9 @@ void BuildSdkOnPodfile (Artifact artifact)
 				Information(ext.ToString());
  			   	CopyDirectory(ext,  $"./externals/");
 				if(System.IO.File.Exists("./externals/README.md"))
-			    DeleteFile($"./externals/README.md");
+			      DeleteFile($"./externals/README.md");
 				if(System.IO.File.Exists("./externals/LICENSE"))
-			    DeleteFile($"./externals/LICENSE");
+			      DeleteFile($"./externals/LICENSE");
 				if(AGC_VERSION=="1.3.0.300" && podSpec.FrameworkName =="AGConnectCredential")
 				    System.IO.Directory.Move($"./externals/AGCResources.bundle", $"./externals/{framework}/AGCResources.bundle");
 			  }

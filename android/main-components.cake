@@ -10,9 +10,9 @@ new ArtifactInfo("awareness-common","1.0.7.303","hms","aar")
 
 
 var HIANALYTICS_ARTIFACTS = new List<ArtifactInfo> {
-    new ArtifactInfo("hianalytics-framework","5.0.5.300","hms","jar"),
-    new ArtifactInfo("hianalytics-core","5.0.5.300","hms","jar"),
-    new ArtifactInfo("hianalytics","5.0.5.300","hms","aar")
+    new ArtifactInfo("hianalytics-framework","6.0.0.300","hms","jar"),
+    new ArtifactInfo("hianalytics-core","6.0.0.300","hms","jar"),
+    new ArtifactInfo("hianalytics","6.0.0.300","hms","aar")
 };
 
 

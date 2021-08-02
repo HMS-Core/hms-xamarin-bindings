@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Huawei.Hms.iOS.Hianalytics</id>
+    <version>6.0.0.300</version>
+    <title>Huawei.Hms.iOS.Hianalytics</title>
+    <authors>Huawei</authors>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="file">LICENSE.txt</license> 
+     <icon>huawei.png</icon> 
+    <projectUrl>https://github.com/HMS-Core/hms-xamarin-bindings</projectUrl>
+    <description>C# bindings for Huawei Analytics Kit iOS Library</description>
+    <copyright>© Huawei Technologies Co., Ltd. All rights reserved.</copyright>
+    <tags>Huawei Hms Hianalytics</tags>
+    <dependencies>
+      <group targetFramework="Xamarin.iOS1.0" >
+       <dependency id="Huawei.Agconnect.iOS.AgconnectCore" version="1.3.0.300" include="All" />
+    </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.Drawing.Common.dll" targetFramework="Xamarin.iOS1.0" />
+      <frameworkAssembly assemblyName="Xamarin.iOS" targetFramework="Xamarin.iOS1.0" />
+    </frameworkAssemblies>
+  </metadata>
+  <files>
+    <file src="Huawei.Hms.Analytics.dll" target="lib/xamarinios10/Huawei.Hms.Analytics.dll" />
+   <file src="../../README.md" target="README.md" />
+    <file src="../../../../icons/huawei.png" target="" /> 
+    <file src="../../../../LICENSE.txt" target="" />
+  </files>
+</package>

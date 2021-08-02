@@ -60,5 +60,7 @@
 	</array>
 	<key>XSAppIconAssets</key>
 	<string>Assets.xcassets/AppIcon.appiconset</string>
+  <key>NSUserTrackingUsageDescription</key>
+  <string>Application wants to track your data.</string>
 </dict>
 </plist>

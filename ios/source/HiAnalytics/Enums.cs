@@ -177,10 +177,6 @@ namespace Huawei.Hms.Analytics
 
         //Account type of a user, for example, email or mobile number.
         public static string AcountType = "AcountType";
-
-        //Time when a user purchases a product.
-        public static string OccurredTime = "OccurredTime";
-
         //Sign-in result.
         public static string EvtResult = "EvtResult";
 
@@ -275,8 +271,7 @@ namespace Huawei.Hms.Analytics
         /// Event reported when a user joins in a group, for example, joining in a group chat in a social app. It can be used to evaluate the attractiveness of your product's social features to users.
         public static string JoinUserGroup = "JoinUserGroup";
 
-        /// Event reported when a user completes a game level in a game app. It can be used with StartLevel to analyze whether the game level design is proper and formulate targeted optimization policies.
-        public static string CompleteLevel = "CompleteLevel";
+        /// Event reported when a user completes a game level in a game app. It can be used with StartLevel to analyze whether the game level design is proper and formulate targeted optimization policies.f
 
         /// Event reported when a user starts a game level in a game app.It can be used with CompleteLevel to analyze whether the game level design is proper and formulate targeted optimization policies.
         public static string StartLevel = "StartLevel";
@@ -377,4 +372,13 @@ namespace Huawei.Hms.Analytics
         /// Event reported when props are consumed.
         public static string ConsumeProps = "ConsumeProps";
     }
+
+    
+    public static class HAUserProfileType
+    {
+        ///User level. This attribute is used to identify the level of a user in an app that employs the user level hierarchy.
+       public static string HAUserLevel = @"user_level";
+       public static string HAIsFullLevel = @"is_full_level";
+    }
+
 }

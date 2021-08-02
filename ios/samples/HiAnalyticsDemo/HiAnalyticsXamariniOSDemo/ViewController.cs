@@ -1,5 +1,5 @@
 ﻿/*
- * Copyright 2020. Huawei Technologies Co., Ltd. All rights reserved.
+ * Copyright 2020-2021. Huawei Technologies Co., Ltd. All rights reserved.
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -17,6 +17,7 @@
 using System;
 using UIKit;
 using Huawei.Hms.Analytics;
+using Foundation;
 
 namespace HiAnalyticsXamariniOSDemo
 {
@@ -37,6 +38,21 @@ namespace HiAnalyticsXamariniOSDemo
             // Perform any additional setup after loading the view, typically from a nib.
 
             SetReportPolicies();
+
+            //Adds default event parameters. 
+            var keys = new[]
+            {
+                    new NSString("Default Event Params"), 
+            };
+
+            var objects = new NSObject[]
+            {
+                  new NSString( "This is a default event param."), 
+            };
+
+            var dictionary = new NSDictionary<NSString, NSObject>(keys, objects); 
+            HiAnalytics.AddDefaultEventParams(dictionary);
+
             quizViewController = Storyboard?.InstantiateViewController("Quiz");
             quizViewController.View.Frame = View.Frame;
             SwitchViewController(null, quizViewController);

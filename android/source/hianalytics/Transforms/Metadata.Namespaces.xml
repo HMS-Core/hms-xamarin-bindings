@@ -13,6 +13,7 @@
         limitations under the License.-->
 <metadata>
   <attr path="/api/package[@name='com.huawei.hms.analytics']" name="managedName">Huawei.Hms.Analytics</attr>
+  <attr path="/api/package[@name='com.huawei.hms.analytics.provider']" name="managedName">Huawei.Hms.Analytics.Provider</attr>
   <attr path="/api/package[@name='com.huawei.hms.analytics.connector']" name="managedName">Huawei.Hms.Analytics.Connector</attr>
   <attr path="/api/package[@name='com.huawei.hms.analytics.database']" name="managedName">Huawei.Hms.Analytics.Database</attr> 
   <attr path="/api/package[@name='com.huawei.hms.analytics.internal.filter']" name="managedName">Huawei.Hms.Analytics.Internal.Filter</attr>

@@ -12,18 +12,18 @@ using Foundation;
 // Information about this assembly is defined by the following attributes.
 // Change them to the values specific to your project.
 
-[assembly: AssemblyTitle("Huawei.Hms.Hianalytics")]
+[assembly: AssemblyTitle("Huawei.Hms.Analytics")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Huawei Technologies Co., Ltd.")]
-[assembly: AssemblyProduct("Huawei.Hms.Hianalytics")]
+[assembly: AssemblyProduct("Huawei.Hms.Analytics")]
 [assembly: AssemblyCopyright("© Huawei Technologies Co., Ltd. All rights reserved.")]
 
 // The assembly version has the format "{Major}.{Minor}.{Build}.{Revision}".
 // The form "{Major}.{Minor}.*" will automatically update the build and revision,
 // and "{Major}.{Minor}.{Build}.*" will update just the revision.
 
-[assembly: AssemblyMetadata("AssemblyVersion", "5.0.5.300")]
+[assembly: AssemblyMetadata("AssemblyVersion", "6.0.0.300")]
 [assembly: AssemblyMetadata("AssemblyFileVersion", "1.0.0.0")]
 
 // The following attributes are used to specify the signing key for the assembly,

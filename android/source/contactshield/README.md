@@ -3,8 +3,8 @@
 </p>
 
 <p align="center">
-  <a href="https://www.nuget.org/packages/Huawei.Hms.Contactshield"><img src="https://img.shields.io/nuget/dt/NUGET_PACKAGE_ID?label=Downloads&color=%23007EC6&style=for-the-badge"alt="downloads"></a>
-  <a href="https://www.nuget.org/packages/Huawei.Hms.Contactshield"><img src="https://img.shields.io/nuget/v/NUGET_PACKAGE_ID?color=%23ed2a1c&style=for-the-badge" alt="Nuget version"></a>
+  <a href="https://www.nuget.org/packages/Huawei.Hms.Contactshield"><img src="https://img.shields.io/nuget/dt/Huawei.Hms.Contactshield?label=Downloads&color=%23007EC6&style=for-the-badge"alt="downloads"></a>
+  <a href="https://www.nuget.org/packages/Huawei.Hms.Contactshield"><img src="https://img.shields.io/nuget/v/Huawei.Hms.Contactshield?color=%23ed2a1c&style=for-the-badge" alt="Nuget version"></a>
   <a href="/LICENSE"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg?color=%3bcc62&style=for-the-badge" alt="Licence"></a>
 </p>
 

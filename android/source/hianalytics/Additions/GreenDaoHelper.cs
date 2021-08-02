@@ -96,3 +96,4 @@ namespace Huawei.Hms.Analytics.Database
         }
     }
 }
+
