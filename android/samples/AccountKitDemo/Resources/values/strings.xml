@@ -15,6 +15,7 @@
 	<string name="hwid_sign_out">SignOut</string>
 	<string name="hwid_revokeAccess">AuthorizationCode Mode Signln</string>
 	<string name="hwid_silent_sign_in">Silent Signln</string>
+	<string name="hwid_independent_sign_in">Independent Authorization</string>
 	<string name="hwid_cancel_out">Cancel Authorization</string>
 	<string name="hwid_start_sms_manager">Start Read Sms Manager</string>
 </resources>

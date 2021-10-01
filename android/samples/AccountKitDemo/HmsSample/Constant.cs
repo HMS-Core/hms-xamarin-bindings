@@ -36,6 +36,8 @@ namespace XamarinAccountKitDemo.HmsSample
         public static readonly int RequestSignInLogin = 1002;
         //login by code
         public static readonly int RequestSignInLoginCode = 1003;
+        //independent signin
+        public static readonly int RequestIndependentSignInLoginCode = 8888;
 
         /**
          * your app’s client ID,please replace it of yours

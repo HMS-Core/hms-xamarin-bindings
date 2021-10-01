@@ -16,29 +16,24 @@
 using Android.App;
 using Android.OS;
 using Android.Runtime;
-using Huawei.Hms.Support.Hwid.Request;
-using Huawei.Hms.Support.Hwid;
-using Huawei.Hms.Support.Hwid.Result;
-using Huawei.Hms.Support.Hwid.Service;
-using XamarinAccountKitDemo.HmsSample;
-using Task = Huawei.Hmf.Tasks.Task;
 using XamarinAccountKitDemo.Logger;
 using Android.Content;
-using Android.Views;
 using Android.Content.PM;
 using Log = XamarinAccountKitDemo.Logger.Log;
 using Android.Support.V4.Content;
 using Android.Support.V4.App;
-using XamarinAccountKitDemo.HmsSample.Common;
 using Huawei.Hms.Support.Sms;
 using XamarinAccountKitDemo.SMSBroadcastReceiver;
 using Huawei.Hms.Support.Sms.Common;
 using Result = Android.App.Result;
 using System;
-using System.Collections.Generic;
-using Huawei.Hms.Support.Api.Entity.Auth;
 using XamarinAccountKitDemo.Helper;
 using Android.Widget;
+using Huawei.Hms.Support.Account.Service;
+using Huawei.Hms.Support.Account.Request;
+using Huawei.Hms.Support.Account;
+using Huawei.Hms.Support.Account.Result;
+using System.Threading.Tasks;
 
 namespace XamarinAccountKitDemo.HmsSample
 {
@@ -50,10 +45,13 @@ namespace XamarinAccountKitDemo.HmsSample
         //Broadcast Receiver for sms validation
         public MySMSBroadcastReceiver mySMSBroadcastReceiver;
         //HUAWEI ID authorization service interface 
-        private IHuaweiIdAuthService authManager;
+        private IAccountAuthService mAuthManager;
         //HUAWEI ID authorization service request parameters
-        private HuaweiIdAuthParams authParam;
-        private Button btnSignIn, btnSignInCode, btnSilentSignIn, btnStartSmsManager, btnCancelAuthorization, btnSignOut;
+        private AccountAuthParams mAuthParam;
+        //AccessToken for Independent Auth after sign in
+        string accessToken;
+
+        private Button btnSignIn, btnSignInCode, btnSilentSignIn, btnIndependentAuth, btnStartSmsManager, btnCancelAuthorization, btnSignOut;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -65,6 +63,7 @@ namespace XamarinAccountKitDemo.HmsSample
             btnSignIn = FindViewById<Button>(Resource.Id.hwid_signin);
             btnSignInCode = FindViewById<Button>(Resource.Id.hwid_signInCode);
             btnSilentSignIn = FindViewById<Button>(Resource.Id.hwid_silentSignIn);
+            btnIndependentAuth = FindViewById<Button>(Resource.Id.hwid_independentAuth);
             btnStartSmsManager = FindViewById<Button>(Resource.Id.hwid_startSmsManager);
             btnCancelAuthorization = FindViewById<Button>(Resource.Id.hwid_cancelAuthorization);
             btnSignOut = FindViewById<Button>(Resource.Id.hwid_signout);
@@ -73,6 +72,7 @@ namespace XamarinAccountKitDemo.HmsSample
             btnSignIn.Click += BtnSignIn_Click;
             btnSignInCode.Click += BtnSignInCode_Click;
             btnSilentSignIn.Click += BtnSilentSignIn_Click;
+            btnIndependentAuth.Click += BtnIndependentAuth_Click;
             btnStartSmsManager.Click += BtnStartSmsManager_Click;
             btnCancelAuthorization.Click += BtnCancelAuthorization_Click;
             btnSignOut.Click += BtnSignOut_Click;
@@ -85,7 +85,7 @@ namespace XamarinAccountKitDemo.HmsSample
             */
             var appHashKey = AppHashKeyHelper.GetAppHashKey(this);
 
-            //sample log Please ignore
+            //Inflate log fragment
             AddLogFragment();
 
             //check permissions
@@ -155,6 +155,11 @@ namespace XamarinAccountKitDemo.HmsSample
             SilentSignIn();
         }
 
+        private void BtnIndependentAuth_Click(object sender, EventArgs e)
+        {
+            IndependentAuthorization();
+        }
+
         private void BtnSignInCode_Click(object sender, EventArgs e)
         {
             SignInCode();
@@ -170,13 +175,13 @@ namespace XamarinAccountKitDemo.HmsSample
         /// </summary>
         private void SignIn()
         {
-            authParam = new HuaweiIdAuthParamsHelper(HuaweiIdAuthParams.DefaultAuthRequestParam)
-                    .SetIdToken()
-                    .SetAccessToken()
-                    .CreateParams();
-            authManager = HuaweiIdAuthManager.GetService(this, authParam);
+            mAuthParam = new AccountAuthParamsHelper(AccountAuthParams.DefaultAuthRequestParam)
+                            .SetIdToken()
+                            .SetAccessToken()
+                            .CreateParams();
+            mAuthManager = AccountAuthManager.GetService(this, mAuthParam);
 
-            StartActivityForResult(authManager.SignInIntent, Constant.RequestSignInLogin);
+            StartActivityForResult(mAuthManager.SignInIntent, Constant.RequestSignInLogin);
         }
 
         /// <summary>
@@ -184,91 +189,121 @@ namespace XamarinAccountKitDemo.HmsSample
         /// </summary>
         private void SignInCode()
         {
-            authParam = new HuaweiIdAuthParamsHelper(HuaweiIdAuthParams.DefaultAuthRequestParam)
-                     .SetProfile()
-                     .SetAuthorizationCode()
-                     .CreateParams();
-            authManager = HuaweiIdAuthManager.GetService(this, authParam);
+            mAuthParam = new AccountAuthParamsHelper(AccountAuthParams.DefaultAuthRequestParam)
+                    .SetProfile()
+                    .SetAuthorizationCode()
+                    .CreateParams();
+            mAuthManager = AccountAuthManager.GetService(this, mAuthParam);
 
-            StartActivityForResult(authManager.SignInIntent, Constant.RequestSignInLoginCode);
+            StartActivityForResult(mAuthManager.SignInIntent, Constant.RequestSignInLoginCode);
+        }
+
+        /// <summary>
+        /// Independent Authorization
+        /// </summary>
+        private void IndependentAuthorization()
+        {
+            mAuthParam = new AccountAuthParamsHelper()
+                            .SetProfile()
+                            .CreateParams();
+            mAuthManager = AccountAuthManager.GetService(this, mAuthParam);
+
+            StartActivityForResult(mAuthManager.GetIndependentSignInIntent(accessToken), Constant.RequestIndependentSignInLoginCode);
         }
 
         /// <summary>
         /// Signing Out from HUAWEI ID
         /// </summary>
-        private void SignOut()
+        private async void SignOut()
         {
+            if(mAuthManager == null)
+            {
+                Log.InfoFunc(TAG, "Please, sign in first");
+                return;
+            }
+            Task signOutTask = mAuthManager.SignOutAsync();
+
             try
             {
-                Task signOutTask = authManager.SignOut();
-                signOutTask.AddOnSuccessListener
-                 (
-                        new OnSuccessListener
-                        (
-                            "SignOut Success"
-                        )
-                 ).AddOnFailureListener(
-                         new OnFailureListener
-                        (
-                            "SignOut Failed"
-                        )
-                 );
+                await signOutTask;
+
+                if (signOutTask.Exception == null)
+                {
+                    Log.InfoFunc(TAG, "Sign Out success");
+                }
+                else
+                {
+                    Log.InfoFunc(TAG, "Sign Out failed: " + (signOutTask.Exception).ToString());
+                }          
+
             }
-            catch (System.Exception e)
+            catch (Exception e)
             {
-                Log.InfoFunc(TAG, "SignOut Failed: "+ e.Message);
+                Log.InfoFunc(TAG, "Sign Out failed: " + e.Message);
             }
         }
 
         /// <summary>
         /// Silently Signing In With HUAWEI ID
         /// </summary>
-        private void SilentSignIn()
+        private async void SilentSignIn()
         {
+            if (mAuthManager == null)
+            {
+                Log.InfoFunc(TAG, "Please, sign in by HuaweiID first!");
+                return;
+            }
+            Task<AuthAccount> silentSignInTask = mAuthManager.SilentSignInAsync();
+
             try
             {
-                Task silentSignInTask = authManager.SilentSignIn();
-                silentSignInTask.AddOnSuccessListener
-                 (
-                        new OnSuccessListener
-                        (
-                            "SilentSignIn Success"
-                        )
-                 ).AddOnFailureListener(
-                         new OnFailureListener
-                        (
-                            "SilentSignIn Failed"
-                        )
-                 );
+                await silentSignInTask;
+
+                if(silentSignInTask.Result != null)
+                {
+                    Log.InfoFunc(TAG, "SilentSignIn success");
+                }
+                else
+                {
+                    Log.InfoFunc(TAG, "SilentSignIn failed: " + (silentSignInTask.Exception).ToString());
+                    SignIn();
+                }
+
             }
-            catch (System.Exception e)
+            catch(Exception e)
             {
-                //if Failed use SignIn
-                SignIn();
+                Log.InfoFunc(TAG, "SilentSignIn failed: " + e.Message);
             }
 
         }
         /// <summary>
         /// Revoking HUAWEI ID Authorization
         /// </summary>
-        private void CancelAuthorization()
+        private async void CancelAuthorization()
         {
+            mAuthParam = new AccountAuthParamsHelper(AccountAuthParams.DefaultAuthRequestParam)
+                            .SetProfile()
+                            .SetAuthorizationCode()
+                            .CreateParams();
+            mAuthManager = AccountAuthManager.GetService(this, mAuthParam);
+            Task cancelAuthorizationTask = mAuthManager.CancelAuthorizationAsync();
             try
             {
+                await cancelAuthorizationTask;
 
-                Task cancelAuthorizationTask = authManager.CancelAuthorization();
-                cancelAuthorizationTask.AddOnCompleteListener
-                 (
-                        new OnCompleteListener
-                        (
-                            "Cancel Authorization Success",
-                            "Cancel Authorization Failed"
-                        )
-                 );
+                if(cancelAuthorizationTask != null)
+                {
+                    Log.InfoFunc(TAG, "Cancel Authorization success");
+                }
+                else
+                {
+                    Log.InfoFunc(TAG, "Cancel Authorization failed: " + (cancelAuthorizationTask.Exception).ToString());
+                }
+
             }
-            catch (Exception e)
+            catch(Exception e)
             {
-                Log.InfoFunc(TAG, "Cancel Authorization failed: "+ e.Message);
+                Log.InfoFunc(TAG, "Cancel Authorization failed: " + e.Message);
             }
 
         }
@@ -276,18 +311,27 @@ namespace XamarinAccountKitDemo.HmsSample
         /// <summary>
         /// Start read sms manager
         /// </summary>
-        private void StartReadSmsManager()
+        private async void StartReadSmsManager()
         {
+            System.Threading.Tasks.Task readSmsManagerTask = ReadSmsManager.StartAsync(this);
+            try
+            {
+                await readSmsManagerTask;
 
-            Task readSmsManagerTask = ReadSmsManager.Start(this);
-            readSmsManagerTask.AddOnCompleteListener
-             (
-                    new OnCompleteListener
-                    (
-                        "Read Sms Manager Service Started",
-                        "Read Sms Manager Service Failed"
-                    )
-             );
+                if (readSmsManagerTask.Exception == null)
+                {
+                    Log.InfoFunc(TAG, "Read Sms Manager Service Started");
+                }
+                else
+                {
+                    Log.InfoFunc(TAG, "Read Sms Manager Service failed: " + (readSmsManagerTask.Exception).ToString());
+                }
+
+            }
+            catch (Exception e)
+            {
+                Log.InfoFunc(TAG, "Read Sms Manager Service failed: " + e.Message);
+            }
         }
 
         /// <summary>
@@ -317,43 +361,80 @@ namespace XamarinAccountKitDemo.HmsSample
 
         }
 
-        protected override void OnActivityResult(int requestCode, Result resultCode, Intent data)
+        protected async override void OnActivityResult(int requestCode, Result resultCode, Intent data)
         {
             base.OnActivityResult(requestCode, resultCode, data);
             if (requestCode == Constant.RequestSignInLogin)
             {
-                //login success
-                //get user message by ParseAuthResultFromIntent
-                Task authHuaweiIdTask = HuaweiIdAuthManager.ParseAuthResultFromIntent(data);
-                if (authHuaweiIdTask.IsSuccessful)
+                // Sign In Operation
+                Task<AuthAccount> authAccountTask = AccountAuthManager.ParseAuthResultFromIntentAsync(data);
+                try
                 {
-                    AuthHuaweiId huaweiAccount = (AuthHuaweiId)authHuaweiIdTask.Result;
-                    Log.InfoFunc(TAG, huaweiAccount.DisplayName + " signIn success ");
-                    Log.InfoFunc(TAG, "AccessToken: " + huaweiAccount.AccessToken);
+                    await authAccountTask;
 
-                    ValidateIdToken(huaweiAccount.IdToken);
+                    if(authAccountTask.Result != null)
+                    {
+                        AuthAccount authAccount = authAccountTask.Result;
+                        Log.InfoFunc(TAG, authAccount.DisplayName + " signIn success ");
+                        Log.InfoFunc(TAG, "AccessToken: " + authAccount.AccessToken);
+                        accessToken = authAccount.AccessToken;
+                    }
+                    else
+                    {
+                        Log.InfoFunc(TAG, "signIn failed: " + (authAccountTask.Exception).ToString());
+                    }
                 }
-                else
+                catch (Exception e)
                 {
-                    Log.InfoFunc(TAG, "signIn failed: " + (authHuaweiIdTask.Exception).ToString());
+                    Log.InfoFunc(TAG, "signIn failed: " + e.Message);
                 }
             }
             if (requestCode == Constant.RequestSignInLoginCode)
             {
-                //login success
-                Task authHuaweiIdTask = HuaweiIdAuthManager.ParseAuthResultFromIntent(data);
-                if (authHuaweiIdTask.IsSuccessful)
+                // Sign In Code Operation
+                Task<AuthAccount> authAccountTask = AccountAuthManager.ParseAuthResultFromIntentAsync(data);
+                try
                 {
-                    AuthHuaweiId huaweiAccount = (AuthHuaweiId)authHuaweiIdTask.Result;
-                    Log.InfoFunc(TAG, "signIn get code success.");
-                    Log.InfoFunc(TAG, "ServerAuthCode: " + huaweiAccount.AuthorizationCode);
+                    await authAccountTask;
 
-                    /**** english doc:For security reasons, the operation of changing the code to an AT must be performed on your server. The code is only an example and cannot be run. ****/
-                    /**********************************************************************************************/
+                    if (authAccountTask.Result != null)
+                    {
+                        AuthAccount authAccount = authAccountTask.Result;
+                        Log.InfoFunc(TAG, "signIn get code success.");
+                        Log.InfoFunc(TAG, "ServerAuthCode: " + authAccount.AuthorizationCode);
+                    }
+                    else
+                    {
+                        Log.InfoFunc(TAG, "signIn get code failed: " + (authAccountTask.Exception).ToString());
+                    }
                 }
-                else
+                catch (Exception e)
                 {
-                    Log.InfoFunc(TAG, "signIn get code failed: " + (authHuaweiIdTask.Exception).ToString());
+                    Log.InfoFunc(TAG, "signIn get code failed: " + e.Message);
+                }
+            }
+            if (requestCode == Constant.RequestIndependentSignInLoginCode)
+            {
+                // Independent Auth Operation
+                Task<AuthAccount> authAccountTask = AccountAuthManager.ParseAuthResultFromIntentAsync(data);
+                try
+                {
+                    await authAccountTask;
+
+                    if (authAccountTask.Result != null)
+                    {
+                        AuthAccount authAccount = authAccountTask.Result;
+                        Log.InfoFunc(TAG, "Independent Auth success.");
+                        Log.InfoFunc(TAG, "ServerAuthCode: " + authAccount.AuthorizationCode);
+                    }
+                    else
+                    {
+                        Log.InfoFunc(TAG, "Independent Auth failed: " + (authAccountTask.Exception).ToString());
+                    }
+                }
+                catch (Exception e)
+                {
+                    Log.InfoFunc(TAG, "Independent Auth failed: " + e.Message);
                 }
             }
         }
