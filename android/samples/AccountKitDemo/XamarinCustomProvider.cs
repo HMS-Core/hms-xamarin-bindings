@@ -29,7 +29,7 @@ using Huawei.Agconnect.Config;
 
 namespace XamarinAccountKitDemo
 {
-    [ContentProvider(new string[] { "com.huawei.accountkitdemo.XamarinCustomProvider" })]
+    [ContentProvider(new string[] { "com.company.project.XamarinCustomProvider" })]
     public class XamarinCustomProvider : ContentProvider
     {
         public override int Delete(Android.Net.Uri uri, string selection, string[] selectionArgs)

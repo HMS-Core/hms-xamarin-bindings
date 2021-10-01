@@ -70,55 +70,8 @@
     <LibraryProjectZip Include="..\..\externals\hwid.aar" Link="Jars\%(Filename)%(Extension)" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\agconnect-core\agconnect-core.csproj">
-      <Project>{dc61b5ff-1065-4c4b-878d-b0f05fee296f}</Project>
-      <Name>agconnect-core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\availableupdate\availableupdate.csproj">
-      <Project>{577822ba-43aa-4415-b45e-2d690f31d5e3}</Project>
-      <Name>availableupdate</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\base\base.csproj">
-      <Name>base</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\device\device.csproj">
-      <Project>{735d9f1e-a2cf-466b-98a1-1722d7fa2898}</Project>
-      <Name>device</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\log\log.csproj">
-      <Project>{90cdea4a-d708-4f14-b975-07918c77806a}</Project>
-      <Name>log</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\network-common\network-common.csproj">
-      <Project>{756cf6a2-4055-464d-b9b1-35faf5eef6d8}</Project>
-      <Name>network-common</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\network-grs\network-grs.csproj">
-      <Project>{0f4eaa93-9d3a-4050-8470-3391cba73937}</Project>
-      <Name>network-grs</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\security-encrypt\security-encrypt.csproj">
-      <Project>{11dcf699-e329-454c-b435-6e33540d896f}</Project>
-      <Name>security-encrypt</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\security-ssl\security-ssl.csproj">
-      <Project>{f2e9130c-ab62-4c86-a740-634c22861c0b}</Project>
-      <Name>security-ssl</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\stats\stats.csproj">
-      <Project>{12fabbc8-59ed-4794-8c49-be6fcab9e367}</Project>
-      <Name>stats</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\tasks\tasks.csproj">
-      <Name>tasks</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ui\ui.csproj">
-      <Project>{bf819fd6-efa7-4e2a-8e42-80bdaf850748}</Project>
-      <Name>ui</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\update\update.csproj">
-      <Project>{acfcf020-3e94-4930-862e-93f3afc33c36}</Project>
-      <Name>update</Name>
-    </ProjectReference>
+    <PackageReference Include="Huawei.Hms.Base">
+      <Version>6.1.0.302</Version>
+    </PackageReference>
   </ItemGroup>
 </Project>

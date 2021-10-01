@@ -1,4 +1,4 @@
-ArtifactInfo ACCOUNT_ARTIFACT = new ArtifactInfo("hwid","5.0.3.302","hms","aar");
+ArtifactInfo ACCOUNT_ARTIFACT = new ArtifactInfo("hwid","6.1.0.302","hms","aar");
 ArtifactInfo DRIVE_ARTIFACT = new ArtifactInfo("drive","5.0.0.302","hms","aar");
 ArtifactInfo AR_ENGINE_ARTIFACT = new ArtifactInfo("arenginesdk","2.13.0.4","hms","aar");
 ArtifactInfo CONTACTSHIELD_ARTIFACT = new ArtifactInfo("contactshield","5.0.4.301","hms","aar");
